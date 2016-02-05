@@ -1,0 +1,42 @@
+@import "_theme.scss";
+@import "_mixin.scss";
+
+#slider-contents{
+  .infos{
+    background-size: 672px auto;
+    &{
+      background-image: url();
+    }
+  }
+}
+
+@include media(tab){
+  #slider-contents{
+    .infos{
+      background-size: 1056px auto;
+      &{
+        background-image: url();
+      }
+    }
+  }
+}
+@include media(desk){
+  #slider-contents{
+    .infos{
+      background-size: 1302px auto;
+      &{
+        background-image: url();
+      }
+    }
+  }
+}
+@include media(lgdesk){
+  #slider-contents{
+    .infos{
+      background-size: 1920px auto;
+      &{
+        background-image: url();
+      }
+    }
+  }
+}

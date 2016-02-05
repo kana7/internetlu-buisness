@@ -1,0 +1,165 @@
+@import "_normalize.scss";
+@import "_grid.scss";
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    @include base-style;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $blue;
+    font-weight: 300;
+}
+
+a{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border-color: lighten($grey, 8%);
+}
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "luxonline-icons";
+  src:url("../../fonts/luxonline-icons.eot");
+  src:url("../../fonts/luxonline-icons.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/luxonline-icons.woff") format("woff"),
+    url("../../fonts/luxonline-icons.ttf") format("truetype"),
+    url("../../fonts/luxonline-icons.svg#luxonline-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "luxonline-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "luxonline-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account-icone:before {
+  content: "\62";
+}
+.icon-x-icone:before {
+  content: "\61";
+}
+.icon-calculator-ico:before {
+  content: "\63";
+}
+.icon-call-me:before {
+  content: "\64";
+}
+.icon-check-ico:before {
+  content: "\65";
+}
+.icon-clock-icone:before {
+  content: "\66";
+}
+.icon-document-ico:before {
+  content: "\67";
+}
+.icon-download-ico:before {
+  content: "\6a";
+}
+.icon-faq-ico:before {
+  content: "\6b";
+}
+.icon-facebook:before {
+  content: "\6c";
+}
+.icon-heart-ico:before {
+  content: "\6d";
+}
+.icon-google:before {
+  content: "\6e";
+}
+.icon-telephonie-ico:before {
+  content: "\6f";
+}
+.icon-repondeur-icone:before {
+  content: "\70";
+}
+.icon-right-arrow:before {
+  content: "\71";
+}
+.icon-pig-ico:before {
+  content: "\72";
+}
+.icon-parrainage-ico:before {
+  content: "\73";
+}
+.icon-phone-icone:before {
+  content: "\74";
+}
+.icon-pack-ico:before {
+  content: "\75";
+}
+.icon-mobile-ico:before {
+  content: "\76";
+}
+.icon-menu-icone:before {
+  content: "\77";
+}
+.icon-linkedin:before {
+  content: "\78";
+}
+.icon-internet-ico:before {
+  content: "\79";
+}
+.icon-info-icone:before {
+  content: "\7a";
+}
+.icon-icone-lol:before {
+  content: "\41";
+}
+.icon-tv-ico:before {
+  content: "\42";
+}
+.icon-twitter:before {
+  content: "\43";
+}
+.icon-hotcity:before {
+  content: "\68";
+}
+.icon-left-arrow:before {
+  content: "\69";
+}
+.icon-cable-ico:before {
+  content: "\44";
+}

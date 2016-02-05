@@ -1,0 +1,1308 @@
+@include viewport(max, $max: 1301){
+    .header-icon{
+        display: none !important;
+    }
+    .icons{
+        width: 60%;
+        margin-top: 6%;
+    }
+}
+@include viewport(max, $max: 1055){
+    #top-menu-header{
+        .container-wrapper{
+            width: 100%;
+            padding: 0 25px;
+        }
+    }
+    .equipement-item-blue, .equipement-item-orange{
+        .main-image{
+            margin: 0 auto 15px;
+        }
+        .thumbnails{
+            margin-bottom: 30px;
+        }
+        .config{
+            padding-left: 28px;
+        }
+        .equipement-price{
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        .item-name{
+            width: 100%;
+            font-size: 19px;
+            line-height: 21px;
+            margin-bottom: 25px;
+            text-align: center;
+            .sub{
+                font-size: 0.71em;
+            }
+        }
+    }
+    .group-contact-details{
+        div[class^=phone-]:first-child{
+            margin-bottom: 20px;
+        }
+    }
+}
+@include media(phone){
+    .equipement-item-blue, .equipement-item-orange{
+        .equipement-price{
+            padding: 13px 82px;
+            margin-bottom: 25px;
+        }
+    }
+    .container-wrapper{
+        width: 320px;
+        padding: 0 14px;
+    }
+    .table-details td, .table-details th{
+        font-size: 12px;
+    }
+
+    .content-container .offer-item-blue .info .data, .offer-item-orange .info .data{
+        padding-left: 40px;
+    }
+    .section-info p{
+        font-size: 19px;
+        line-height: 26px;
+    }
+    .section-info .btn-blue {
+        font-size: 19px;
+        padding: 15px 50px;
+    }
+    .btn-outline-white, .btn-outline-black{
+        font-size: 13px;
+    }
+    .logo{
+        margin-right: 0px;
+    }
+    .typeContainer{
+        text-align: center;
+    }
+    .priceWrapperRight{
+        font-size: 20px;
+    }
+    .picContainer{
+        margin-bottom: 10px;
+    }
+    .hotcity-link{
+        .table-details{
+            td{
+                font-size: 16px;
+            }
+        }
+    }
+    #services .service#dispo{
+        position: relative;
+        margin: 0;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        height: 100%;
+        .infos{
+            position: relative;
+        }
+    }
+    .center-phone{
+        text-align: center;
+    }
+    .center-phone-img{
+        float: none;
+        display: inline-block;
+    }
+    .text-align-left{
+        text-align: left;
+    }
+    .detailsTableCable{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dropdown-content{
+        margin-left: 0px;
+        border-left: 1px solid #004494;
+        padding: 0 10px;
+    }
+}
+@include media(tab){
+    #error404{
+        height: 600px;
+        .logo-404{
+            @include vertical-align-middle;
+        }
+    }
+    .section-description{
+        font-size: 20px;
+    }
+    .container-wrapper{
+        width: 640px;
+    }
+    .section-subtitle{
+        font-size: 27px;
+    }
+    .section-layout:not(.height-auto){
+        img{
+            width: auto;
+            height: 230px;
+        }
+    }
+    #services{
+        .row>div[class^=phone-]{
+            padding: 0 15px;
+        }
+        .service{
+            height: auto;
+            padding-bottom: 135%;
+            margin-bottom: 30px;
+            &#loldsl{background-image: url(../../images/Homepage/OFFRES/LOL_DSL_288x392px_Noel.jpg);}
+            &#mobiles{background-image: url(../../images/Homepage/OFFRES/LOL_Mobile_288x392px.jpg);}
+            &#installation{background-image: url(../../images/Homepage/OFFRES/LOL_TV_288x392px_Noel.jpg);}
+        }
+    }
+    #offers-section{
+        div[class^=phone-]{
+            margin-bottom: 20px;
+        }
+    }
+    .content-container .content-title{
+        font-size: 26px;
+        margin: 25px 0 27px;
+    }
+    #slider-contents .infos{
+        height: 450px;
+    }
+    #slider-contents{
+        .title{
+            font-size: 30pt;
+            margin-bottom: 15px;
+        }
+        p.top-details{
+            font-size: 21pt;
+            line-height: 35px;
+        }
+        p.bottom-details{
+            font-size: 10pt;
+        }
+
+        .flickity-prev-next-button {
+            position: absolute;
+            top: 50%;
+            width: 55px;
+            height: 55px;
+            &.previous{left: 50px;}
+            &.next{right: 50px;}
+        }
+        .section-price{
+            font-size: 72px;
+            margin: 0px 0 20px;
+            padding-top: 2px;
+            div{
+                font-size: 24px;
+                top: 12px;
+                left: 83px;
+            }
+            span{
+                font-size: 21px;
+                padding-left: 0px;
+            }
+        }
+    }
+    #slider-ui{
+        .buttons{
+            width: 95%;
+            .arrow{
+                font-size: 38pt;
+            }
+        }
+        .dots{
+            width: 135px;
+            li{font-size: 7pt;}
+        }
+    }
+    .help-link{
+        font-size: 17px;
+        line-height: 25px;
+        padding: 15px 0 20px;
+    }
+    #social-links ul,
+    #contact ul, #document-links ul
+    {
+        &.center{
+            @include display-flex-center;
+            li:not(:last-child){
+                margin-right: 150px;
+            }
+        }
+    }
+    #document-links ul li:not(:last-child){
+        margin-bottom: 0;
+    }
+    #document-links ul li{
+        display: inline-block;
+        width: auto;
+    }
+    #social-links .brand-name{
+        display: inline-block;
+    }
+    #social-links .social-icon{
+        margin-right: 10px;
+    }
+    #contact li{
+        width: auto;
+    }
+    .section-title{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .section-price{
+        div{
+            left: 75px;
+        }
+    }
+    .footer-bottom-links li{
+        margin: 0 35px;
+        text-align: center;
+    }
+    .content-container{
+        .offer-item-blue, .offer-item-orange{
+            width: 395px;
+        }
+    }
+    .pdf-list img{
+        margin-right: 10px;
+    }
+    .tab-adjust{
+        margin: 24px 0;
+    }
+    .tab-adjust-2{
+        margin: 25px 0px 55px 0px;
+    }
+    .equipement-item-blue{
+        padding: 30px 20px 25px;
+        .equipement-price{
+            margin: 0;
+        }
+        .thumbnails{
+            margin-bottom: 30px;
+        }
+    }
+    #mobileType{
+        height: 150px;
+        .gallery-cell {
+            width: 25%;
+            .mobile-container{
+                padding: 20px 0 10px;
+            }
+        }
+    }
+    .descSubWrapperRight, .descSubWrapperLeft{
+        width: 50%;
+    }
+    .descSubWrapperRight{
+        padding-left: 20px;
+    }
+    .rightWrapper{
+        display: block;
+        width: 75%;
+    }
+    .pdf-list-extended{
+        height: 200px;
+    }
+    .location-section{
+        .pull-left{
+            text-align: left;
+            margin-bottom: 0;
+        }
+        .pull-right{
+            text-align: right;
+        }
+    }
+    .contact-form-info{
+        .left-container{
+            padding-right: 20px;
+        }
+        .right-container{
+            padding-left: 20px;
+        }
+    }
+    #anniv{
+        background-image: url("../../images/Divers/A_propos/20ans_1056x162px.png");
+    }
+    #fibre{
+        background-image: url("../../images/Divers/A_propos/slider_1302x330px.jpg");
+    }
+    #valeurs{
+        background-image: url("../../images/Divers/A_propos/nosvaleurs_1056x300px.jpg");
+    }
+    #slider-magazine{
+        img{
+            height: 550px;
+        }
+    }
+    //Page A propos - Historique
+    #history-extended{
+        height: 220px;
+    }
+    .history{
+        position: relative;
+        height: 200px;
+        .container-wrapper{
+            position: relative;
+        }
+
+        #first{
+            //margin-top: 100px;
+        }
+        #last{
+            //margin-bottom: 100px;
+        }
+        .row{
+            height: 100%;
+        }
+        .rond{
+            z-index: 2;
+            margin: 0 auto;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #004494;
+            box-shadow: inset 0px -2px 15px rgba(0, 0, 0, 0.1),inset 0px 2px 15px rgba(0, 0, 0, 0.1), inset 2px 0px 15px rgba(0, 0, 0, 0.1), inset -2px 0px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            left: 0;
+            right: 0;
+            p{
+                margin: 0 auto;
+                text-align: center;
+                color: white;
+                font-weight: 800;
+                font-size: 19px;
+                top: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+            }
+        }
+        .text{
+            width: 50%;
+            p{
+                font-size: 16px;
+                margin: 0;
+                line-height: 20px;
+            }
+        }
+        .history-text{
+            @include vertical-align-middle;
+        }
+        .history-text-exeption{
+            @include vertical-align-middle;
+            float: right;
+            margin-right: 15px;
+        }
+        .right-block{
+            float: right;
+            padding: 0 0 0 70px;
+        }
+        .left-block{
+            padding: 0 55px 0 0;
+            float: left;
+            .history-text{
+                float: right;
+                margin-right: 15px;
+            }
+        }
+        .history-element{
+            .icon-right{
+                text-align: center;
+                padding-left: 80px;
+            }
+            .icon-right-arrow{
+                font-size: 16px;
+                color:#004494;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .icon-left{
+                text-align: center;
+                padding-right: 170px;
+            }
+            .line-grey{
+                width: 3px;
+                height: 100%;
+                background-color: #B0B1B2;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                position: absolute;
+            }
+        }
+    }
+    .btn-abo{
+        width: 47%;
+    }
+    .table-details{
+        a{
+            font-size: 16px;
+        }
+    }
+    #twenty-years{
+        background-image: url(../../images/Homepage/CONTENU/640px/20ans_LOL.jpg);
+        background-size: 583px auto;
+        padding-top: 205px;
+    }
+    .dropdown-content{
+        margin-left: 30px;
+        border-left: 1px solid #004494;
+        padding: 0 35px;
+    }
+}
+
+@include media(desk){
+    .dropdown-content{
+        margin-left: 30px;
+        border-left: 1px solid #004494;
+        padding: 0 35px;
+    }
+    .center-tab{
+        @include vertical-align-middle;
+    }
+    .header-section-height{
+        height: 350px !important;
+    }
+    .logo{
+        height: auto;
+        &.noel{
+            bottom: 19px;
+            img{
+                max-height: 75px;
+            }
+        }
+    }
+    #mobileType{
+        .flickity-prev-next-button{
+            height: 35px;
+        }
+    }
+    .minix-info{
+        margin-top: 50px;
+    }
+    #equipement-section{
+        padding-top: 70px;
+        min-height: 787px;
+    }
+    .equipement-item-blue, .equipement-item-orange{
+        height: 275px;
+        text-align: right;
+        padding: 0 40px 0 20px;
+        margin-bottom: 15px;
+        .details{
+            vertical-align: top;
+            padding-left: 20px;
+            padding-right: 0px;
+            li{
+                display: block;
+            }
+        }
+        .main-image.fillHeight{
+            height: 125px;
+        }
+        .thumbnails{
+            margin-bottom: 0;
+        }
+    }
+    .container-wrapper{
+        width: 1024px;
+    }
+    .content-container{
+        padding-top: 100px !important;
+        margin-bottom: 40px !important;
+    }
+    .section-layout.content-container{
+        height: 400px;
+        &.height-auto{height: auto;}
+    }
+    .first-section{
+        padding-top: 0px !important;
+        height: 400px !important;
+    }
+    .btn-container{
+        text-align: left;
+    }
+    .btn-black{
+        margin-bottom: 30px;
+    }
+    #bottom-menu-header{
+        height: 75px;
+        padding: 17px 0;
+        .pull-left{
+            width: auto;
+        }
+        &:after{
+            top: 74px;
+        }
+    }
+    .bottom-menu-header-links{
+        float: left;
+    }
+    #fibrelu.section-layout{
+        height: 425px;
+    }
+    .section-layout{
+        height: 350px;
+        padding: 0;
+        &.height-auto{height: auto;}
+    }
+    #slider-contents .flickity-page-dots{
+        bottom: 20px;
+    }
+    #slider{
+        padding-bottom: 0;
+    }
+    #slider-contents .infos{
+        position: relative;
+        height: 330px;
+        z-index: 1;
+        text-align: left;
+        .align-right{
+            text-align: right !important;
+        }
+        .row{
+            @include vertical-align-middle;
+        }
+    }
+    #slider-contents{
+        .title{
+            font-size: 32pt;
+            margin-bottom: 15px;
+        }
+        p.top-details{
+            font-size: 18pt;
+            line-height: 35px;
+        }
+        p.bottom-details{
+            font-size: 10pt;
+        }
+        .section-price {
+            font-size: 72px;
+            margin: 0px 0 20px;
+            padding-top: 2px;
+            margin-right: 65px;
+            div{
+                font-size: 21px;
+                top: 13px !important;
+                left: 84px;
+            }
+            span{
+                font-size: 21px;
+            }
+        }
+    }
+    #slider-ui{
+        .buttons{
+            width: 95%;
+            .arrow{
+                font-size: 38pt;
+            }
+        }
+        .dots{
+            width: 135px;
+            li{font-size: 7pt;}
+        }
+    }
+    .content-container .content-title, .content-container .content-subtitle{
+        text-align: left;
+    }
+    #offers-section{
+        padding-top: 70px;
+    }
+    .footer-note{
+        text-align: center;
+        span{
+            display: inline-block;
+            &:first-child{
+                margin-right: 5px;
+            }
+        }
+    }
+    #services{
+        .row > div[class^=phone-]{
+            padding: 0 7px;
+        }
+        .service{
+            margin-bottom: 0;
+            &#loldsl{background-image: url(../../images/Homepage/OFFRES/LOL_DSL_240x327px_Noel.jpg);}
+            &#mobiles{background-image: url(../../images/Homepage/OFFRES/LOL_Mobile_240x327px.jpg);}
+            &#installation{background-image: url(../../images/Homepage/OFFRES/LOL_TV_240x327px_Noel.jpg);}
+            .infos{
+                padding: 0 15px 15px;
+                .details{
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                h3{
+                    font-size: 1.4em;
+                    margin: 20px -11px 15px;
+                }
+            }
+        }
+        .price-orange{
+            margin-top: 0;
+            font-size: 52px;
+            span{
+                font-size: 16px;
+            }
+        }
+        .price-orange div{
+            font-size: 14pt;
+            top: 5px;
+            left: 68px;
+        }
+    }
+    .section-subtitle{
+        text-align: left;
+    }
+    .section-description {
+        margin: 0 0 10px;
+    }
+    .section-price{
+        font-size: 58px;
+        div{
+            left: 84px;
+            top: 14px !important;
+        }
+    }
+    .bottom-info{
+        font-size: 8pt;
+    }
+
+    .price-blue span, .price-orange span{
+        font-size: 9.5pt;
+    }
+    .price-orange{
+        font-size: 43pt;
+        margin-top: 22px;
+        div{
+            font-size: 14pt;
+            top: -17px;
+            left: 68px;
+
+        }
+    }
+
+    .price-blue{
+        font-size: 34pt;
+        div{
+            font-size: 11pt;
+            top: -11px;
+            left: 55px;
+        }
+    }
+    #dispo{
+        h3{
+            font-size: 12pt !important;
+        }
+        .input-white{
+            height: 48px;
+        }
+        .btn-orange{
+            font-size: 15px;
+        }
+    }
+
+    .right-orientation,
+    .left-orientation{
+        .row{
+            position: relative;
+        }
+    }
+
+    .right-orientation .row > div:first-child,
+        .left-orientation .row > div:last-child{
+        left: 0;
+        float: left !important;
+        .section-img-align-bottom{
+            left: 0;
+        }
+    }
+    .right-orientation .row > div:last-child,
+        .left-orientation .row > div:first-child{
+        right: 0;
+        float: right !important;
+        .section-img-align-bottom{
+            right: 0;
+        }
+    }
+    .right-orientation .row > div:last-child, .left-orientation .row > div:last-child{
+        text-align: left;
+    }
+    .right-orientation .row>div:last-child{
+        text-align: left;
+    }
+    .left-orientation .row>div:last-child{
+        text-align: left;
+    }
+
+    .right-orientation .row > div:last-child, .left-orientation .row > div:last-child{
+        @include vertical-align-middle;
+        height: auto;
+    }
+    .section-background-image{
+        .container-wrapper>.row>div:first-child{
+            @include vertical-align-middle;
+            height: auto;
+        }
+        &.left{
+            .row>div:first-child{
+                text-align: right;
+            }
+        }
+        &.right{
+            .row>div:first-child{
+                text-align: left;
+            }
+        }
+    }
+
+    .content-container .row>div[class^=phone-]{
+        @include vertical-align-middle;
+        height: auto;
+    }
+
+    .section-layout img{
+        height: 100% !important;
+    }
+    .section-img-align-bottom{
+        position: absolute;
+    }
+    .section-title {
+        margin-top: 0;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .bottom-link{
+        margin: 18px 0;
+        font-size: 19px;
+        padding-right: 5px;
+        span{
+            top: 2px;
+            font-size: 17px;
+        }
+    }
+
+    #social-links{
+        padding: 23px 0 12px;
+    }
+    #social-links .text, #contact .text{
+        text-align: left;
+        width: auto;
+        margin: 0;
+        float: left;
+    }
+    #contact .text{
+        margin-top: 5px;
+    }
+    #social-links .text{
+        margin-top: 8px;
+    }
+    #contact ul{
+        width: 75%;
+    }
+    #social-links nav{
+        width: 80%;
+    }
+
+    .help-link{
+        font-size: 12pt;
+        span[class^=icon-]{
+            &.icon-info-icone{
+                margin-right: 5px;
+                font-size: 19pt;
+            }
+            &.icon-right-arrow{
+                margin-left: 5px;
+                font-size: 14pt;
+
+            }
+        }
+    }
+    .section-background-image{
+        background-size: 700px auto;
+        padding-top: 0;
+        &.fit-height{
+            background-size: auto 100%;
+        }
+        &.left{
+            background-position: left top;
+        }
+        &.right{
+            background-position: right top;
+        }
+    }
+    .footer-bottom-links li{
+        text-align: left;
+        margin: 0;
+        margin-right: 69px;
+    }
+    #document-links .icon{
+        display: inline-block;
+    }
+    #document-links a{
+        line-height: 31px;
+        padding-left: 40px;
+    }
+    .section-info{
+        h1{
+            line-height: 35px;
+        }
+        p{
+            margin: 0 0 50px;
+        }
+    }
+    .pdf-list img{
+        margin-right: 10px;
+    }
+    .tab-adjust{
+        margin: 40px 0;
+    }
+    .tab-adjust-2{
+        margin: 40px 0px;
+    }
+    .finance-list{
+        line-height: none;
+    }
+
+    .section-height-extention{
+        height: 450px;
+    }
+    .hotcity-link{
+        .table-details{
+            td{
+                font-size: 16px;
+            }
+        }
+        @include vertical-align-middle;
+    }
+    .history-banner h1{
+        font-size: 60px;
+    }
+    #anniv{
+        background-image: url("../../images/Divers/A_propos/20ans_1920x200px.png");
+        h1{
+            font-size: 80px;
+            margin: 0;
+        }
+        .align-middle{
+            @include vertical-align-middle;
+        }
+    }
+    #fibre{
+        background-image: url("../../images/Divers/A_propos/notre_reseau_1920x480px.jpg");
+        h1{
+            font-size: 60px;
+            margin: 0;
+        }
+        .align-middle{
+            @include vertical-align-middle;
+        }
+    }
+    #valeurs{
+        height: 360px;
+        background-image: url("../../images/Divers/A_propos/nosvaleurs_1920x360px.jpg");
+        h1{
+            font-size: 60px;
+        }
+        .align-middle{
+            @include vertical-align-middle;
+        }
+    }
+    .section-propos{
+        height: 200px !important;
+        h2{
+            margin-top: 80px;
+        }
+    }
+
+    .picContainer, .rightWrapper{
+        display: block;
+        width: 50%;
+    }
+    .descSubWrapperRight{
+        padding-left: 0;
+    }
+    .picContainer{
+        text-align: center;
+        padding-left: 30px;
+    }
+    .location-section{
+        .row>[class^=phone-]:first-child{
+            padding-right: 20px;
+        }
+        .row>[class^=phone-]:last-child{
+            padding-left: 20px;
+        }
+        .row>[class^=phone-]:not(:last-child){
+            margin-bottom: 0px;
+        }
+    }
+    .contact-form-info{
+        padding-right: 30px;
+        margin-bottom: 0px;
+    }
+    .contact-form-mess{
+        padding-left: 30px;
+    }
+    .footer-bottom-links{
+        @include display-flex-spread;
+    }
+    .propos-title {
+        position: relative;
+        padding: 50px 0;
+    }
+    .btn-abo{
+        width: 23%;
+    }
+    .offer-item-blue .item-header, .equipement-item-blue .item-header {
+        padding: 18px 5px 15px;
+        font-size: 22px;
+    }
+    #tarif-details{
+        height: 400px !important;
+        .section-subtitle{
+            font-size: 26px;
+        }
+    }
+    .table-tarifs{
+        &.table-tarifs-display-half{
+            width: 50%;
+        }
+    }
+    #twenty-years{
+        background-image: url(../../images/Homepage/CONTENU/1024px/20ans_LOL.jpg);
+        background-size: 752px auto;
+        background-position: right top;
+        padding-top: 0;
+    }
+}
+
+
+@include viewport(range, $min: 1056, $max: 1302){
+    .offer-item-blue .description, .offer-item-orange .description{
+        font-size: 19px;
+    }
+    .offer-item-orange .item-body > li:not(:first-child), .offer-item-blue .item-body > li:not(:first-child){
+        padding-left: 15px !important;
+    }
+    .offer-item-orange .check-list li .icon-check-ico, .offer-item-blue .check-list li .icon-check-ico{
+        margin-right: 18px;
+    }
+    .offer-item-blue .offer-price div, .offer-item-orange .offer-price div{
+        left: 122px;
+    }
+    .finance-list{
+        p{
+            margin: 5px 0;
+        }
+    }
+    .repondeur-list{
+        p{
+            margin: 7px 0;
+        }
+    }
+    .equipement-item-blue, .equipement-item-orange{
+        height: 350px;
+    }
+    .service#dispo{
+        h3{
+            margin: 15px -11px 10px !important;
+        }
+        .input-white {
+            height: 40px;
+        }
+        .input-white.select{
+            margin: 5px 0;
+        }
+    }
+    .notif-one{
+        width: 315px;
+        height: 115px;
+        top: 1%;
+        left: 52%;
+    }
+    .notif-two{
+        width: 315px;
+        height: 135px;
+        top: 17%;
+        left: 52%;
+    }
+    .notif-three{
+        width: 730px;
+        height: 210px;
+        top: 38%;
+        left: 4%;
+    }
+    .notif-four{
+        width: 720px;
+        height: 90px;
+        top: 66%;
+        left: 4%;
+    }
+    .notif-five{
+        width: 700px;
+        height: 85px;
+        top: 90%;
+        left: 6%;
+    }
+}
+
+@include media(lgdesk){
+    .notif-one{
+        width: 315px;
+        height: 115px;
+        top: 1%;
+        left: 52%;
+    }
+    .notif-two{
+        width: 315px;
+        height: 135px;
+        top: 17%;
+        left: 52%;
+    }
+    .notif-three{
+        width: 730px;
+        height: 280px;
+        top: 38%;
+        left: 4%;
+    }
+    .notif-four{
+        width: 720px;
+        height: 125px;
+        top: 66%;
+        left: 4%;
+    }
+    .notif-five{
+        width: 700px;
+        height: 85px;
+        top: 90%;
+        left: 6%;
+    }
+    .container-wrapper{
+        width: 1280px;
+    }
+    .first-section{
+        padding-top: 15px !important;
+        height: 500px !important;
+    }
+    .btn-black{
+        margin-bottom: 10px;
+    }
+    #fibrelu.section-layout{
+        height: 450px;
+    }
+    .section-layout{
+        height: 400px;
+        &.height-auto{
+            height: auto;
+        }
+    }
+    .bottom-menu-header-links{
+        .main-menu li{
+            border-left: 1px solid #eeeeee;
+            a{
+                .link{
+                    bottom: 15px;
+                }
+            }
+        }
+    }
+    .sub-menu{
+        height: 65px;
+        line-height: 65px;
+        font-size: 16px;
+        li{
+            margin-right: 65px;
+        }
+    }
+
+    .offer-item-orange .offer-price div, .offer-item-blue .offer-price div{left: 162px;}
+
+    #slider-contents{
+        .title{
+            font-size: 37pt;
+            line-height: 58px;
+            margin-bottom: 10px;
+        }
+        p.top-details{
+            font-size: 25pt;
+            line-height: 40px;
+        }
+        p.bottom-details{
+            font-size: 11pt;
+        }
+    }
+    #slider-contents .infos{
+        height: 360px;
+    }
+    #slider-contents{
+        .section-price{
+            font-size: 82px !important;
+            padding-top: 7px;
+            margin-right: 80px;
+            div{
+                font-size: 22px;
+                top: 16px !important;
+                left: 93px;
+            }
+            span{
+                font-size: 22px;
+            }
+        }
+    }
+    #slider-ui{
+        .buttons{
+            width: 90%;
+            .arrow{
+                font-size: 50pt;
+            }
+        }
+        .dots{
+            width: 145px;
+            li{font-size: 8pt;}
+        }
+    }
+
+    .service
+    {
+        border: 1px solid lighten($grey, 15%);
+        border-radius: 2px;
+        .infos
+        {
+            h3
+            {
+                font-size: 24px;
+                font-weight: 400;
+                margin: 15px -17px 15px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .text
+            {
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+        }
+        .price-orange
+        {
+            font-size: 52px;
+            span
+            {
+                font-size: 16px;
+            }
+            div
+            {
+                font-size: 16pt;
+                top: 5px;
+                left: 65px;
+            }
+        }
+    }
+    #services{
+        .row>div[class^=phone-]{
+            padding: 0 7px;
+        }
+        .service
+        {
+            &#loldsl{background-image: url(../../images/Homepage/OFFRES/LOL_DSL_320x437px_Noel.jpg);}
+            &#mobiles{background-image: url(../../images/Homepage/OFFRES/LOL_Mobile_320x437px.jpg);}
+            &#installation{background-image: url(../../images/Homepage/OFFRES/LOL_TV_320x437px_Noel.jpg);}
+            .infos
+            {
+                padding: 0 25px 15px;
+                h3
+                {
+                    font-size: 1.9em;
+                    line-height: 28px;
+                }
+                .details
+                {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 40px;
+        line-height: 52px;
+        margin: 0 0 25px;
+    }
+    .section-description {
+        font-size: 18px;
+    }
+    .bottom-info{
+        font-size: 10pt;
+    }
+    .price-blue span, .price-orange span{
+        font-size: 10pt;
+    }
+    .price-orange{
+        font-size: 43pt;
+        margin-top: 20px;
+        div{
+            font-size: 14pt;
+            top: -17px;
+            left: 68px;
+
+        }
+    }
+    .price-blue{
+        font-size: 34pt;
+        div{
+            font-size: 11pt;
+            top: -11px;
+            left: 55px;
+        }
+    }
+    #dispo
+    {
+        h3
+        {
+            font-size: 16pt !important;
+        }
+    }
+    .section-background-image{
+        background-size: 900px auto;
+    }
+    .help-link{
+        font-size: 16pt;
+        span[class^=icon-]{
+            &.icon-info-icone{
+                margin-right: 7px;
+                font-size: 20pt;
+            }
+            &.icon-right-arrow{
+                margin-left: 7px;
+                font-size: 15pt;
+
+            }
+        }
+    }
+    .footer-bottom-links li{
+        margin-right: 111px;
+    }
+    #twenty-years{
+        background-image: url(../../images/Homepage/CONTENU/1280px/20ans_LOL.jpg);
+        background-size: 926px auto;
+        background-position: right top;
+    }
+}
+@include viewport(min, $min: 1400){
+    .container-wrapper{
+        width: 1344px;
+    }
+    .footer-bottom-links li{
+        margin-right: 122px;
+    }
+}
