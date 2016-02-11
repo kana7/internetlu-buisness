@@ -2,41 +2,29 @@
 @import "_mixin.scss";
 
 #slider-contents{
-  .infos{
-    background-size: 672px auto;
-    &{
-      background-image: url();
-    }
+  height: 450px;
+  background-position: center center;
+  background-size: cover;
+  &{
+    background-image: url(../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
   }
 }
 
 @include media(tab){
   #slider-contents{
-    .infos{
-      background-size: 1056px auto;
-      &{
-        background-image: url();
-      }
-    }
+    height: 400px;
   }
 }
-@include media(desk){
-  #slider-contents{
-    .infos{
-      background-size: 1302px auto;
-      &{
-        background-image: url();
-      }
-    }
-  }
-}
+
+/*
 @include media(lgdesk){
-  #slider-contents{
-    .infos{
-      background-size: 1920px auto;
-      &{
-        background-image: url();
-      }
-    }
-  }
+#slider-contents{
+.infos{
+background-size: 1920px auto;
+&{
+background-image: url();
 }
+}
+}
+}
+*/

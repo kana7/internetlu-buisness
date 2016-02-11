@@ -40,6 +40,10 @@
 .align-left{
     text-align: left !important;
 }
+.align-justify-center{
+  text-align: justify;
+  text-align-last: center; 
+}
 .background-image-right
 {
     position: absolute;
@@ -68,7 +72,7 @@
     margin-bottom: 5px;
     padding: 10px 10px;
     text-align: right;
-} 
+}
 
 // HEADER
 // --------------------------------------------------
@@ -117,7 +121,7 @@ header{
     .main-menu{height: 100%;}
     .main-menu li{
         height: 100%;
-        border-left: none;        
+        border-left: none;
         a{
             position: relative;
             display: block;
@@ -219,7 +223,7 @@ header{
     p{
         color: white;
         text-align: justify;
-        line-height: 20px;        
+        line-height: 20px;
         font-size: 16px;
         text-shadow: 1px 1px 5px #000000;
         span{
@@ -259,12 +263,12 @@ header{
         margin: 0;
     }
 }
-.section-propos{   
+.section-propos{
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     p{
         color: #004994;
         text-align: justify;
-        line-height: 20px;        
+        line-height: 20px;
         font-size: 16px;
     }
     h2{
@@ -288,13 +292,6 @@ header{
 }
 .logo
 {
-    &.noel{
-        bottom: 9px;
-        height: auto;
-        img{
-            max-height: 50px;
-        }
-    }
     position: relative;
 
     display: inline-block;
@@ -311,22 +308,6 @@ header{
     }
 }
 
-// CAROUSEL
-// --------------------------------------------------
-#slider{
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 35px;
-    #slider-ui{
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-
-    }
-}
 #slider-contents{
     display: block;
     position: relative;
@@ -339,110 +320,8 @@ header{
     .infos{
         display: block;
         position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 320px;
-        a{
-            display: block;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-        }
-    }    
-}
-#slider-magazine{
-    display: block;
-    position: relative;
-    img{
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        width: auto;
-        height: 400px;
-    }
-    .infos{
-        display: block;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 320px;
-        a{
-            display: block;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-        }
-    }
-    figcaption{
-        margin: 10px 0;
-        text-align: center;
     }
 }
-#slider-contents, #slider-magazine{
-    .gallery-cell{
-        width: 100%;
-    }
-    .flickity-page-dots{
-        width: 100%;
-        bottom: -28px;
-        top: auto;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        text-align: center;
-        line-height: 1;
-        .dot{
-            width: 12px;
-            height: 12px;
-            background: $dark-grey;
-            border-radius: 50%;
-            filter: alpha(opacity=100);
-            opacity: 1;
-
-            cursor: pointer;
-            &.is-selected{
-                background: $white;
-                border: 2px solid $blue;
-            }
-        }
-    }
-    .flickity-prev-next-button {
-        position: absolute;
-        top: 50%;
-        width: 44px;
-        height: 44px;
-        border: none;
-        border-radius: 50%;
-        background: none;
-        background: none;
-        cursor: pointer;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        &:focus{
-            outline: 0;
-            box-shadow: none;
-        }
-        .arrow{
-            fill: $grey;
-            opacity: 0.4;
-            @include transition(opacity 0.3s ease-in);
-        }
-        &:hover{
-            .arrow{
-                fill: $grey;
-                opacity: 1;
-            }
-        }
-    }
-}
-
 #offers-section, #equipement-section, #promoFiber-content{
     .gallery-cell {
         width: 100%;
