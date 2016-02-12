@@ -42,7 +42,7 @@
 }
 .align-justify-center{
   text-align: justify;
-  text-align-last: center; 
+  text-align-last: center;
 }
 .background-image-right
 {
@@ -527,27 +527,21 @@ footer
 #social-links nav,
 #contact ul
 {
-    float: right;
-
     width: 100%;
-
-    text-align: right;
 }
 
 #social-links ul,
 #contact ul, #document-links ul
 {
     &.center{
-        @include display-flex-center;
+        @include spread-element;
+        max-width: 65%;
         li:not(:last-child){
             margin-right: 0px;
         }
     }
     &.spread{
-        @include display-flex-spread;
-    }
-    li{
-        @include display-flex-spread-item;
+        @include spread-element;
     }
 }
 
@@ -558,12 +552,12 @@ footer
 }
 
 #social-links .brand-name{
+  font-size: 20px;
     display: none;
 }
 
 #social-links
 {
-    padding: 20px 0 15px;
     a
     {
         @include clearfix;
@@ -571,24 +565,21 @@ footer
     .social-icon
     {
         display: inline-block;
-        float: left;
-
         position: relative;
-        bottom: 9px;
-
-        display: inline-block;
-
-        width: 34px;
-        height: 34px;
+        width: 44px;
+        height: 44px;
+        margin-bottom: 30px;
     }
     nav
     {
         display: inline-block;
-        margin-top: 10px;
     }
     ul
     {
         width: 100%;
+    }
+    li{
+      text-align: center;
     }
 }
 

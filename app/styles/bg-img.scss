@@ -9,12 +9,48 @@
     background-image: url(../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
   }
 }
+#social-links{
+  height: 200px;
+  background-position: top center;
+  background-size: 672px auto;
+  background-repeat: no-repeat;
+  &{
+    background-image: url(../images/homepage/Socials/Socials_bandeau_672x200px.jpg);
+  }
+}
 
 @include media(tab){
   #slider-contents{
     height: 400px;
   }
+  #social-links{
+    height: 240px;
+    background-size: 1056px auto;
+    &{
+      background-image: url(../images/homepage/Socials/Socials_bandeau_1056x240px.jpg);
+    }
+  }
 }
+
+@include media(desk) {
+  #social-links{
+    height: 230px;
+    background-size: 1302px auto;
+    &{
+      background-image: url(../images/homepage/Socials/Socials_bandeau_1302x230px.jpg);
+    }
+  }
+}
+@include media(lgdesk) {
+  #social-links{
+    height: 300px;
+    background-size: 1920px auto;
+    &{
+      background-image: url(../images/homepage/Socials/Socials_bandeau_1920x300px.jpg);
+    }
+  }
+}
+
 
 /*
 @include media(lgdesk){

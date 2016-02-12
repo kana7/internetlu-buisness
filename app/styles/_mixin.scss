@@ -329,3 +329,15 @@ $perspective : $parallax-perspective
 }
 
 // End of magic parallax mixins
+
+@mixin spread-element(){
+    display: inline-block;
+    text-align: justify;
+    width: 100%;
+    line-height: 0;
+    &:after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
