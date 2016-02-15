@@ -1377,15 +1377,18 @@ span[class^=icon-]
   height: 200px;
   line-height: 160px;
   padding: 20px;
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);  /* For Webkit browsers */
-  filter: gray;  /* For IE 6 - 9 */
+  filter: url('../images/grey.svg#grayscale');
+  filter: gray;
   &, & .overlay, & comptype-select-box, & p, & h3{
     @include transition(all .8s ease);
   }
   &:hover{
-    filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0%);
     filter: none;
     .overlay{
       opacity: 0;
@@ -1408,7 +1411,7 @@ span[class^=icon-]
     bottom: 0;
     background-color: $black;
     opacity: 0.6;
-    z-index: -1;
+    z-index: 0;
   }
   &#ge{
     background-image: url(../images/homepage/Homepage_GE_600x306px.jpg);
@@ -1418,6 +1421,7 @@ span[class^=icon-]
   }
   .comptype-select-box{
     display: inline-block;
+    position: relative;
     padding: 15px 25px;
     background-color: rgba(555, 555, 555, 0);
     border: 2px solid $white;
@@ -1623,11 +1627,11 @@ color: #004994;
     font-size: 21px;
 
     position: absolute;
-    top: 25%;
-    left: 25%;
-
+    left: 0;
+    right: 0;
+    line-height: 18px;
     margin: 0;
-
+    @include vertical-align-middle;
     color: $white;
   }
   &.lol

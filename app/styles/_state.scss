@@ -17,15 +17,22 @@
     margin-right: 0px;
   }
 }
+
 @include media(tab){
 
   #social-links
   {
-      .social-icon
-      {
-          width: 64px;
-          height: 64px;
+    .social-icon{
+      width: 64px;
+      height: 64px;
+      span[class^=icon-]{
+        font-size: 30px;
       }
+    }
+  }
+
+  .subtitle-container{
+    margin: 40px 0 20px;
   }
 
   .comptype-select{
@@ -264,6 +271,25 @@
 }
 
 @include media(desk){
+
+  .subtitle-container{
+    margin: 30px 0 30px;
+    h2 {
+      font-size: 1.3em;
+      line-height: 20px;
+    }
+  }
+
+
+  #social-links .social-icon{
+    width: 54px;
+    height: 54px;
+    margin-bottom: 25px;
+    span[class^=icon-]{
+      font-size: 25px;
+    }
+  }
+
   .dropdown-content{
     margin-left: 30px;
     border-left: 1px solid #004494;
@@ -344,9 +370,6 @@
   .bottom-menu-header-links{
     float: left;
   }
-  #fibrelu.section-layout{
-    height: 425px;
-  }
   .section-layout{
     height: 350px;
     padding: 0;
@@ -416,28 +439,6 @@
     font-size: 8pt;
   }
 
-  .price-blue span, .price-orange span{
-    font-size: 9.5pt;
-  }
-  .price-orange{
-    font-size: 43pt;
-    margin-top: 22px;
-    div{
-      font-size: 14pt;
-      top: -17px;
-      left: 68px;
-
-    }
-  }
-
-  .price-blue{
-    font-size: 34pt;
-    div{
-      font-size: 11pt;
-      top: -11px;
-      left: 55px;
-    }
-  }
   /*IMAGE + TEXT SECTION LAYOUT*/
   /*-----------------------------------------------------------------------*/
   .right-orientation,
@@ -780,6 +781,15 @@
 }
 
 @include media(lgdesk){
+
+  .subtitle-container{
+    margin: 50px 0 50px;
+    h2 {
+      font-size: 1.5em;
+      line-height: 22px;
+    }
+  }
+
   .notif-one{
     width: 315px;
     height: 115px;

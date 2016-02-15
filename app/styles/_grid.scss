@@ -540,6 +540,3 @@ $breakpoints : $grid-breakpoints;
         align-items: stretch;
     }
 }
-.vertical-align-middle{
-    @include vertical-align-middle();
-}

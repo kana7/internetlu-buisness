@@ -5,6 +5,7 @@
 }
 .container-wrapper
 {
+  position: relative;
     margin-right: auto;
     margin-left: auto;
     padding-right: ($gridGutterWidth/2);
@@ -319,7 +320,7 @@ header{
     }
     .infos{
         display: block;
-        position: relative;
+        position: absolute;
     }
 }
 #offers-section, #equipement-section, #promoFiber-content{
@@ -552,7 +553,7 @@ footer
 }
 
 #social-links .brand-name{
-  font-size: 20px;
+  font-size: 21px;
     display: none;
 }
 
@@ -568,7 +569,6 @@ footer
         position: relative;
         width: 44px;
         height: 44px;
-        margin-bottom: 30px;
     }
     nav
     {
