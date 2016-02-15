@@ -23,6 +23,10 @@
 
 </head>
 <body>
+  <!--[if lt IE 10]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
   <!-- POPUP ESPACE CLIENT -->
   <div id="clientSpace" class="popup">
     <div class="background-client"></div>
@@ -98,7 +102,7 @@
   </div>
   <!-- ./FIXED MENU -->
   <!-- MOBILE MENU -->
-  <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
+  <nav class="mobile-side-menu">
     <ul class="menu">
       <li class="menu-item link"><a href="index.htm">Accueil</a></li>
       <li class="menu-item" data-id='internet'>Internet<span class="icon-right-arrow"></span></li>
@@ -176,6 +180,15 @@
                 <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
               </ul>
             </nav>
+            <nav class="pull-right hidden-phone hidden-tab">
+              <ul class="top-menu-header-links right">
+                <li><a href="divers/assistance.html">Assistance</a></li>
+                <li><a href="http://www.internet.lu/lolcloud/index.htm" target="_blank">LOL CLOUD</a></li>
+                <li><a href="divers/magazine.html">Magazine</a></li>
+                <li><a href="divers/propos.html">À propos</a></li>
+                <li><a href="divers/contact.html">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -228,7 +241,7 @@
         </div>
       </div>
     </div>
-    <section class="phone-mb-50">
+    <section>
       <div class="container-wrapper">
         <div class="row">
           <div class="subtitle-container">
@@ -237,7 +250,7 @@
         </div>
         <div class="row">
           <div class="phone-12 desk-6 phone-mb-20 desk-mb-0 desk-pr-20">
-            <a href="pme/accueil.html">
+            <a href="#">
               <div id="pme" class="comptype-select">
                 <div class="overlay"></div>
                 <div class="comptype-select-box">
@@ -248,7 +261,7 @@
             </a>
           </div>
           <div class="phone-12 desk-6 desk-pl-20">
-            <a href="ge/accueil.html">
+            <a href="#">
               <div id="ge" class="comptype-select">
                 <div class="overlay"></div>
                 <div class="comptype-select-box">
@@ -266,33 +279,33 @@
       <div id="social-links">
         <div class="container-wrapper">
           <div class="row">
-            <div class="subtitle-container grey">
+            <div class="subtitle-container">
               <h2>Retrouvez Luxembourg Online sur :</h2>
             </div>
-            <div class="clearfix tab-mt-30 desk-mt-0">
-              <nav class="align-center">
-                <ul class="center">
-                  <li>
-                    <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
-                      <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
-                      <span class="brand-name">LinkedIn</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
-                      <div class="social-icon facebook"><span class="icon-facebook"></span></div>
-                      <span class="brand-name">Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.online.lu/" target="blank_">
-                      <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
-                      <span class="brand-name">Online.lu</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+          </div>
+          <div class="row">
+            <nav>
+              <ul class="spread">
+                <li>
+                  <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
+                    <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
+                    <span class="brand-name">LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
+                    <div class="social-icon facebook"><span class="icon-facebook"></span></div>
+                    <span class="brand-name">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.online.lu/" target="blank_">
+                    <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
+                    <span class="brand-name">Online.lu</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -317,6 +330,60 @@
         </div>
         <div id="footer-links">
           <div class="container-wrapper">
+            <div class="row">
+              <a class="help-link" href="../divers/assistance.html">
+                <span class="icon-info-icone"></span>
+                <p>Besoin d'aide ? Accédez à l’espace assistance de Luxembourg Online (FAQ, informations, guides et documents utiles, contrats, divers)</p>
+                <span class="icon-right-arrow"></span>
+              </a>
+              <div class="separator hidden-phone hidden-tab"></div>
+            </div>
+            <div class="row hidden-phone hidden-tab">
+              <div class="footer-top-links">
+                <h4>internet : </h4>
+                <nav>
+                  <ul class="links">
+                    <li><a href="#">Nos abonnements Coup de coeur :</a></li>
+                    <li><a href="#">LOL FIBER 100</a></li>
+                    <li><a href="#">Équipement</a></li>
+                    <li><a href="#">S'abonner</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top-links">
+                <h4>téléphonie : </h4>
+                <nav>
+                  <ul class="links">
+                    <li><a href="#">Abonnement</a></li>
+                    <li><a href="#">Tarifs détaillés</a></li>
+                    <li><a href="#">Équipement</a></li>
+                    <li><a href="#">S'abonner</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top-links">
+                <h4>Cloud : </h4>
+                <nav>
+                  <ul class="links">
+                    <li><a href="#">Abonnement</a></li>
+                    <li><a href="#">Chaines</a></li>
+                    <li><a href="#">Équipement</a></li>
+                    <li><a href="#">S'abonner</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top-links">
+                <h4>Mobile : </h4>
+                <nav>
+                  <ul class="links">
+                    <li><a href="#">Offre spéciale fibre</a></li>
+                    <li><a href="#">TV - Installation offerte</a></li>
+                    <li><a href="#">Offre spéciale II</a></li>
+                    <li><a href="#">Offre spéciale Mobile</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
             <div class="row">
               <div class="separator"></div>
               <div class="phone-12">
