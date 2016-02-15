@@ -1445,7 +1445,7 @@ span[class^=icon-]
   }
 }
 
-.subtitle-container{
+.subtitle-container, .title-container{
   position: relative;
   text-align: center;
   margin: 30px 0 20px;
@@ -1471,8 +1471,7 @@ span[class^=icon-]
       color: $dark-grey !important;
     }
   }
-
-  h2{
+  h2, &:not(.subtitle-container) h1, &.big h2{
     margin: 0;
     color: $section-black;
     text-transform: uppercase;
@@ -1480,9 +1479,35 @@ span[class^=icon-]
     font-weight: 600;
     line-height: 27px;
   }
+  &.big{
+    padding-bottom: 25px;
+    &:after{
+      background-color: $footer-grey;
+    }
+    h2{
+      color: $footer-grey;
+      font-size: 2.2em;
+      font-weight: 400;
+    }
+  }
+
+  &:not(.subtitle-container){
+    &:after{
+      background-color: $blue;
+    }
+    h1{
+      font-weight: 400;
+      text-transform: initial;
+      color: $blue;
+      font-size: 2.2em;
+      line-height: 35px;
+      strong{
+        font-weight: 600;
+        display: block;
+      }
+    }
+  }
 }
-
-
 
 // SERVICE - HOMEPAGE
 // --------------------------------------------------

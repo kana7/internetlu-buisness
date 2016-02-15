@@ -1,13 +1,18 @@
 @import "_theme.scss";
 @import "_mixin.scss";
 
-#slider-contents{
-  height: 450px;
+.bg-header{
   background-position: center center;
   background-size: cover;
-  &{
-    background-image: url(../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
-  }
+}
+
+#slider-contents{
+  height: 450px;
+  background-image: url(../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
+}
+#bg-propos-header{
+  height: 400px;
+  background-image: url(../images/propos/Banner_introduction_1920x600px.jpg);
 }
 #social-links{
   height: 200px;
@@ -50,17 +55,3 @@
     }
   }
 }
-
-
-/*
-@include media(lgdesk){
-#slider-contents{
-.infos{
-background-size: 1920px auto;
-&{
-background-image: url();
-}
-}
-}
-}
-*/
