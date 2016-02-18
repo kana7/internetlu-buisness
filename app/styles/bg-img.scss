@@ -26,6 +26,10 @@
   height: 400px;
   background-image: url(../images/propos/Banner_introduction_1920x600px.jpg);
 }
+#bg-propos-value{
+  height: 400px;
+  background-image: url(../images/propos/Banner_valeurs.jpg);
+}
 
 #fibre-bg-header, #lolphone-bg-header, #lolcloud-bg-header{
   height: 160px;
@@ -51,6 +55,9 @@
 }
 
 @include media(tab){
+  #bg-propos-value{
+    height: 350px;
+  }
   #slider-contents{
     height: 400px;
   }
