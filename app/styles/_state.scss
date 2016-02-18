@@ -20,6 +20,20 @@
 
 @include media(tab){
 
+  .subtitle-container, .title-container{
+    margin: 50px 0 40px;
+    padding-bottom: 30px;
+    &:not(.subtitle-container){
+      h1{
+        font-size: 2.7em;
+        strong{
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+
   #social-links
   {
     .social-icon{
@@ -271,6 +285,26 @@
 }
 
 @include media(desk){
+  .subtitle-container, .title-container{
+    &:not(.subtitle-container){
+      h1{
+        font-size: 3em;
+      }
+    }
+  }
+  .txt{
+    p{
+      margin: 25px 0;
+    }
+  }
+  // PAGE PROPOS
+  // --------------------------------------------------
+  .propos-section-header{
+    [class^=phone-]
+    .title{
+      font-size: 3em;
+    }
+  }
 
   .subtitle-container{
     margin: 30px 0 30px;
@@ -621,16 +655,6 @@
       @include vertical-align-middle;
     }
   }
-  #fibre{
-    background-image: url("../../images/Divers/A_propos/notre_reseau_1920x480px.jpg");
-    h1{
-      font-size: 60px;
-      margin: 0;
-    }
-    .align-middle{
-      @include vertical-align-middle;
-    }
-  }
   #valeurs{
     height: 360px;
     background-image: url("../../images/Divers/A_propos/nosvaleurs_1920x360px.jpg");
@@ -882,18 +906,6 @@
       }
     }
   }
-  #slider-ui{
-    .buttons{
-      width: 90%;
-      .arrow{
-        font-size: 50pt;
-      }
-    }
-    .dots{
-      width: 145px;
-      li{font-size: 8pt;}
-    }
-  }
 
   .service
   {
@@ -928,31 +940,6 @@
         font-size: 16pt;
         top: 5px;
         left: 65px;
-      }
-    }
-  }
-  #services{
-    .row>div[class^=phone-]{
-      padding: 0 7px;
-    }
-    .service
-    {
-      &#loldsl{background-image: url(../../images/Homepage/OFFRES/LOL_DSL_320x437px_Noel.jpg);}
-      &#mobiles{background-image: url(../../images/Homepage/OFFRES/LOL_Mobile_320x437px.jpg);}
-      &#installation{background-image: url(../../images/Homepage/OFFRES/LOL_TV_320x437px_Noel.jpg);}
-      .infos
-      {
-        padding: 0 25px 15px;
-        h3
-        {
-          font-size: 1.9em;
-          line-height: 28px;
-        }
-        .details
-        {
-          font-size: 25px;
-          line-height: 35px;
-        }
       }
     }
   }
@@ -1020,6 +1007,14 @@
     background-image: url(../../images/Homepage/CONTENU/1280px/20ans_LOL.jpg);
     background-size: 926px auto;
     background-position: right top;
+  }
+  // PAGE PROPOS
+  // --------------------------------------------------
+  .propos-section-header{
+    [class^=phone-]
+    .title{
+      text-align: center;
+    }
   }
 }
 @include viewport(min, $min: 1400){

@@ -173,6 +173,14 @@ span[class^=icon-]
 {
   position: relative;
   display: inline-block;
+  font-size: 0.8em;
+  top: 2px;
+  &.right{
+    margin-left: 5px;
+  }
+  &.left{
+    margin-right: 5px;
+  }
 }
 .exponent{
   vertical-align:super;
@@ -1480,6 +1488,7 @@ span[class^=icon-]
     line-height: 27px;
   }
   &.big{
+    margin: 30px 0 30px;
     padding-bottom: 25px;
     &:after{
       background-color: $footer-grey;
@@ -1605,32 +1614,26 @@ span[class^=icon-]
   }
 }
 
-/*
-#mobiles{
-.sub-title{
-color: #E75E0A;
-font-weight: 600;
-margin-bottom: 4px;
+.txt{
+  p{
+    line-height: 21px;
+    font-size: 16px;
+    text-align: justify;
+  }
 }
-.details{
-font-size: 17px;
-line-height: 22px;
-}
-}
-#installation{
-.details{
-font-size: 19px;
-line-height: 25px;
-text-align: left;
-color: #004994;
-}
-}
-*/
-#twenty-years{
-  background-image: url(../../images/Homepage/CONTENU/320px/20ans_LOL.jpg);
-  background-position: center top;
-  background-size: 312px auto;
-  padding-top: 135px;
+// PAGE PROPOS
+// --------------------------------------------------
+.propos-section-header{
+  margin: 15px 0;
+  [class^=phone-]
+  .title{
+    margin: 0;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.3em;
+    text-align: inherit;
+  }
 }
 
 // FOOTER - HOMEPAGE

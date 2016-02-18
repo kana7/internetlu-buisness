@@ -5,7 +5,19 @@
   background-position: center center;
   background-size: cover;
 }
-
+@mixin bg-propos-section($path){
+  background-image: url($path);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  &.right{
+    background-position: center right;
+    text-align: left;
+  }
+  &.left{
+    background-position: center left;
+    text-align: right;
+  }
+}
 #slider-contents{
   height: 450px;
   background-image: url(../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
@@ -14,6 +26,20 @@
   height: 400px;
   background-image: url(../images/propos/Banner_introduction_1920x600px.jpg);
 }
+
+#fibre-bg-header, #lolphone-bg-header, #lolcloud-bg-header{
+  height: 160px;
+}
+#fibre-bg-header{
+  @include bg-propos-section("../images/propos/fibre_optique.jpg");
+}
+#lolphone-bg-header{
+  @include bg-propos-section("../images/propos/telephonie.jpg");
+}
+#lolcloud-bg-header{
+  @include bg-propos-section("../images/propos/cloud.jpg");
+}
+
 #social-links{
   height: 200px;
   background-position: top center;
