@@ -1,9 +1,13 @@
 @import "_theme.scss";
 @import "_mixin.scss";
 
-.bg-header{
-  background-position: center center;
+.bg-header, .bg-header-pme{
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-header-pme{
+  @include overlay($white, 0.8);
 }
 @mixin bg-propos-section($path){
   background-image: url($path);
@@ -71,6 +75,13 @@
 }
 
 @include media(desk) {
+  .bg-header-pme{
+    background-position: center right;
+    background-size: 600px auto;
+    &:before{
+      display: none;
+    }
+  }
   #social-links{
     height: 230px;
     background-size: 1302px auto;

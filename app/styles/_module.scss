@@ -108,6 +108,7 @@ svg:not(:root) {
 }
 .section-layout{
   color: $blue;
+  height: 322px;
 }
 .content-container{
   position: relative;
@@ -1531,6 +1532,13 @@ span[class^=icon-]
         display: block;
       }
     }
+  }
+}
+// PAGE PME
+// --------------------------------------------------
+.bg-header-pme{
+  .row>div{
+    text-align: center;
   }
 }
 

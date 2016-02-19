@@ -203,6 +203,11 @@
 }
 
 @include media(desk){
+  .bg-header-pme{
+    .row>div{
+      text-align: left;
+    }
+  }
   .subtitle-container, .title-container{
     &:not(.subtitle-container){
       h1{
@@ -248,9 +253,6 @@
   }
   .center-tab{
     @include vertical-align-middle;
-  }
-  .header-section-height{
-    height: 350px !important;
   }
   .logo{
     height: auto;
@@ -320,11 +322,6 @@
   }
   .bottom-menu-header-links{
     float: left;
-  }
-  .section-layout{
-    height: 350px;
-    padding: 0;
-    &.height-auto{height: auto;}
   }
   #slider-contents .flickity-page-dots{
     bottom: 20px;
@@ -398,7 +395,7 @@
       position: relative;
     }
   }
-
+/*
   .right-orientation .row > div:first-child,
   .left-orientation .row > div:last-child{
     left: 0;
@@ -445,7 +442,7 @@
       }
     }
   }
-
+*/
   .content-container .row>div[class^=phone-]{
     @include vertical-align-middle;
     height: auto;
@@ -643,12 +640,6 @@
       width: 50%;
     }
   }
-  #twenty-years{
-    background-image: url(../../images/Homepage/CONTENU/1024px/20ans_LOL.jpg);
-    background-size: 752px auto;
-    background-position: right top;
-    padding-top: 0;
-  }
 }
 
 
@@ -783,15 +774,6 @@
   }
   .btn-black{
     margin-bottom: 10px;
-  }
-  #fibrelu.section-layout{
-    height: 450px;
-  }
-  .section-layout{
-    height: 400px;
-    &.height-auto{
-      height: auto;
-    }
   }
   .bottom-menu-header-links{
     .main-menu li{
