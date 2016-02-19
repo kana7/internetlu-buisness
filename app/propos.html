@@ -176,6 +176,14 @@
                 <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
               </ul>
             </nav>
+            <nav class="pull-right hidden-phone hidden-tab">
+              <ul class="top-menu-header-links right">
+                <li><a href="index.htm">Assistance</a></li>
+                <li><a href="http://www.internet.lu/business/" target="blank_">Actualités</a></li>
+                <li><a href="http://www.internet.lu/business/" target="blank_">À propos</a></li>
+                <li><a href="http://www.internet.lu/business/" target="blank_">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -200,16 +208,50 @@
           <div class="row">
             <div class="pull-left">
               <div class="logo">
-                <a href="index.htm"><img src="images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
-              </div>
-            </div>
-            <div class="pull-right hidden-phone hidden-tab">
-              <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+                <a href="../index.htm"><img src="../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+              </div><!--
+              --><nav class="bottom-menu-header-links">
+              <ul class="main-menu">
+                <li>
+                  <div class="active-border"></div>
+                  <a href="../internet/accueil.html">
+                    <div class="link">Internet</div>
+                  </a>
+                </li><!--
+                --><li>
+                <div class="active-border"></div>
+                <a href="../telephonie/accueil.html">
+                  <div class="link">Téléphonie</div>
+                </a>
+              </li><!--
+              --><li>
+              <div class="active-border"></div>
+              <a href="../tv/accueil.html">
+                <div class="link">TV</div>
+              </a>
+            </li><!--
+            --><li>
+            <div class="active-border"></div>
+            <a href="../mobile/accueil.html">
+              <div class="link">Mobile</div>
+            </a>
+          </li><!--
+          --><li>
+          <div class="active-border"></div>
+          <a href="../promos/accueil.html">
+            <div class="link">Promos</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pull-right hidden-phone hidden-tab">
+    <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
+  </div>
+</div>
+</div>
+</div>
+</header>
     <!-- ./HEADER -->
       <div class="container-wrapper">
         <div class="row">
@@ -230,11 +272,11 @@
       </div>
       <section>
         <div class="container-wrapper">
-        <div class="row blue">
+        <div class="row blue phone-mb-40">
           <div class="subtitle-container big">
             <h2>NOS SERVICES</h2>
           </div>
-          <div class="txt phone-mb-40 phone-12 lgdesk-6">
+          <div class="txt phone-12 desk-6 desk-pr-20">
             <p>
               Titulaires de la licence d’opérateur « A », nous fournissons des services en matière d’accès Internet, de téléphonie fixe et mobile ainsi que des services de télévision IP.<br/>
               Pour ce faire, nous disposons de notre propre réseau (DSL et fibre optique) et sommes présents à ce jour dans plus de <strong> 150 sites à Luxembourg</strong>.
@@ -245,6 +287,9 @@
             <p>
               Avec nos collaborateurs, nous développons, commercialisons et assurons le suivi de nos produits pour <strong>plus de 25.000 clients</strong> privés et professionnels à Luxembourg.
             </p>
+          </div>
+          <div class="phone-12 desk-6 desk-pl-20 hidden-phone hidden-tab">
+            <div style="background-image: url(images/propos/nosservices_570x324px.jpg); height: 324px;" class="bg-header"></div>
           </div>
         </div>
       </div>
@@ -259,7 +304,7 @@
           </div>
           <div class="container-wrapper">
             <div class="row phone-mt-20 phone-mb-20">
-              <div class="txt blue phone-12 desk-6 pull-right">
+              <div class="txt blue phone-12 desk-6 pull-right desk-pl-20">
                 <p>
                   Depuis sa création, Luxembourg Online s’est donné comme objectif principal de fournir la connexion Internet la plus performante possible à ses clients.
                 </p>
@@ -273,6 +318,7 @@
                   <a class="bold" href="#">Voir la cartographie de notre réseau <span class="icon-right-arrow right"></span></a>
                 </p>
               </div>
+              <div class="desk-6 desk-pl-20 hidden display-desk"></div>
             </div>
           </div>
           <div id="lolphone-bg-header" class="left propos-section-header fill-height">
@@ -290,7 +336,8 @@
                 <p>Avec cette même volonté d’innovation, Luxembourg Online a lancé le service LOL Cloud Phone qui représente la <strong>nouvelle génération des centraux téléphoniques</strong>.</p>
                 <p>Vos communications passent désormais par notre <strong>service Cloud</strong> et non plus par votre ligne de téléphone fixe classique.</p>
                 <p>Ce type d’installation vous permet une <strong>utilisation multi-sites</strong> de vos postes téléphoniques, tout en conservant le  même numéro.</p>
-</div>
+              </div>
+              <div class="display-lgdesk desk-6 desk-pl-20 display-desk"></div>
             </div>
           </div>
           <div id="lolcloud-bg-header" class="right propos-section-header fill-height">
@@ -304,11 +351,12 @@
           </div>
           <div class="container-wrapper">
             <div class="row phone-mt-20 phone-mb-20">
-              <div class="txt blue phone-12 desk-6 pull-right">
+              <div class="txt blue phone-12 desk-6 pull-right desk-pl-20">
                 <p>Nous avons également développé un nouveau service de stockage de données en ligne, qui vous permet de stocker et partager vos documents, images, vidéos dans un espace en ligne, accessible de partout. </p>
                 <p>LOL CLOUD rend <strong>vos fichiers facilement accessibles</strong>, que vous utilisiez un ordinateur, une tablette ou un Smartphone.</p>
                 <p>Ce service est donc <strong>exploitable à tout moment</strong> via une application, un disque d’ordinateur additionnel ou encore une interface web.</p>
               </div>
+              <div class="display-lgdesk desk-6 desk-pl-20 display-desk"></div>
             </div>
           </div>
     </section>
