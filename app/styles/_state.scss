@@ -36,12 +36,13 @@
   // PROPOS PAGE
   // --------------------------------------------------
   #bg-propos-value{
-    text-align: center;
-    .subtitle-container.big h2{
-      font-size: 3em;
+    .txt p{text-align: center;font-size: 18px;line-height: 25px;}
+    .subtitle-container.big{
+      padding-bottom: 30px;
+    h2{font-size: 3em;}
     }
   }
-  
+
   #social-links
   {
     .social-icon{
@@ -185,98 +186,7 @@
       height: 550px;
     }
   }
-  //Page A propos - Historique
-  #history-extended{
-    height: 220px;
-  }
-  .history{
-    position: relative;
-    height: 200px;
-    .container-wrapper{
-      position: relative;
-    }
-    .row{
-      height: 100%;
-    }
-    .rond{
-      z-index: 2;
-      margin: 0 auto;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: #004494;
-      box-shadow: inset 0px -2px 15px rgba(0, 0, 0, 0.1),inset 0px 2px 15px rgba(0, 0, 0, 0.1), inset 2px 0px 15px rgba(0, 0, 0, 0.1), inset -2px 0px 15px rgba(0, 0, 0, 0.1);
-      position: relative;
-      left: 0;
-      right: 0;
-      p{
-        margin: 0 auto;
-        text-align: center;
-        color: white;
-        font-weight: 800;
-        font-size: 19px;
-        top: 50%;
-        position: absolute;
-        transform: translateY(-50%);
-        left: 0;
-        right: 0;
-      }
-    }
-    .text{
-      width: 50%;
-      p{
-        font-size: 16px;
-        margin: 0;
-        line-height: 20px;
-      }
-    }
-    .history-text{
-      @include vertical-align-middle;
-    }
-    .history-text-exeption{
-      @include vertical-align-middle;
-      float: right;
-      margin-right: 15px;
-    }
-    .right-block{
-      float: right;
-      padding: 0 0 0 70px;
-    }
-    .left-block{
-      padding: 0 55px 0 0;
-      float: left;
-      .history-text{
-        float: right;
-        margin-right: 15px;
-      }
-    }
-    .history-element{
-      .icon-right{
-        text-align: center;
-        padding-left: 80px;
-      }
-      .icon-right-arrow{
-        font-size: 16px;
-        color:#004494;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      .icon-left{
-        text-align: center;
-        padding-right: 170px;
-      }
-      .line-grey{
-        width: 3px;
-        height: 100%;
-        background-color: #B0B1B2;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        position: absolute;
-      }
-    }
-  }
+
   .btn-abo{
     width: 47%;
   }
@@ -321,7 +231,6 @@
       line-height: 20px;
     }
   }
-
 
   #social-links .social-icon{
     width: 54px;
@@ -813,6 +722,13 @@
 }
 
 @include media(lgdesk){
+/*PAGE PROPOS*/
+/*------------------------------------------------*/
+#bg-propos-value{
+  .subtitle-container.big{
+  h2{font-size: 3.5em;}
+  }
+}
 
   .subtitle-container{
     margin: 50px 0 50px;

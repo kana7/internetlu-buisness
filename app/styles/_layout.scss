@@ -57,6 +57,15 @@
 
 }
 
+.fill-height{
+  .container-wrapper{
+    height: 100%;
+    .row{
+      height: 100%;
+    }
+  }
+}
+
 // FIXED ELEMENT
 // --------------------------------------------------
 .fixed-options{

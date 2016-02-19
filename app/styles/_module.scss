@@ -1479,6 +1479,14 @@ span[class^=icon-]
       color: $dark-grey !important;
     }
   }
+  &.white{
+    &:after{
+      background-color: $white !important;
+    }
+    h2{
+      color: $white !important;
+    }
+  }
   h2, &:not(.subtitle-container) h1, &.big h2{
     margin: 0;
     color: $section-black;
@@ -1518,102 +1526,6 @@ span[class^=icon-]
   }
 }
 
-// SERVICE - HOMEPAGE
-// --------------------------------------------------
-.service-link{
-  display: block;
-  &:hover{
-    .service{
-      border-color: rgba(0,73,148,0.5);
-    }
-  }
-}
-.icons
-{
-  position: relative;
-
-  display: block;
-
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 13%;
-
-  @include clearfix;
-  li
-  {
-    display: inline-block;
-    float: left;
-
-    width: 50%;
-    margin-bottom: 16px;
-
-    text-align: center;
-  }
-}
-
-.dispo-icon
-{
-  position: relative;
-
-  display: inline-block;
-
-  width: 46px;
-  height: 46px;
-
-  border-radius: 50%;
-  background-color: $orange;
-  @include box-shadow(0 2px 4px 0 lighten($black, 15%));
-  span[class^=icon-]
-  {
-    font-size: 22px;
-
-    position: absolute;
-    top: 25%;
-    left: 11px;
-
-    margin: 0;
-
-    color: #fff;
-  }
-}
-
-.bottom-info
-{
-  font-size: 10pt;
-  color: darken($dark-grey, 35%);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  margin: 0;
-  margin-bottom: 10px;
-
-  text-align: center;
-}
-
-.price-orange
-{
-  font-weight: 800;
-  font-size: 44px;
-  color: $orange;
-  position: relative;
-  display: inline-block;
-  span
-  {
-    font-size: 16px;
-  }
-  div
-  {
-    position: absolute;
-    font-size: 14pt;
-    font-weight: 600;
-    font-size: 14pt;
-    top: 5px;
-    left: 65px;
-  }
-}
-
 // PAGE PROPOS
 // --------------------------------------------------
 .propos-section-header{
@@ -1624,6 +1536,12 @@ span[class^=icon-]
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2em;
+  }
+}
+
+#bg-propos-value{
+  .subtitle-container.big h2 {
+    font-size: 2.4em;
   }
 }
 
@@ -2387,7 +2305,6 @@ h2.contact-title {
   .select-arrow{
     display: inline-block;
     width: 100%;
-    /*background: url(../../images/Icone/Img/arrow.png) no-repeat;*/
     background-size: auto auto;
     background-position: 97% center;
   }
@@ -2472,160 +2389,5 @@ h2.contact-title {
   }
   [data-trigger]:hover{
     color: lighten($blue, 10%)
-  }
-}
-
-// PAGE A PROPOS HISTORIQUE
-// --------------------------------------------------
-
-#history-extended{
-  height: 220px;
-}
-.history{
-  position: relative;
-  height: 200px;
-  .container-wrapper{
-    position: relative;
-  }
-
-  #first{
-    //margin-top: 100px;
-  }
-  #last{
-    //margin-bottom: 100px;
-  }
-  .row{
-    height: 100%;
-  }
-  .round-center{
-    @include vertical-align-middle;
-  }
-  .rond{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #004494;
-    box-shadow: inset 0px -2px 15px rgba(0, 0, 0, 0.1),
-    inset 0px 2px 15px rgba(0, 0, 0, 0.1),
-    inset 2px 0px 15px rgba(0, 0, 0, 0.1),
-    inset -2px 0px 15px rgba(0, 0, 0, 0.1);
-    p{
-      margin: 0;
-      text-align: center;
-      color: white;
-      font-weight: 800;
-      font-size: 19px;
-      top: 50%;
-      position: relative;
-      transform: translateY(-50%);
-    }
-  }
-  .text{
-    width: 50%;
-    position: relative;
-    top: 50%;
-    p{
-      font-size: 16px;
-      margin: 0;
-      line-height: 20px;
-    }
-  }
-  .history-text{
-    @include vertical-align-middle;
-  }
-  .right-block{
-    float: right;
-    width: 70%;
-  }
-  .left-block{
-    float: right;
-    width: 70%;
-  }
-  .history-element{
-    .icon-right{
-      padding-left: 60px;
-    }
-    .icon-right-arrow, .icon-left-arrow{
-      font-size: 16px;
-      color:#004494;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .icon-left{
-      padding-left: 60px;
-    }
-    .line-grey{
-      width: 3px;
-      height: 100%;
-      background-color: #B0B1B2;
-      margin: 0 auto;
-      left: 32px;
-      position: absolute;
-    }
-  }
-}
-
-.zone {
-  display: none;
-  position: absolute;
-  top: 0px;
-  background: #FFF;
-  border: 1px solid $blue;
-  border-radius: 5px;
-  padding: 15px;
-  text-align: left;
-  z-index: 999999;
-  max-width: 500px;
-  min-width: 300px;
-}
-
-/*Mise en page Magazine*/
-/*-----------------------------------------------------------------------------*/
-#slider-magazine1{
-  &:after{
-    content:"Lire maintenant \A en francais";
-    white-space: pre;
-  }
-}
-#slider-magazine2{
-  &:after{
-    content:"Read now\Ain english";
-    white-space: pre;
-  }
-}
-#slider-magazine1, #slider-magazine2{
-  position: relative;
-  cursor: pointer;
-  max-width: 300px;
-  margin: auto;
-  &:after{
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(255,255,255,0.80);
-    color: $blue;
-    font-size: 1.6em;
-    line-height: 25px;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 195px;
-  }
-  img{
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-  &:hover{
-    &:after{
-      visibility: visible;
-      opacity: 1;
-    }
   }
 }
