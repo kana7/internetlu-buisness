@@ -228,6 +228,17 @@
   // PAGE PME ACCUEIL
   // --------------------------------------------------
   .pme-solution{p{text-align: center; min-height: 128px;}}
+
+  .pme-stats-titre{
+    font-size: 3em;
+  }
+
+  .pme-stats{
+    max-width: 70%;
+    li:nth-child(2), p{
+      display: block;
+    }
+  }
   // PAGE PROPOS
   // --------------------------------------------------
   .propos-section-header{

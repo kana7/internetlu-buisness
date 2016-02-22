@@ -1594,9 +1594,9 @@ span[class^=icon-]
   }
 }
 
-.devis-pme{
+.pme-devis{
   p{
-    margin-top: 0; 
+    margin-top: 0;
     font-size: 18px;
     line-height: 25px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -1606,6 +1606,37 @@ span[class^=icon-]
     font-size: 18px;
     @include box-shadow(none);
     padding: 13px 18px;
+  }
+}
+.pme-stats-titre{
+  margin-top: 0;
+  color: $white;
+  font-size: 2em;
+  line-height: 35px;
+}
+.pme-stats{
+  color: $white;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  li{
+    display: block;
+  }
+  li:first-child{
+    font-size: 4.2em;
+    font-weight: 800;
+    span{display: block; font-size: 0.4em; font-weight: 300;}
+  }
+  li:nth-child(2), p{
+    display: none;
+  }
+  li:nth-child(2){
+    padding: 15px 0;
+  }
+  p{
+    margin: 0;
+    line-height: 20px;
+    font-size: 1.1em;
   }
 }
 // PAGE PROPOS
