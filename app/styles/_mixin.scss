@@ -360,8 +360,8 @@ $perspective : $parallax-perspective
     width: 100%;
     line-height: 0;
     &:after{
-        content: '';
-        display: inline-block;
-        width: 100%;
+        content: '' !important;
+        display: inline-block !important;
+        width: 100% !important;
     }
 }
