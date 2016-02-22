@@ -1545,6 +1545,7 @@ span[class^=icon-]
 .pme-solution{
   position: relative;
   border: 1px solid $grey;
+  font-size: 16px;
   .header{
     padding: 15px 0;
     background-color: $blue;
@@ -1557,20 +1558,34 @@ span[class^=icon-]
       font-size: 1.3em;;
     }
   }
+  .bg-header{position: relative; text-align: center;}
   .orange-circle{
     display: inline-block;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    bottom: 40px;
+    @include absolute-center;
+    bottom: -15px;
     border: 2px solid $white;
     background-color: $orange;
     color: $white;
     text-align: center;
     border-radius: 50%;
     line-height: 55px;
-    height: 55px;
-    width: 55px;
+    height: 75px;
+    width: 75px;
+    span[class^="icon-"]{
+      @include absolute-center;
+      top: 0;
+      bottom: 0;
+      font-size: 2em;
+      line-height: 73px;
+
+    }
+  }
+  p{
+    color: $blue;
+    margin: 0;
+    padding: 20px 20px;
+    line-height: 22px;
+    text-align: justify;
   }
 }
 

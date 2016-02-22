@@ -111,6 +111,13 @@
   -o-transform: $parameter;
 }
 
+@mixin absolute-center{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 @mixin vertical-align-middle($position: relative){
   position: $position;
   top: 50%;
