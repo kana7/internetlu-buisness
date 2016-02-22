@@ -32,7 +32,12 @@
       }
     }
   }
-
+  // PME ACCUEIL PAGE
+  // --------------------------------------------------
+  .pme-solution{
+    margin: 0;
+    p{min-height: 172px;}
+  }
   // PROPOS PAGE
   // --------------------------------------------------
   #bg-propos-value{
@@ -222,7 +227,7 @@
   }
   // PAGE PME ACCUEIL
   // --------------------------------------------------
-  .pme-solution{p{text-align: center;}}
+  .pme-solution{p{text-align: center; min-height: 128px;}}
   // PAGE PROPOS
   // --------------------------------------------------
   .propos-section-header{

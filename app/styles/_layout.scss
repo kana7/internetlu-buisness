@@ -66,6 +66,19 @@
   }
 }
 
+//SPREAD CENTER SUPPORT
+.flexbox{
+  .flex{
+    @include display-flex-center;
+  }
+}
+.no-flexbox{
+  .flex{
+    @include spread-element;
+  }
+}
+
+
 // FIXED ELEMENT
 // --------------------------------------------------
 .fixed-options{
