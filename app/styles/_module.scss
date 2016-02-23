@@ -722,6 +722,20 @@ span[class^=icon-]
     color: $section-black;
   }
 }
+.btn-outline-inv{
+  @extend .btn-outline-black;
+  border-color: $section-black;
+  border-width: 1px;
+  color: $section-black;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 12px 15px;
+  font-weight: 800;
+  &:hover{
+    background-color: $section-black;
+    color: $white;
+  }
+}
 
 #offers-section{
   .section-subtitle{
@@ -1015,8 +1029,6 @@ span[class^=icon-]
 // --------------------------------------------------
 @mixin input
 {
-  /*line-height: 35px;*/
-
   position: relative;
 
   display: inline-block;
@@ -1616,6 +1628,33 @@ span[class^=icon-]
   color: $white;
   font-size: 2em;
   line-height: 35px;
+}
+#pme-witness{
+  	position: relative;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f1f1f0;
+    background-image: url(../images/pme/homepage/tab-bg-witness.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include overlay(#f1f1f0, 0.8);
+}
+.pme-witness-aside{
+  @include vertical-align-middle;
+  text-shadow: 1px 1px 5px $black;
+  color: $white;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  span{
+    display: block;
+    &[class^="icon-"]{
+      font-size: 5em;
+      margin-bottom: 15px;
+    }
+
+  }
 }
 .pme-stats{
   color: $white;
