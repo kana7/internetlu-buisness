@@ -18,6 +18,12 @@
   }
 }
 
+@include viewport(range, $max: $desk, $min: $tab){
+  .pme-solution.offre .content{
+    min-height: 159px;
+  }
+}
+
 @include media(tab){
 
   .subtitle-container, .title-container{

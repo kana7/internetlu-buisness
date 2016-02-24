@@ -178,7 +178,6 @@ span[class^=icon-]
   position: relative;
   display: inline-block;
   font-size: 0.8em;
-  top: 2px;
   &.right{
     margin-left: 5px;
   }
@@ -733,6 +732,20 @@ span[class^=icon-]
   font-weight: 800;
   &:hover{
     background-color: $section-black;
+    color: $white;
+  }
+}
+.btn-outline-inv-blue{
+  @extend .btn-outline-black;
+  border-color: $blue;
+  border-width: 1px;
+  color: $blue;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 12px 15px;
+  font-weight: 800;
+  &:hover{
+    background-color: $blue;
     color: $white;
   }
 }
@@ -1567,7 +1580,7 @@ span[class^=icon-]
     position: relative;
     background-color: $blue;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 30px;
     h3{
       margin: 0;
       color: $white;
@@ -1607,7 +1620,28 @@ span[class^=icon-]
     text-align: justify;
     min-height: 128px;
   }
+  &.offre{
+    border: none;
+    @include box-shadow(1px 1px 5px 0 rgba(0,0,0,0.3));
+    .header{
+      text-align: left;
+      padding: 15px 0px 15px 30px;
+      h3{
+        text-transform: initial;
+      }
+    }
+    .content{
+      padding: 20px 20px 10px;
+      p{
+        padding: 0;
+        margin: 0 0 15px;
+        min-height: initial !important;
+        text-align: justify;
+      }
+    }
+  }
 }
+
 
 .pme-devis{
   p{
