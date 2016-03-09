@@ -36,6 +36,9 @@ svg:not(:root) {
 .grey{
   color: $dark-grey !important;
 }
+.black{
+  color: $section-black !important;
+}
 .red{
   color: #DC0000 !important;
 }
@@ -1494,7 +1497,7 @@ span[class^=icon-]
 .subtitle-container, .title-container{
   position: relative;
   text-align: center;
-  margin: 30px 0 20px;
+  margin: 0 0 20px;
   padding-bottom: 20px;
   &:after{
     content: "";
