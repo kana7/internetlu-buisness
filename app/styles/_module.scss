@@ -1759,6 +1759,33 @@ span[class^=icon-]
   }
 }
 
+//INTERNET SECTION
+.profit{
+  display: block;
+  position: relative;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto 25px;
+  [class^=icon-]{
+    font-size: 1.8em;
+    color: $orange;
+  }
+  h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0 15px;
+  }
+  p{
+    font-size: 1.1em;
+    color: $section-black;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
 // FOOTER - HOMEPAGE
 // --------------------------------------------------
 @mixin link-hover()
