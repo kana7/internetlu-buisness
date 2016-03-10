@@ -589,7 +589,6 @@ span[class^=icon-]
 
   margin: 3px 0;
   padding: 12px 15px;
-
   cursor: pointer;
   -webkit-transition: $transitionUi;
   transition: $transitionUi;
@@ -752,6 +751,17 @@ span[class^=icon-]
     background-color: $blue;
     color: $white;
   }
+}
+
+.border-blue{
+  border-color: $blue;
+  border: 1px solid;
+  border-width: 1px;
+  color: $blue;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 12px 15px;
+  font-weight: 800;
 }
 
 #offers-section{
@@ -1635,7 +1645,9 @@ span[class^=icon-]
       }
     }
     .content{
+      @include clearfix;
       padding: 20px 20px 10px;
+      background-color: $white;
       p{
         padding: 0;
         margin: 0 0 15px;
@@ -1820,7 +1832,7 @@ span[class^=icon-]
   display: block;
   position: relative;
   text-align: center;
-  max-width: 250px;
+  max-width: 275px;
   margin: 0 auto 25px;
   [class^=icon-]{
     font-size: 1.8em;
