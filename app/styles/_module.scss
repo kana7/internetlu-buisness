@@ -1854,6 +1854,24 @@ span[class^=icon-]
   }
 }
 
+//PHONE SECTION
+//---------------------------------------------------
+.function-list{
+  margin-top: 20px;
+  text-align: center;
+  color: $blue;
+  font-size: 1.6em;
+  font-weight: 800;
+  li{
+    margin-bottom: 30px;
+    [class^="icon-"]{
+      margin-right: 10px;
+      font-size: 1em;
+    }
+  }
+}
+
+
 // FOOTER - HOMEPAGE
 // --------------------------------------------------
 @mixin link-hover()
