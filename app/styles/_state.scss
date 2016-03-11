@@ -7,8 +7,39 @@
       padding: 0 25px;
     }
   }
+  .equipement-item-blue, .equipement-item-orange{
+    .main-image{
+      margin: 0 auto 15px;
+    }
+    .thumbnails{
+      margin-bottom: 30px;
+    }
+    .config{
+      padding-left: 28px;
+    }
+    .equipement-price{
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+    .item-name{
+      width: 100%;
+      font-size: 19px;
+      line-height: 21px;
+      margin-bottom: 25px;
+      text-align: center;
+      .sub{
+        font-size: 0.71em;
+      }
+    }
+  }
 }
 @include media(phone){
+  .equipement-item-blue, .equipement-item-orange{
+    .equipement-price{
+      padding: 13px 82px;
+      margin-bottom: 25px;
+    }
+  }
   .container-wrapper{
     width: 320px;
     padding: 0 14px;
@@ -44,6 +75,20 @@
     /*margin: 0;*/
     p{min-height: 172px;}
   }
+
+  // PME EQUIPEMENT
+  //---------------------------------------------------
+  .equipement-item-blue{
+    padding: 30px 20px 25px;
+    .equipement-price{
+      margin: 0;
+    }
+    .thumbnails{
+      margin-bottom: 30px;
+    }
+  }
+
+
   // PROPOS PAGE
   // --------------------------------------------------
   #bg-propos-value{
@@ -302,20 +347,17 @@
     min-height: 787px;
   }
   .equipement-item-blue, .equipement-item-orange{
-    height: 275px;
+    height: 200px;
     text-align: right;
     padding: 0 40px 0 20px;
     margin-bottom: 15px;
     .details{
       vertical-align: top;
-      padding-left: 20px;
+      padding-left: 40px;
       padding-right: 0px;
       li{
         display: block;
       }
-    }
-    .main-image.fillHeight{
-      height: 125px;
     }
     .thumbnails{
       margin-bottom: 0;
@@ -697,9 +739,6 @@
     p{
       margin: 7px 0;
     }
-  }
-  .equipement-item-blue, .equipement-item-orange{
-    height: 350px;
   }
   .service#dispo{
     h3{
