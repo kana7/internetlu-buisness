@@ -57,6 +57,10 @@
 
 @include media(tab){
 
+  .page-content{
+    padding: 40px 0;
+  }
+  
   .subtitle-container, .title-container{
     margin: 0 0 40px;
     padding-bottom: 30px;
@@ -784,6 +788,9 @@
 }
 
 @include media(lgdesk){
+  .page-content{
+    padding: 50px 0;
+  }
 /*PAGE PROPOS*/
 /*------------------------------------------------*/
 #bg-propos-value{

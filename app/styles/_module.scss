@@ -1846,7 +1846,7 @@ span[class^=icon-]
 }
 .pme-witness-aside{
   @include vertical-align-middle;
-  text-shadow: 1px 1px 5px $black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   color: $white;
   font-size: 1.7em;
   text-transform: uppercase;
