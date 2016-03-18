@@ -1932,10 +1932,46 @@ span[class^=icon-]
 
 //INTERNET SECTION
 
-.table-offer{
+.offer-table{
+  display: table;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   color: $blue;
+  .offer-table-col{
+    background-color: $white;
+    margin-right: -1px;
+    position: relative;
+    &:not(:last-child){margin-bottom: 10px;}
+      .offer-table-header{
+        border-radius: 6px 6px 0 0;
+      }
+      .offer-table-footer{
+        border-radius: 0 0 6px 6px;
+      }
+  }
+  .offer-table-header, .offer-table-item, .offer-table-footer{
+    padding: 16px 45px;
+    border-right: 1px solid $blue;
+    border-left: 1px solid $blue;
+  }
+  .offer-table-header{
+    background-color: $blue;
+    color: $white;
+    font-size: 1.7em;
+  }
+  .offer-table-item{
+    font-weight: 800;
+    font-size: 1.4em;
+    border-bottom: 1px solid $blue;
+  }
+  .offer-table-footer{
+    background-color: darken($light-blue, 10%);
+    font-size: 1.3em;
+    font-weight: 800;
+    padding: 20px;
+    border-bottom: 1px solid $blue;
+  }
   [class^="icon-"]{
     bottom: 1px;
     font-size: 0.7em;
@@ -1947,45 +1983,9 @@ span[class^=icon-]
   .upload{
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);}
-    th,td{
-      padding: 16px 45px;
-    }
-    thead{
-      background-color: $blue;
-      color: $white;
-      font-size: 1.7em;
-      th:first-child{
-        border-radius: 6px 0 0 0;
-      }
-      th:last-child{
-        border-radius: 0 6px 0 0;
-      }
-    }
-    tbody tr:not(:last-child){
-      font-weight: 800;
-      font-size: 1.4em;
-    }
-    th:not(:first-child):not(:last-child){
-      border-left: 1px solid $white;
-      border-right: 1px solid $white;
-    }
-    td{
-      border: 1px solid $blue;
-    }
-    tfoot{
-      background-color: darken($light-blue, 10%);
-      font-size: 1.3em;
-      font-weight: 800;
-      td{padding: 20px}
-      td:first-child{
-        border-radius: 6px 0 0 0;
-      }
-      td:last-child{
-        border-radius: 0 6px 0 0;
-      }
-    }
+    transform: rotate(180deg);
   }
+}
 
 .profit{
   display: block;

@@ -73,6 +73,22 @@
       }
     }
   }
+
+  //PME OFFER
+  //--------------------------------------------------
+  .offer-table{
+    .offer-table-col{
+      &:nth-child(2n+1){
+        .offer-table-header{border-radius:6px 0 0 0;}
+        .offer-table-footer{border-radius: 0 0 0 6px;}
+      }
+      &:nth-child(2n+0){
+        .offer-table-header{border-radius: 0 6px 0 0; border-left: 1px solid #fff;}
+        .offer-table-footer{border-radius: 0 0 6px 0;}
+      }
+    }
+  }
+
   // PME ACCUEIL PAGE
   // --------------------------------------------------
   .pme-solution{
@@ -275,6 +291,34 @@
       }
     }
   }
+
+  //PME OFFER
+  //--------------------------------------------------
+  .offer-table{
+    .offer-table-col{
+      border-right: none;
+      &:not(:first-child){
+        .offer-table-header{border-left: 1px solid $white;}
+      }
+      &:first-child{
+        .offer-table-header{border-radius: 6px 0 0 0 !important;}
+        .offer-table-footer{border-radius: 0 0 0 6px !important;}
+      }
+      &:nth-child(2n+1){
+        .offer-table-header{border-radius:0;}
+        .offer-table-footer{border-radius: 0;}
+      }
+      &:nth-child(2n+0){
+        .offer-table-header{border-radius: 0; border-left: 1px solid #fff;}
+        .offer-table-footer{border-radius: 0;}
+      }
+      &:last-child{
+        .offer-table-header{border-radius: 0 6px 0 0 !important;}
+        .offer-table-footer{border-radius: 0 0 6px 0 !important;}
+      }
+    }
+  }
+
   // PAGE PME ACCUEIL
   // --------------------------------------------------
   .pme-solution{p{text-align: center; min-height: 128px;}}
@@ -468,54 +512,7 @@
       position: relative;
     }
   }
-/*
-  .right-orientation .row > div:first-child,
-  .left-orientation .row > div:last-child{
-    left: 0;
-    float: left !important;
-    .section-img-align-bottom{
-      left: 0;
-    }
-  }
-  .right-orientation .row > div:last-child,
-  .left-orientation .row > div:first-child{
-    right: 0;
-    float: right !important;
-    .section-img-align-bottom{
-      right: 0;
-    }
-  }
-  .right-orientation .row > div:last-child, .left-orientation .row > div:last-child{
-    text-align: left;
-  }
-  .right-orientation .row>div:last-child{
-    text-align: left;
-  }
-  .left-orientation .row>div:last-child{
-    text-align: left;
-  }
 
-  .right-orientation .row > div:last-child, .left-orientation .row > div:last-child{
-    @include vertical-align-middle;
-    height: auto;
-  }
-  .section-background-image{
-    .container-wrapper>.row>div:first-child{
-      @include vertical-align-middle;
-      height: auto;
-    }
-    &.left{
-      .row>div:first-child{
-        text-align: right;
-      }
-    }
-    &.right{
-      .row>div:first-child{
-        text-align: left;
-      }
-    }
-  }
-*/
   .content-container .row>div[class^=phone-]{
     @include vertical-align-middle;
     height: auto;
