@@ -1437,8 +1437,6 @@ span[class^=icon-]
   box-shadow: none;
 }
 
-
-
 .content-container{
   .offer-item-blue, .offer-item-orange{
     margin: 0;
@@ -1624,6 +1622,7 @@ span[class^=icon-]
     font-size: 1.2em;
     line-height: 22px;
     text-align: justify;
+    margin: 25px 0;
   }
 }
 
@@ -1727,6 +1726,13 @@ span[class^=icon-]
     }
   }
 }
+}
+
+// PARAGRAPH CONTENT
+//---------------------------------------------------
+.offer-description{
+  font-size: 1.2em;
+  line-height: 22px;
 }
 
 // PAGE PME ACCUEIL
