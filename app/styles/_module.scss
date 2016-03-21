@@ -1958,19 +1958,42 @@ span[class^=icon-]
   .offer-table-header{
     background-color: $blue;
     color: $white;
-    font-size: 1.7em;
+    font-size: 1.67em;
+    font-weight: 800;
   }
   .offer-table-item{
     font-weight: 800;
     font-size: 1.4em;
     border-bottom: 1px solid $blue;
+    &.light{
+      font-weight: 600 !important;
+      font-size: 1.2em;
+    }
   }
   .offer-table-footer{
     background-color: darken($light-blue, 10%);
     font-size: 1.3em;
     font-weight: 800;
-    padding: 20px;
+    padding: 5px 20px;
     border-bottom: 1px solid $blue;
+    &.fix-height{
+      line-height: 64px;
+    }
+    .offer-price{
+      position: relative;
+      width: 215px;
+      margin: 0 auto;
+      line-height: normal;
+      font-size: 2.7em;
+      font-weight: 800;
+      div{
+        position: absolute;
+        top: 5px;
+        right: 50px;
+        font-size: 0.52em;
+      }
+      span:not(.exponent){font-size: 0.4em; font-weight: 600;}
+    }
   }
   [class^="icon-"]{
     bottom: 1px;
