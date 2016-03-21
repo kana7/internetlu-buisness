@@ -1938,6 +1938,25 @@ span[class^=icon-]
   margin: 0 auto;
   text-align: center;
   color: $blue;
+  &.mono-offer{
+    .offer-table-header{padding: 16px 0}
+    .offer-table-col:not(:last-child){
+      margin-bottom: 0;
+      .offer-table-footer{
+        border-radius: 0;
+      }
+    }
+    .offer-table-col:last-child{
+      .offer-table-item{
+        [class^="icon-"]{color: $blue;}
+        font-weight: 400;
+        padding: 15px 0;
+        &:last-child{
+          border-radius: 0 0 6px 6px;
+        }
+      }
+    }
+  }
   .offer-table-col{
     background-color: $white;
     margin-right: -1px;
@@ -2042,10 +2061,11 @@ span[class^=icon-]
   margin-top: 20px;
   text-align: center;
   color: $blue;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 800;
   li{
-    margin-bottom: 30px;
+    min-height: 45px;
+    margin-bottom: 10px;
     [class^="icon-"]{
       margin-right: 10px;
       font-size: 1em;

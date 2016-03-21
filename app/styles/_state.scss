@@ -87,12 +87,26 @@
         .offer-table-footer{border-radius: 0 0 6px 0;}
       }
     }
+    &.mono-offer{
+      .offer-table-col:last-child{
+        .offer-table-item:first-child{
+          border-top: 1px solid $blue;
+          border-radius: 0 6px 0 0;
+        }
+        .offer-table-item{
+          line-height: 23px;
+          height: 55px;
+        }
+        .offer-table-item:last-child{
+          border-radius: 0 0 6px 0;
+        }
+      }
+    }
   }
 
   // PME ACCUEIL PAGE
   // --------------------------------------------------
   .pme-solution{
-    /*margin: 0;*/
     p{min-height: 172px;}
   }
 
