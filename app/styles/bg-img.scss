@@ -114,6 +114,9 @@
 #bg-pme-telephonie-sip{
   background-image: url(../images/pme/telephonie/Telephonie_SIP_1055x322px.jpg);
 }
+#bg-pme-news{
+  background-image: url(../images/pme/divers/Actualites_1055x322px.jpg);
+}
 
 @include media(tab){
   #bg-propos-value{
@@ -193,6 +196,9 @@
   #bg-pme-telephonie-sip{
     background-image: url(../images/pme/telephonie/Telephonie_SIP_1302x330px.jpg);
   }
+  #bg-pme-news{
+    background-image: url(../images/pme/divers/Actualites_1302x330px.jpg);
+  }
   #social-links{
     height: 230px;
     background-size: 1302px auto;
@@ -265,5 +271,8 @@
   }
   #bg-pme-telephonie-sip{
     background-image: url(../images/pme/telephonie/Telephonie_SIP_1920x360px.jpg);
+  }
+  #bg-pme-news{
+    background-image: url(../images/pme/divers/Actualites_1920x360px.jpg);
   }
 }

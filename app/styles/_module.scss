@@ -120,7 +120,7 @@ svg:not(:root) {
   position: relative;
   z-index: 1;
 }
-.section-title{
+.section-title, .article-title{
   font-size: 35px;
   line-height: 37px;
   margin: 12px 0 25px;
@@ -129,6 +129,10 @@ svg:not(:root) {
   strong{
     display: block;
   }
+}
+.article-title{
+  font-size: 2.3em;
+  line-height: 35px;
 }
 .section-subtitle, .moveArrow{
   font-size: 23px;
@@ -488,6 +492,10 @@ span[class^=icon-]
 
   color: $white;
   text-shadow: 0 1px 5px $dark-grey;
+  li.active{
+    text-decoration: underline;
+    font-weight: bold;
+  }
   &.left li
   {
     margin-right: 30px;
@@ -1731,9 +1739,12 @@ span[class^=icon-]
 
 // PARAGRAPH CONTENT
 //---------------------------------------------------
-.offer-description{
+.offer-description, .article-txt{
   font-size: 1.2em;
   line-height: 22px;
+}
+.article-txt{
+  text-align: justify;
 }
 
 // PAGE PME ACCUEIL
@@ -1952,6 +1963,8 @@ span[class^=icon-]
         [class^="icon-"]{color: $blue;}
         font-weight: 400;
         padding: 15px 0;
+        padding-left: 5%;
+        text-align: left;
         &:last-child{
           border-radius: 0 0 6px 6px;
         }
@@ -1983,7 +1996,7 @@ span[class^=icon-]
   }
   .offer-table-item{
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.3em;
     border-bottom: 1px solid $blue;
     &.light{
       font-weight: 600 !important;
@@ -2001,7 +2014,8 @@ span[class^=icon-]
     }
     .offer-price{
       position: relative;
-      width: 215px;
+      width: 210px;
+      height: 65px;
       margin: 0 auto;
       line-height: normal;
       font-size: 2.7em;
