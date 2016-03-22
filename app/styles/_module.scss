@@ -2748,9 +2748,26 @@ h2.contact-title {
   text-transform: uppercase;
   font-size: 2em;
 }
+#container-map{
+  height: 520px;
+  text-align: center;
+  line-height: 20px;
+  color: $blue;
+  h2{font-size: 1.4em;}
+  ul{
+    font-size: 1.1em;
+    display: block;
+    li{display: block;}
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+}
 .googleMap{
-  margin-top: 30px;
-  height: 300px;
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+  height: 48%;
 }
 
 //FORM

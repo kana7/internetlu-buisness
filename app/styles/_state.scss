@@ -78,6 +78,27 @@
     font-size: 2.7em;
     line-height: 40px;
   }
+  #container-map{
+    height: 400px;
+    text-align: left;
+    h2{
+      font-size: 2em;
+      margin-bottom: 35px;
+    }
+    ul{
+      font-size: 1.3em;
+      line-height: 25px;
+    }
+    .row>div{
+      @include vertical-align-middle(absolute);
+    }
+  }
+  .googleMap{
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
 
   //PME OFFER
   //--------------------------------------------------
