@@ -120,6 +120,9 @@
 #bg-pme-contact{
   background-image: url(../images/pme/divers/Contact_1055x322px.jpg);
 }
+#bg-pme-mobile-equip{
+  background-image: url(../images/pme/mobile/Mobile_Materiel_1055x322px.jpg);
+}
 
 @include media(tab){
   #bg-propos-value{
@@ -205,6 +208,9 @@
   #bg-pme-contact{
     background-image: url(../images/pme/divers/Contact_1302x330px.jpg);
   }
+  #bg-pme-mobile-equip{
+    background-image: url(../images/pme/mobile/Mobile_Materiel_1302x330px.jpg);
+  }
   #social-links{
     height: 230px;
     background-size: 1302px auto;
@@ -283,5 +289,8 @@
   }
   #bg-pme-contact{
     background-image: url(../images/pme/divers/Contact_1920x360px.jpg);
+  }
+  #bg-pme-mobile-equip{
+    background-image: url(../images/pme/mobile/Mobile_Materiel_1920x360px.jpg);
   }
 }

@@ -14,6 +14,7 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) ../../styles/main.css -->
+  <link rel="stylesheet" href="../../styles/flickity.css">
   <link rel="stylesheet" href="../../styles/main.css">
   <link rel="stylesheet" href="../../styles/bg-img.css">
   <!-- endbuild -->
@@ -250,13 +251,72 @@
 </div>
 </header>
 <!-- ./HEADER -->
-  <section class="page-content">
-    <div class="container-wrapper">
-      <div class="row">
-
+<section id="bg-pme-mobile-equip" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+  <div class="container-wrapper">
+    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Mobile</a></li><li><span class="icon-right-arrow"></span></li><li>Mobiles & accessoires</li></ul>
+    <div class="row clearfix">
+      <div class="phone-12 desk-6">
+        <h1 class="section-title lowercase"><span class="bold">Mobiles</span> & accessoires</h1>
+        <p class="section-text">Téléphones classiques, Smartphones à prix mini, Smartphones les plus performants… Luxembourg Online vous propose une large gamme de téléphones portables et Smartphones pour répondre à tous vos besoins en téléphonie mobile.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<style type="text/css">
+.modelType {
+  display:inline-block;
+  padding:5px;
+  border:1px solid #e96021;
+  border-radius:4px;
+  margin-bottom:20px;
+  margin-right:10px;
+  color:#e96021;
+  cursor:pointer;
+  height: 26px;
+  line-height: 12px;
+}
+.modelType.is-selected {
+  background-color:#e96021;
+  color:white !important;
+}
+.squareWrapper {
+  clear:both;
+  margin-top:5px;
+}
+</style>
+<section id="equipement-section" class="background-lightgrey">
+    <div class="container-wrapper">
+        <div class="row hidden-desk hidden-lgdesk">
+            <h1 class="content-title">Nos mobiles : </h1>
+        </div>
+        <div  class="row display-phone display-tab">
+            <div class="phone-12">
+                <div class="searchMenu mobile phone">
+                    <button>
+                        <span class="icon-right-arrow"></span> Affiner votre recherche :
+                    </button>
+                    <ul class="dropdown">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div style="padding-right: 15px;" class="phone-3  hidden-phone hidden-tab">
+                <div class="searchMenu mobile">
+                    <ul class="DesktopMenu">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="phone-12 desk-9">
+                <div id="mobileType" class="main-gallery" >
+                </div>
+                <div id="mobileDetail">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
   <!-- FOOTER -->
   <footer>
     <div id="social-links">
@@ -401,7 +461,9 @@
 
 
 <!-- build:js(.tmp) ../../scripts/main.js -->
-<script src="../../scripts/main.js"></script>
+<script type="text/javascript" src="../../scripts/vendor/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="../../scripts/main.js"></script>
+<script type="text/javascript" src="../../scripts/allmobilescript2.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript" src="../../scripts/analytics.js"></script>
 <!-- endbuild -->

@@ -47,6 +47,9 @@
   .logo{
     margin-right: 0px;
   }
+  .priceWrapperRight {
+    font-size: 20px;
+  }
 }
 
 @include viewport(range, $max: $desk, $min: $tab){
@@ -61,6 +64,10 @@
     padding: 40px 0;
   }
 
+  .descSubWrapperRight, .descSubWrapperLeft {
+      width: 50%;
+  }
+  
   .subtitle-container, .title-container{
     margin: 0 0 40px;
     padding-bottom: 30px;
@@ -272,10 +279,6 @@
       }
     }
   }
-  .rightWrapper{
-    display: block;
-    width: 75%;
-  }
   .pdf-list-extended{
     height: 200px;
   }
@@ -329,6 +332,15 @@
         font-size: 3em;
       }
     }
+  }
+
+  .rightWrapper {
+    display: block;
+    width: 75%;
+  }
+  .rightWrapper {
+    width: 75%;
+    text-align: left;
   }
 
   //PME OFFER
