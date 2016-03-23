@@ -110,7 +110,7 @@
   //PME OFFER
   //--------------------------------------------------
   .offer-table{
-    .offer-table-col{
+    .offer-table-col:not(.rounded){
       &:nth-child(2n+1){
         .offer-table-header{border-radius:6px 0 0 0;}
         .offer-table-footer{border-radius: 0 0 0 6px;}
@@ -346,7 +346,7 @@
   //PME OFFER
   //--------------------------------------------------
   .offer-table{
-    .offer-table-col{
+    .offer-table-col:not(.rounded){
       border-right: none;
       &:not(:first-child){
         .offer-table-header{border-left: 1px solid $white;}

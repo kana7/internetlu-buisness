@@ -1956,6 +1956,10 @@ span[class^=icon-]
   margin: 0 auto;
   text-align: center;
   color: $blue;
+  .offer-table-col.rounded{
+    .offer-table-header{border-radius: 6px 6px 0 0 !important;}
+    .offer-table-footer{border-radius: 0 0 6px 6px !important;}
+  }
   &.mono-offer{
     .offer-table-header{padding: 16px 0}
     .offer-table-col:not(:last-child){
@@ -1990,7 +1994,7 @@ span[class^=icon-]
       }
   }
   .offer-table-header, .offer-table-item, .offer-table-footer{
-    padding: 16px 45px;
+    padding: 16px 15px;
     border-right: 1px solid $blue;
     border-left: 1px solid $blue;
   }
