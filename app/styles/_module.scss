@@ -1360,9 +1360,6 @@ span[class^=icon-]
     }
 }
 
-#equipement-section{
-  padding-bottom: 40px;
-}
 .k24, .k30, .k100, .k200{
   position: relative;
   .not-dispo{
@@ -1503,7 +1500,7 @@ span[class^=icon-]
   font-size: 20px;
   font-weight: 800;
   text-align: center;
-  margin: 40px 0 50px;
+  margin: 0 0 30px;
 }
 .content-subtitle{
   @extend .content-title;
@@ -1765,6 +1762,10 @@ span[class^=icon-]
   border: 1px solid $grey;
   font-size: 16px;
   margin-bottom: 20px;
+  @include transition($transitionUi);
+  &:hover{
+    border-color: $blue;
+  }
   .header{
     display: block;
     position: relative;
