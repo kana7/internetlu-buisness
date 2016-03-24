@@ -142,9 +142,6 @@ svg:not(:root) {
   text-align: center;
   &.divers-subtitle{
     font-size: 19px;
-    &.is-active{
-      font-weight: 600;
-    }
   }
   &[data-trigger]{
     span[class^=icon]{
@@ -1960,6 +1957,13 @@ span[class^=icon-]
     .offer-table-header{border-radius: 6px 6px 0 0 !important;}
     .offer-table-footer{border-radius: 0 0 6px 6px !important;}
   }
+  &.striped{
+    span[class^="icon-"]{display: block; position: absolute !important; font-size: 1.15em !important; top: 15px !important; left: 40px;}
+    .offer-table-col{
+      .offer-table-item:first-child{border-top: 1px solid $blue;}
+      .offer-table-item:nth-child(odd){background-color: lighten($grey, 18%)}
+    }
+  }
   &.mono-offer{
     .offer-table-header{padding: 16px 0}
     .offer-table-col:not(:last-child){
@@ -2001,10 +2005,11 @@ span[class^=icon-]
   .offer-table-header{
     background-color: $blue;
     color: $white;
-    font-size: 1.67em;
-    font-weight: 800;
+    font-size: 2em;
+    font-weight: 600;
   }
   .offer-table-item{
+    position: relative;
     font-weight: 800;
     font-size: 1.3em;
     border-bottom: 1px solid $blue;
@@ -2035,7 +2040,7 @@ span[class^=icon-]
       div{
         position: absolute;
         top: 5px;
-        right: 50px;
+        right: 48px;
         font-size: 0.52em;
       }
       span:not(.exponent){font-size: 0.4em; font-weight: 600;}

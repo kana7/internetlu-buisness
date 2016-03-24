@@ -32,6 +32,18 @@
       }
     }
   }
+  .offer-table{
+    &.striped{
+      .offer-table-col:nth-child(odd){
+        .offer-table-item:first-child{border-radius: 6px 0 0 0;}
+        .offer-table-item:last-child{border-radius: 0 0 0 6px;}
+      }
+      .offer-table-col:nth-child(even){
+        .offer-table-item:first-child{border-radius: 0 6px 0 0;}
+        .offer-table-item:last-child{border-radius: 0 0 6px 0;}
+      }
+    }
+  }
 }
 @include media(phone){
   .equipement-item-blue, .equipement-item-orange{
@@ -49,6 +61,14 @@
   }
   .priceWrapperRight {
     font-size: 20px;
+  }
+  .offer-table{
+    &.striped{
+      .offer-table-col{
+        .offer-table-item:first-child{border-radius: 6px 6px 0 0;}
+        .offer-table-item:last-child{border-radius: 0 0 6px 6px;}
+      }
+    }
   }
 }
 
@@ -346,6 +366,18 @@
   //PME OFFER
   //--------------------------------------------------
   .offer-table{
+    &.striped{
+      .offer-table-col{
+        &:first-child{
+          .offer-table-item:first-child{border-radius: 6px 0 0 0;}
+          .offer-table-item:last-child{border-radius: 0 0 0 6px;}
+        }
+        &:last-child{
+          .offer-table-item:first-child{border-radius: 0 6px 0 0;}
+          .offer-table-item:last-child{border-radius: 0 0 6px 0;}
+        }
+      }
+    }
     .offer-table-col:not(.rounded){
       border-right: none;
       &:not(:first-child){
@@ -763,7 +795,7 @@
 }
 
 
-@include viewport(range, $min: 1056, $max: 1302){
+@include viewport(range, $min: 1056, $max: 1301){
   .offer-item-blue .description, .offer-item-orange .description{
     font-size: 19px;
   }
@@ -827,6 +859,9 @@
     top: 90%;
     left: 6%;
   }
+  .offer-table.striped span[class^="icon-"] {
+    left: 15px;
+}
 }
 
 @include media(lgdesk){

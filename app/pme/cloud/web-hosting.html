@@ -273,6 +273,12 @@
     </div>
   </div>
 </section>
+<style>
+.offer-table .offer-table-item:not(.light){padding: 10px 15px;}
+.offer-table-item>div:first-child{font-size: 1.3em; margin-bottom: 8px;}
+.offer-table-item>div:last-child{font-size: 0.8em;}
+.offer-table span[class^="icon-"]:not(.upload){color: #004994; font-size: 1.1em; position: relative; top: 2px;}
+</style>
 <section class="section-shadow phone-pb-30 phone-pt-30 background-lightblue">
   <div class="container-wrapper">
     <div class="row">
@@ -280,61 +286,116 @@
         <h2>nos solutions sur mesure pour votre présence en ligne :</h2>
       </div>
       <div class="clearfix">
-        <table class="table-offer">
-          <thead>
-            <tr>
-              <th><span class="normal">Package</span> 500 MB</th>
-              <th><span class="normal">Package</span> 2 GB</th>
-              <th><span class="normal">Package</span> 5 GB</th>
-              <th><span class="normal">Package</span> 10 GB</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>500 MB</td>
-              <td>2 GB</td>
-              <td>5 GB</td>
-              <td>10 GB</td>
-            </tr>
-            <tr>
-              <td>5 GB</td>
-              <td>20 GB</td>
-              <td>50 GB</td>
-              <td>100 GB</td>
-            </tr>
-            <tr>
-              <td><span class="icon-check-ico"></span>antivirus / Anti-spam</td>
-              <td><span class="icon-check-ico"></span>antivirus / Anti-spam</td>
-              <td><span class="icon-check-ico"></span>antivirus / Anti-spam</td>
-              <td><span class="icon-check-ico"></span>antivirus / Anti-spam</td>
-            </tr>
-            <tr>
-              <td>25.00€</td>
-              <td>25.00€</td>
-              <td>25.00€</td>
-              <td>25.00€</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>10.00€/mois1</td>
-              <td>20.00€/mois1</td>
-              <td>45.00€/mois1</td>
-              <td>125.00€/mois1</td>
-            </tr>
-          </tfoot>
-        </table>
-        <div class="footer-note">1) Prix hors taxes.</div>
-      </div>
-      <div class="clearfix">
-        <div class="dropdown">
-          <h2 data-trigger="" style="text-decoration: underline;" class="section-subtitle divers-subtitle"><span class="icon-right-arrow"></span> Caractéristiques</h2>
-          <div class="clearfix phone-mt-5">
+        <div class="offer-table">
+          <div class="offer-table-col phone-12 tab-6 desk-3">
+            <div class="offer-table-header"><span class="normal">Package</span> 500 MB</div>
+            <div class="offer-table-item"><div>500 MB</div><div class="grey uppercase">espace web</div></div>
+            <div class="offer-table-item"><div>5 GB</div><div class="grey uppercase">trafic mensuel</div></div>
+            <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
+            <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
+            <div class="offer-table-footer fix-height">
+              <div class="offer-price">
+                <div>,00€<span class="exponent">1</span></div>
+                10<span>/mois</span>
+              </div>
+            </div>
+          </div><!--
+          --><div class="offer-table-col phone-12 tab-6 desk-3">
+          <div class="offer-table-header"><span class="normal">Package</span> 2 GB</div>
+          <div class="offer-table-item"><div>2 GB</div><div class="grey uppercase">espace web</div></div>
+          <div class="offer-table-item"><div>20 GB</div><div class="grey uppercase">trafic mensuel</div></div>
+          <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
+          <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
+          <div class="offer-table-footer fix-height">
+            <div class="offer-price">
+              <div>,00€<span class="exponent">1</span></div>
+              20<span>/mois</span>
+            </div>
           </div>
+        </div><!--
+        --><div class="offer-table-col phone-12 tab-6 desk-3">
+        <div class="offer-table-header"><span class="normal">Package</span> 5 GB</div>
+        <div class="offer-table-item"><div>5 GB</div><div class="grey uppercase">espace web</div></div>
+        <div class="offer-table-item"><div>50 GB</div><div class="grey uppercase">trafic mensuel</div></div>
+        <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
+        <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
+        <div class="offer-table-footer fix-height">
+          <div class="offer-price">
+            <div>,00€<span class="exponent">1</span></div>
+            45<span>/mois</span>
+          </div>
+        </div>
+      </div><!--
+      --><div class="offer-table-col phone-12 tab-6 desk-3">
+      <div class="offer-table-header"><span class="normal">Package</span> 10 GB</div>
+      <div class="offer-table-item"><div>100 GB</div><div class="grey uppercase">espace web</div></div>
+      <div class="offer-table-item"><div>100 GB</div><div class="grey uppercase">trafic mensuel</div></div>
+      <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
+      <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
+      <div class="offer-table-footer fix-height">
+        <div class="offer-price">
+          <div style="right: 35px;">,00€<span class="exponent">1</span></div>
+          125<span>/mois</span>
         </div>
       </div>
     </div>
   </div>
+  <div class="footer-note">1) Prix hors taxes.</div>
+</div>
+<div class="clearfix">
+  <div class="dropdown align-center">
+    <h2 data-trigger="" style="text-align: center; font-size: 1.5em; font-weight: 600;" class="section-subtitle divers-subtitle"><span style="margin-right: 10px;" class="icon-right-arrow"></span><span style="text-decoration: underline;">Caractéristiques :</span></h2>
+    <div class="clearfix phone-mt-5">
+      <div class="offer-table striped">
+        <div class="offer-table-col phone-12 tab-6 desk-3">
+          <div class="offer-table-item"><div>10 (30)</div><div class="grey uppercase">adresses email (alias)</div></div>
+          <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
+          <div class="offer-table-item"><div>10 (30)</div><div class="grey uppercase">sous-domaines</div></div>
+          <div class="offer-table-item"><div>2</div><div class="grey uppercase">accès ftp</div></div>
+          <div class="offer-table-item light"><span class="icon-x-icone"></span>PHP</div>
+          <div class="offer-table-item"><div>0</div><div class="grey uppercase">mysql</div></div>
+          <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
+          <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
+          <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
+        </div><!--
+        --><div class="offer-table-col phone-12 tab-6 desk-3">
+        <div class="offer-table-item"><div>25 (75)</div><div class="grey uppercase">adresses email (alias)</div></div>
+        <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
+        <div class="offer-table-item"><div>25 (75)</div><div class="grey uppercase">sous-domaines</div></div>
+        <div class="offer-table-item"><div>5</div><div class="grey uppercase">accès ftp</div></div>
+        <div class="offer-table-item light"><span class="icon-check-ico"></span>PHP</div>
+        <div class="offer-table-item"><div>2</div><div class="grey uppercase">mysql</div></div>
+        <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
+        <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
+        <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
+      </div><!--
+      --><div class="offer-table-col phone-12 tab-6 desk-3">
+      <div class="offer-table-item"><div>50 (150)</div><div class="grey uppercase">adresses email (alias)</div></div>
+      <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
+      <div class="offer-table-item"><div>50 (150)</div><div class="grey uppercase">sous-domaines</div></div>
+      <div class="offer-table-item"><div>15</div><div class="grey uppercase">accès ftp</div></div>
+      <div class="offer-table-item light"><span class="icon-check-ico"></span>PHP</div>
+      <div class="offer-table-item"><div>3</div><div class="grey uppercase">mysql</div></div>
+      <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
+      <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
+      <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
+    </div><!--
+    --><div class="offer-table-col phone-12 tab-6 desk-3">
+    <div class="offer-table-item"><div>100 (300)</div><div class="grey uppercase">adresses email (alias)</div></div>
+    <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
+    <div class="offer-table-item"><div>100 (300)</div><div class="grey uppercase">sous-domaines</div></div>
+    <div class="offer-table-item"><div>30</div><div class="grey uppercase">accès ftp</div></div>
+    <div class="offer-table-item light"><span class="icon-check-ico"></span>PHP</div>
+    <div class="offer-table-item"><div>5</div><div class="grey uppercase">mysql</div></div>
+    <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
+    <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
+    <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <section class="section-shadow phone-pb-30 phone-pt-30">
