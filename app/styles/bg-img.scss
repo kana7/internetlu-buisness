@@ -60,6 +60,9 @@
 
 //HEADER BACKGROUND
 //--------------------------------------------------------------
+
+//PME
+//-------------------------
 #bg-pme-accueil{
   background-image: url(../images/pme/homepage/Accueil_1055x322px.jpg);
 }
@@ -123,6 +126,12 @@
 #bg-pme-mobile-equip{
   background-image: url(../images/pme/mobile/Mobile_Materiel_1055x322px.jpg);
 }
+
+//GRANDE ENTREPRISE
+//-------------------------
+#bg-ge-accueil{background-image: url(../images/ge/homepage/bg-accueil.jpg);}
+
+
 
 @include media(tab){
   #bg-propos-value{

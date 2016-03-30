@@ -9,11 +9,11 @@
   <link rel="shortcut icon" href="favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- build:css(.) /styles/vendor.css -->
+  <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css(.tmp) /styles/main.css -->
+  <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/bg-img.css">
   <!-- endbuild -->
@@ -171,10 +171,12 @@
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="index.htm">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button>Business<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
@@ -228,7 +230,7 @@
         </div>
       </div>
     </div>
-    <section class="phone-pb-50 phone-pt-50">
+    <section class="page-content">
       <div class="container-wrapper">
         <div class="row">
           <div class="subtitle-container">
