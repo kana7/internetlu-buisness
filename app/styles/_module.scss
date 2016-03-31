@@ -2982,6 +2982,43 @@ h2.contact-title {
 // JS MODULES
 // --------------------------------------------------
 
+#select-text{
+  ul{
+    font-size: 65px;
+    color: $blue;
+    margin: 35px auto 5px;
+    @include spread-element(600px);
+    display: block;
+    li{
+      opacity: 0.50;
+      cursor: pointer;
+      @include transition(opacity 0.3s ease-in-out);
+      &:hover, &.is-selected{opacity: 1;}
+    }
+  }
+  .select-box{
+    &>div[data-select]{
+      position: relative;
+      display: none;
+      @include clearfix;
+      &.is-visible{display: block;}
+    }
+    img{max-height: 240px; width: auto;}
+  }
+  .title{
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  .description{
+    font-size: 1.1em;
+    color: $black;
+    line-height: 25px;
+    margin: 30px 0;
+  }
+}
+
 .header-dropdown{
     position: relative;
     display: inline-block;

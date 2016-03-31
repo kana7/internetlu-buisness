@@ -354,10 +354,11 @@ $perspective : $parallax-perspective
 
 // End of magic parallax mixins
 
-@mixin spread-element(){
+@mixin spread-element($max-width: none){
     display: inline-block;
     text-align: justify;
     width: 100%;
+    max-width: $max-width;
     line-height: 0;
     &:after{
         content: '' !important;

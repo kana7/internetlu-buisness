@@ -12,6 +12,7 @@
   <!-- build:css(.) ../styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
+  <link rel="stylesheet" href="../styles/vendor/animate.min.css">
   <!-- endbuild -->
   <!-- build:css(.tmp) ../styles/main.css -->
   <link rel="stylesheet" href="/styles/main.css">
@@ -270,8 +271,53 @@
           <h2>Nos solutions business pour les entreprises :</h2>
         </div>
       </div>
-      <div class="row">
+      <div id="select-text" class="row">
         <p style="margin-bottom: 0; font-size: 15px;" class="align-center black">Découvrez ci-dessous les différentes catégories de produits professionnels sur mesure que nous proposons.</p>
+        <ul class="blue">
+          <li class="is-selected" data-select="internet"><span class="icon-internet-ico"></span></li>
+          <li data-select="tel"><span class="icon-telephonie-ico"></span></li>
+          <li data-select="cloud"><span class="icon-lolcloud"></span></li>
+          <li data-select="mobile"><span class="icon-mobile-ico"></span></li>
+        </ul>
+        <div class="clearfix select-box align-center">
+          <div class="is-visible" data-select="internet"><div class="phone-12 desk-6 phone-mb-10 desk-mb-0 animated fadeInLeft">
+            <img src="../images/ge/homepage/Internet_274x299px.jpg" alt="internet portable">
+          </div>
+          <div class="phone-12 desk-6 animated fadeInRight desk-mt-30">
+              <h3 class="title">Internet</h3>
+              <p class="description">Luxembourg Online propose des solutions Internet adaptées aux exigences des grandes entreprises, grâce à la puissance et à la fiabilité de la fibre optique qui garantit une connexion Internet de haute qualité.</p>
+              <a href="./internet/accueil.html" class="btn-outline-inv-blue">En savoir plus</a>
+          </div>
+        </div>
+          <div data-select="tel"><div class="phone-12 desk-6 phone-mb-10 desk-mb-0 animated fadeInLeft">
+            <img src="../images/ge/homepage/Telephonie_274x299px.jpg" alt="telephonie phone">
+          </div>
+          <div class="phone-12 desk-6 animated fadeInRight desk-mt-30">
+            <h3 class="title">Téléphonie</h3>
+            <p class="description">Le nouveau système de téléphonie virtuelle de Luxembourg Online offrent aux professionnels une solution en téléphonie sur-mesure qui leur permet de travailler sans contrainte, même depuis des sites distants.</p>
+            <a href="./telephonie/accueil.html" class="btn-outline-inv-blue">En savoir plus</a>
+          </div></div>
+          <div data-select="cloud">
+            <div class="phone-12 desk-6 phone-mb-10 desk-mb-0 animated fadeInLeft">
+              <img src="../images/ge/homepage/Cloud_274x299px.jpg" alt="cloud server">
+            </div>
+            <div class="phone-12 desk-6 animated fadeInRight desk-mt-30">
+              <h3 class="title">cloud</h3>
+              <p class="description">En matière de data center, Luxembourg Online propose des emplacements serveurs sécurisés pour y loger les infrastructures IT, tout en se chargeant de la location et de la sécurité des rackspaces.</p>
+              <a href="./cloud/accueil.html" class="btn-outline-inv-blue">En savoir plus</a>
+            </div>
+          </div>
+          <div data-select="mobile">
+            <div class="phone-12 desk-6 phone-mb-10 desk-mb-0 animated fadeInLeft">
+              <img src="../images/ge/homepage/Mobile_274x299px.jpg" alt="mobile phone">
+            </div>
+            <div class="phone-12 desk-6 animated fadeInRight desk-mt-30">
+              <h3 class="title">Mobile</h3>
+              <p class="description">Les abonnements mobiles voix et data offrent aux professionnels le meilleur de la téléphonie mobile pour rester connectés en permanence avec tous leurs collègues ou clients, au Luxembourg et en Europe.</p>
+              <a href="./mobile/accueil.html" class="btn-outline-inv-blue">En savoir plus</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

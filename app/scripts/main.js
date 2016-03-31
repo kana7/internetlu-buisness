@@ -50,6 +50,10 @@ $(function () {
             temp.init();
         });
     }
+    if ($('#select-text')) {
+      temp = new selectText($('#select-text'));
+      temp.init();
+    }
 });
 //test si l'adresse email est eligible
 function testEmail(emailAddress) {
@@ -87,6 +91,31 @@ function printDispo() {
         $('#services .row').prepend(encartDispoTemplate);
     }
 }
+
+var selectText = function(element){
+  var $element = element;
+  var $buttonList = $element.find('ul>li');
+  var $textBox = $element.find('.select-box');
+  var $textList = $element.find('.select-box>div');
+
+  this.init = function(){
+    _bindEvents();
+  };
+  var _bindEvents = function(){
+    $buttonList.on('click', function(){
+      _showText($(this));
+    });
+  };
+  var _showText = function($target){
+    if($target.hasClass('is-selected')===false){
+      var textData = $target.attr('data-select');
+      $textList.removeClass('is-visible');
+      $buttonList.removeClass('is-selected');
+      $target.addClass('is-selected');
+      $textBox.find('div[data-select="'+textData+'"]').addClass('is-visible');
+    }
+  };
+};
 
 //Affiche un container au clique sur un élément dans un container .dropdown
 var DropDown = function (element) {

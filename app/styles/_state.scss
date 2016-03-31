@@ -79,7 +79,10 @@
 }
 
 @include media(tab){
-
+  #select-text{
+    ul{font-size: 85px;}
+    .select-box{img{max-height: none;}}
+  }
   .page-content{
     padding: 40px 0;
   }
