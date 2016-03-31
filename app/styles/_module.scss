@@ -742,6 +742,14 @@ span[class^=icon-]
     background-color: $section-black;
     color: $white;
   }
+  &.white{
+    border-color: $white;
+    color: $white;
+    &:hover{
+      background-color: $white;
+      color: $blue !important;
+    }
+  }
 }
 .btn-outline-inv-blue{
   @extend .btn-outline-black;
@@ -1746,11 +1754,37 @@ span[class^=icon-]
   text-align: justify;
 }
 
+//GRANDE ENTREPRISE
+//---------------------------------------------------
+#ge-news-archives{
+  background-color: $blue;
+  padding: 25px 0;
+  .subtitle-container{
+    margin-bottom: 20px;
+  }
+  ul, li{
+    display: block;
+  }
+  ul{font-size: 1.2em;}
+  li{
+    a{display: block; padding: 8px 0; line-height: 25px; &:hover{text-decoration: underline;}}
+  }
+}
+//PME
+//---------------------------------------------------
 // PAGE PME ACCUEIL
 // --------------------------------------------------
-.bg-header-pme{
+.bg-header-pme, .bg-header-ge{
   .row>div{
     text-align: center;
+  }
+}
+.bg-header-ge{
+  .section-text{
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 
@@ -1853,13 +1887,12 @@ span[class^=icon-]
   font-size: 2em;
   line-height: 35px;
 }
-#pme-witness{
+.bg-section{
   	position: relative;
     height: 500px;
     overflow: hidden;
     text-align: center;
     background-color: #f1f1f0;
-    background-image: url(../images/pme/homepage/tab-bg-witness.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1903,6 +1936,8 @@ span[class^=icon-]
     margin: 0;
     line-height: 20px;
     font-size: 1.1em;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 #news{text-align: center;}
@@ -2957,8 +2992,7 @@ h2.contact-title {
         outline: 0;
         background: none;
         border: none;
-        padding: 9px 10px ;
-        width: 105px;
+        padding: 9px 10px;
         border-bottom: 1px solid darken($blue, 6%);
         span[class^="icon-"]{
             margin-right: 0;

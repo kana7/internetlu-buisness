@@ -168,10 +168,13 @@
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="index.htm">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button class="">Grandes Entreprises<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/business/ge/accueil.html">PME</a></li>
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
             <nav class="pull-right hidden-phone hidden-tab">
               <ul class="top-menu-header-links right">
@@ -250,13 +253,12 @@
 </div>
 </header>
 <!-- ./HEADER -->
-<section id="bg-ge-accueil"  class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+<section id="bg-ge-accueil"  class="bg-header-ge section-layout right-orientation header-section-height section-shadow">
   <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li>Accueil</li></ul>
     <div class="row clearfix">
-      <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase"><strong>Luxembourg Online</strong> au service de votre PME</h1>
-        <p class="section-text">Suivant votre secteur d’activité et la taille de votre entreprise, Luxembourg Online met à votre disposition des produits professionnels adaptés à vos besoins en connectivité et en mobilité.</p>
+      <div class="phone-12">
+        <h1 class="section-title lowercase white"><strong>Luxembourg Online</strong> au service de votre entreprise</h1>
+        <p class="section-text white">En tant qu’opérateur télécom, actif depuis plus de 20 ans au Grand Duché, Luxembourg Online fournit des solutions ultra performantes, au service des entreprises au Luxembourg. Pour répondre à vos besoins professionnels, nous mettons à votre disposition notre infrastructure et notre expertise technique.</p>
       </div>
       </div>
     </div>
@@ -264,113 +266,31 @@
   <section class="page-content">
     <div class="container-wrapper">
       <div class="row">
-        <div class="subtitle-container">
-          <h2>Nos solutions buisness pour les pme :</h2>
+        <div style="margin-bottom: 20px;" class="subtitle-container">
+          <h2>Nos solutions business pour les entreprises :</h2>
         </div>
       </div>
       <div class="row">
-        <div class="flex">
-          <div class="phone-12 tab-6 lgdesk-4 tab-pr-10">
-            <a href="internet/accueil.html">
-              <div class="pme-solution">
-                <div class="header"><h3>Internet</h3></div>
-                <div style="background-image: url(../images/pme/homepage/solution-internet.jpg); height: 237px;" class="bg-header">
-                  <div class="orange-circle"><span class="icon-arobase"></span></div>
-                </div>
-                <p>Luxembourg Online participe à la performance de votre entreprise en vous proposant des connexions ultra haut débit.</p>
-              </div>
-            </a>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 tab-pl-10 lgdesk-pr-10 tab-mb-20 lgdesk-mb-0">
-            <a href="telephonie/accueil.html">
-              <div class="pme-solution">
-                <div class="header"><h3>Téléphonie</h3></div>
-                <div style="background-image: url(../images/pme/homepage/solution-telephonie.jpg); height: 237px;" class="bg-header">
-                  <div class="orange-circle"><span class="icon-telephonie-ico"></span></div>
-                </div>
-                <p>Les nouvelles solutions en téléphonie virtuelle de Luxembourg Online offrent une véritable alternative économique et techniques aux lignes téléphoniques classiques.</p>
-              </div>
-            </a>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 tab-pr-10 lgdesk-pr-0 lgdesk-pl-10">
-            <a href="cloud/accueil.html">
-              <div class="pme-solution">
-                <div class="header"><h3>Cloud</h3></div>
-                <div style="background-image: url(../images/pme/homepage/solution-cloud.jpg); height: 237px;" class="bg-header">
-                  <div class="orange-circle"><span class="icon-lolcloud"></span></div>
-                </div>
-                <p>Luxembourg Online propose différents services Cloud pour stocker et partager tout type de fichiers dans un espace en ligne sécurisé et facile d'accès.</p>
-              </div>
-            </a>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 tab-pl-10 lgdesk-pl-0 lgdesk-pr-10 tab-mb-20 lgdesk-mb-0 lgdesk-mt-20">
-            <a href="mobile/accueil.html">
-              <div class="pme-solution">
-                <div class="header"><h3>Mobile</h3></div>
-                <div style="background-image: url(../images/pme/homepage/solution-mobile.jpg); height: 237px;" class="bg-header">
-                  <div class="orange-circle"><span class="icon-mobile-ico"></span></div>
-                </div>
-                <p>Les abonnements mobiles voix et data offrent aux professionnels des formules attractives et adaptées à leurs besoins mobiles au Luxembourg et en Europe.</p>
-              </div>
-            </a>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 lgdesk-pl-10 lgdesk-mt-20">
-            <a href="gestion/accueil.html">
-              <div class="pme-solution">
-                <div class="header"><h3>Gestion</h3></div>
-                <div style="background-image: url(../images/pme/homepage/solution-gestion.jpg); height: 237px;" class="bg-header">
-                  <div class="orange-circle"><span class="icon-gestion"></span></div>
-                </div>
-                <p>Le Blue Chameleon est un logiciel de gestion polyvalent conçu pour répondre aux enjeux organisationnels des petites et moyennes entreprises.</p>
-              </div>
-            </a>
-          </div>
-        </div>
+        <p style="margin-bottom: 0; font-size: 15px;" class="align-center black">Découvrez ci-dessous les différentes catégories de produits professionnels sur mesure que nous proposons.</p>
       </div>
     </div>
   </section>
-  <section style="background-image: url(../images/pme/homepage/bg-devis.jpg);" class="pme-devis bg-header phone-pt-50 phone-pb-50">
-    <div class="container-wrapper">
-      <div class="row align-center">
-        <p>
-          En quelques clics, trouvez la <strong>« solution business »</strong> qui correspond le mieux à vos besoins.<br/>
-          Faites vous rappeler par un de nos collaborateurs ou demandez gratuitement votre devis en ligne :
-        </p>
-        <a href="#" class="btn-orange">Demande de devis</a>
-      </div>
-    </div>
-  </section>
-  <section id="pme-witness">
+  <section id="ge-witness" class="bg-section right">
     <div class="container-wrapper">
       <div class="row">
         <div class="phone-12 desk-6 desk-pr-50 absolute-vertical-align-middle">
-          <h1 class="section-title lowercase">"Nos clients profitent <strong>d’un réseau wifi de qualité"</strong></h1>
-          <p style="color: black;" class="section-text">Comme Bruno et Manon profitez d’un pack LOL FIBER avec accès haut débit et offrez à vos clients une connexion fiable dans votre espace détente.
-            Nos packs sont assortis d’une ligne téléphonique et de 120 minutes offertes vers les téléphones fixes d’Europe.
-          </p>
-          <a href="#" class="btn-outline-inv phone-mt-30">Nos offres internet</a>
+          <h1 class="section-title lowercase"><span class="bold">Témoignage</span> client</h1>
+          <p style="color: black;" class="section-text">“Depuis l’installation du système de téléphonie virtuel, chaque équipe gère plus facilement l’accueil des parents. Cet apport technique a considérablement amélioré le quotidien des employés du groupe Lavorel, avec l’objectif de réaliser des économies en optant pour l’installation d’un système IP.”</p>
+          <p style="font-style: italic; font-size: 1em; margin-bottom: 0;">Fabrice Martinez, membre de la Direction de Lavorel Kids & Baby.</p>
+          <a href="./telephonie/lolcloud-phone.html" class="btn-outline-inv phone-mt-30">Découvrir LOL CLOUD PHONE</a>
         </div>
       </div>
     </div>
-    <div style="height: 100%; position: absolute; right: 0; top: 0;" class="phone-6 hidden-phone hidden-tab">
-      <div style="background-image: url(../images/pme/homepage/bg-witness.jpg); height: 100%;" class="bg-header tab-7"></div>
-      <div style="height: 100%;" class="tab-5 align-center">
-        <div style="height: 50%; background-image: url(../images/pme/homepage/bg-witness-phone.jpg);" class="bg-header">
-          <div class="pme-witness-aside">
-            <span class="icon-mobile-ico"></span>
-            <span>Mobile</span>
-          </div>
-        </div>
-        <div style="height: 50%;" class="background-blue">
-          <div class="pme-witness-aside">
-            <span class="icon-arobase"></span>
-            <span>Internet</span>
-          </div>
-        </div>
-      </div>
+    <div class="phone-6 hidden-phone hidden-tab image">
+      <div style="background-image: url(../images/ge/homepage/bg-witness.jpg);" class="bg-header tab-12"></div>
     </div>
   </section>
-  <section style="background-image: url(../images/pme/homepage/bg-stats.jpg);" class="bg-header phone-pt-30 phone-pb-30 tab-pt-50 tab-pb-50">
+  <section style="background-image: url(../images/ge/homepage/bg-stats.jpg);" class="bg-header phone-pt-30 phone-pb-30 tab-pt-50 tab-pb-50">
     <div class="container-wrapper">
       <div class="row align-center">
         <h2 class="pme-stats-titre phone-mb-30 tab-mb-50">Pourquoi choisir <strong class="bold">Luxembourg Online</strong> ?</h2>
@@ -389,22 +309,22 @@
         </div>
         <div class="phone-12 tab-4 tab-pl-10 tab-pr-10">
           <ul class="pme-stats phone-mb-30 tab-mb-0">
-            <li>25.000<span>clients</span></li>
+            <li>2006<span>LOL CLOUD Phone</span></li>
             <li><hr/></li>
             <li>
               <p>
-                à ce jour, plus de 25 000 clients privés et professionnels nous accordent leur confiance pour leurs solutions de télécommunications.
+                En tant qu’opérateur télécom innovant, Luxembourg Online a été un précurseur dans le lancement de la téléphonie sur Internet. Le LOL CLOUD Phone constitue la nouvelle génération de centraux téléphoniques entièrement virtuels.
               </p>
             </li>
           </ul>
         </div>
         <div class="phone-12 tab-4 tab-pl-10">
           <ul class="pme-stats">
-            <li>6/7<span>jours</span></li>
+            <li>100<span>collaborateurs</span></li>
             <li><hr/></li>
             <li>
               <p>
-                Nos collaborateurs, répartis sur 4 sites dans le pays, sont à votre disposition du lundi au samedi aussi bien en boutique, que par téléphone ou sur internet.
+                Luxembourg Online dispose d’un effectif de plus de 100 collaborateurs, répartis sur 4 sites dans le pays.  ils sont à votre disposition aussi bien en boutique, que par téléphone ou sur Internet.
               </p>
             </li>
           </ul>
@@ -419,15 +339,14 @@
           <h2>Actualité de la semaine :</h2>
         </div>
         <div class="phone-12 desk-5">
-          <img style="height: auto; max-width: 100%; width: 100%;" src="../images/pme/homepage/news.jpg" alt="news">
+          <img style="height: auto; max-width: 100%; width: 100%;" src="../images/ge/homepage/news.jpg" alt="news">
         </div>
         <div class="txt phone-12 desk-6 desk-pl-50 phone-mt-15 desk-mt-0 pull-right">
-          <h1 style="font-size: 2.7em; line-height: 40px;" class="section-title lowercase"><strong>Astuce :</strong>
-            à quelle fréquence redémarrer son ordinateur?</h1>
-            <p class="section-text">Il fut un temps où l'on éteignait systématiquement son ordinateur après utilisation pour éviter qu'il ne surchauffe. Mais l'évolution des technologies a changé la donne. Luxembourg Online vous éclaire sur la nouvelle marche
-              à suivre.
-            </p>
-          <a href="../pme/divers/news.html" class="btn-outline-inv">En savoir plus</a>
+          <h1 style="font-size: 2.7em; line-height: 40px;" class="section-title lowercase"><strong>Virus :</strong>
+            apprendre à les reconnaître et comment se protéger</h1>
+            <p class="section-text">Ils contaminent votre ordinateur sans que vous ne vous en rendiez compte. Spams, virus, vers ou chevaux de Troie, les logiciels malveillants prennent différentes formes.
+Luxembourg Online vous livre quelques astuces pour mieux protéger vos données.</p>
+          <a href="divers/news.html" class="btn-outline-inv">En savoir plus</a>
         </div>
       </div>
     </div>
