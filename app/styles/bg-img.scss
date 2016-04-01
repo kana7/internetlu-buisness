@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.bg-header-ge{height: 440px !important;}
+.bg-header-ge{height: 300px;}
 .bg-header-pme{
   @include overlay($white, 0.8);
 }
@@ -90,8 +90,12 @@
 //GRANDE ENTREPRISE
 //-------------------------
 #bg-ge-accueil{background-image: url(../images/ge/homepage/Accueil_1055x322px.jpg);}
+#bg-ge-internet-accueil{background-image: url(../images/ge/internet/Internet_1055x322px.jpg);}
 #ge-witness{background-image: url(../images/ge/homepage/bg-witness.jpg);}
 #bg-ge-news{background-image: url(../images/ge/divers/Actualites_1055x322px.jpg);}
+#ge-internet-fibre{background-image: url(../images/ge/internet/bg-fibre.jpg);}
+#ge-internet-fibresym{background-image: url(../images/ge/internet/bg-fibresym.jpg);}
+#ge-internet-vpn{background-image: url(../images/ge/internet/bg-vpn.jpg);}
 
 
 
@@ -142,6 +146,7 @@
   #bg-pme-mobile-equip{background-image: url(../images/pme/mobile/Mobile_Materiel_1302x330px.jpg);}
   #bg-ge-accueil{background-image: url(../images/ge/homepage/Accueil_1920x360px.jpg);}
   #bg-ge-news{background-image: url(../images/ge/divers/Actualites_1920x360px.jpg);}
+  #bg-ge-internet-accueil{background-image: url(../images/ge/internet/Internet_1920x360px.jpg);}
   #social-links{
     height: 230px;
     background-size: 1302px auto;

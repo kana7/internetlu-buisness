@@ -1723,7 +1723,7 @@ span[class^=icon-]
     display: block;
   }
 }
-.bg-header-pme{
+.bg-header-pme, .bg-header-ge{
   .breadcrumb{
     position: absolute;
     z-index: 1;
@@ -1742,6 +1742,9 @@ span[class^=icon-]
     }
   }
 }
+}
+.bg-header-ge{
+  .breadcrumb{color: $white;}
 }
 
 // PARAGRAPH CONTENT

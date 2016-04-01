@@ -168,10 +168,13 @@
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="/index.htm">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button class="">Grandes Entreprises<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/business/ge/accueil.html">PME</a></li>
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
             <nav class="pull-right hidden-phone hidden-tab">
               <ul class="top-menu-header-links right">
@@ -188,7 +191,7 @@
         <nav class="bottom-menu-header-links mobile display-phone display-tab">
           <div class="pull-left">
             <div class="logo">
-              <a href="../../index.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+              <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
             </div>
           </div>
           <div class="mobile-menu-button">
@@ -204,7 +207,7 @@
           <div class="row">
             <div class="pull-left">
               <div class="logo">
-                <a href="../../index.htm"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
               </div><!--
               --><nav class="bottom-menu-header-links">
               <ul class="main-menu">
@@ -249,82 +252,43 @@
 </div>
 </header>
 <!-- ./HEADER -->
-<section id="bg-pme-internet-accueil" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+<section id="bg-ge-internet-accueil" class="bg-header-ge section-layout right-orientation header-section-height section-shadow">
   <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li>Internet</li></ul>
+    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes Entreprises</a></li><li><span class="icon-right-arrow"></span></li><li>Internet</li></ul>
     <div class="row clearfix">
-      <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase"><strong>Connexions Internet</strong> pour les PME</h1>
-        <p class="section-text">Spécialiste de la fibre optique, Luxembourg Online a pour objectif de fournir la connexion Internet la plus performante possible à ses clients. Découvrez ci-dessous le détail de nos offres fibre.</p>
+      <div class="phone-12">
+        <h1 class="section-title lowercase white"><strong>Connexions Internet</strong></h1>
+        <p class="section-text white">Pour répondre à tous vos besoins professionnels, Luxembourg Online vous propose des solutions business sur-mesure, très performantes en matière de connectivité professionnelle.</p>
       </div>
       </div>
     </div>
   </section>
-  <section class="page-content">
+  <section id="ge-internet-fibre" class="bg-section right">
     <div class="container-wrapper">
       <div class="row">
-        <div class="subtitle-container">
-          <h2>nos offres fibre pour les PME :</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="flex">
-          <div class="phone-12 tab-6 lgdesk-4 tab-pr-10">
-              <div class="pme-solution offre">
-                <div class="header"><h3>Internet SDSL</h3></div>
-                <div style="background-image: url(../../images/pme/internet/offre-sdsl.jpg); height: 237px;" class="bg-header"></div>
-                <div class="content">
-                  <p>Une connexion SDSL pour un haut débit symétrique et une bande passante garantie.</p>
-                  <a href="./sdsl.html" class="btn-outline-inv-blue">En savoir plus</a>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 tab-pl-10 lgdesk-pr-10 tab-mb-20 lgdesk-mb-0">
-              <div class="pme-solution offre">
-                <div class="header"><h3>Internet Fibre</h3></div>
-                <div style="background-image: url(../../images/pme/internet/offre-fibre.jpg); height: 237px;" class="bg-header"></div>
-                <div class="content">
-                  <p>Une offre Internet ultra haut débit pour les indépendants et PME.</p>
-                  <a href="./fibre.html" class="btn-outline-inv-blue">En savoir plus</a>
-                </div>
-              </div>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 tab-pr-10 lgdesk-pr-0 lgdesk-pl-10">
-              <div class="pme-solution offre">
-                <div class="header"><h3>Internet Fibre symétrique</h3></div>
-                <div style="background-image: url(../../images/pme/internet/offre-fibresym.jpg); height: 237px;" class="bg-header"></div>
-                <div class="content">
-                  <p>Une offre Internet fiable et performante avec la fibre optique.</p>
-                  <a href="./fibre-sym.html" class="btn-outline-inv-blue">En savoir plus</a>
-                </div>
-              </div>
-          </div>
-          <div class="phone-12 tab-6 lgdesk-4 tab-pl-10 lgdesk-pl-10 lgdesk-pr-10 tab-mb-20 lgdesk-mb-0 lgdesk-mt-20">
-              <div class="pme-solution offre">
-                <div class="header"><h3>Options business</h3></div>
-                <div style="background-image: url(../../images/pme/internet/offre-buisness.jpg); height: 237px;" class="bg-header"></div>
-                <div class="content">
-                  <p>Des options prioritaires réservées aux clients professionnels.</p>
-                  <a href="./options-business.html" class="btn-outline-inv-blue">En savoir plus</a>
-                </div>
-              </div>
-          </div>
+        <div class="phone-12 desk-6 desk-pr-50 absolute-vertical-align-middle">
+          <h1 class="section-title lowercase"><span class="bold">Fibre optique</span></h1>
+          <p style="color: black;" class="section-text">En tant que technologie d’avenir, la fibre optique représente un grand pas pour les entreprises qui sont à la recherche d'une solution plus évolutive, plus rapide et avec une bande passante plus importante.</p>
+          <a href="./telephonie/lolcloud-phone.html" class="btn-outline-inv phone-mt-30">En savoir plus</a>
         </div>
       </div>
     </div>
+    <div class="phone-6 hidden-phone hidden-tab image">
+      <div style="background-image: url(../../images/ge/internet/bg-fibre.jpg);" class="bg-header tab-12"></div>
+    </div>
   </section>
-  <section style="background-image: url(../../images/pme/internet/bg-telecom.jpg);" class="bg-header">
+  <section id="ge-internet-vpn" class="bg-section right">
     <div class="container-wrapper">
       <div class="row">
-        <div class="txt phone-12 desk-6 pull-right">
-          <div style="background-color: white; padding: 25px 35px; margin: 20px 0;">
-            <h1 style="margin-top: 0;" class="section-title lowercase">Complétez <span class="bold">votre solution télécom globale</span></h1>
-            <p class="section-text">Une solution téléphonique sur-mesure pour votre entreprise : Que vous soyez une PME ou une grande entreprise, Luxembourg Online vous propose un système de central téléphonique virtuel, en fonction de vos besoins.</p>
-            <a href="../mobile/accueil.html" class="btn-outline-inv-blue">Voir nos offres Téléphonie</a>
-          </div>
+        <div class="phone-12 desk-6 desk-pr-50 absolute-vertical-align-middle">
+          <h1 class="section-title lowercase"><span class="bold">Fibre optique</span></h1>
+          <p style="color: black;" class="section-text">En tant que technologie d’avenir, la fibre optique représente un grand pas pour les entreprises qui sont à la recherche d'une solution plus évolutive, plus rapide et avec une bande passante plus importante.</p>
+          <a href="./telephonie/lolcloud-phone.html" class="btn-outline-inv phone-mt-30">En savoir plus</a>
         </div>
       </div>
+    </div>
+    <div class="phone-6 hidden-phone hidden-tab image">
+      <div style="background-image: url(../../images/ge/internet/bg-vpn.jpg);" class="bg-header tab-12"></div>
     </div>
   </section>
   <!-- FOOTER -->
