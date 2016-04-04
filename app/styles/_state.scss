@@ -432,8 +432,8 @@
   .bg-section.left{
     text-align: left;
     padding-left: 60px;
-    background-image: none;
-    image{
+    background-image: none !important;
+    .image{
       height: 100%; position: absolute; left: 0; top: 0;
       .bg-header{
         height: 100%;
