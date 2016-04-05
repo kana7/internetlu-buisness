@@ -79,6 +79,16 @@
 }
 
 @include media(tab){
+  .left{
+    .profit{
+      max-width: none;
+      margin: 0 0 25px;
+      text-align: left;
+      p{
+        text-align-last: left; 
+      }
+    }
+  }
   #select-text{
     ul{font-size: 85px;}
     .select-box{img{max-height: none;}}
@@ -201,10 +211,6 @@
 
   .subtitle-container{
     margin: 0 0 20px;
-    &.left{
-      text-align: left;
-      &:after{margin: 0;}
-    }
   }
 
   .comptype-select{
@@ -915,6 +921,10 @@
 
   .subtitle-container{
     margin: 0 0 50px;
+    &.left{
+      text-align: left;
+      &:after{margin: 0;}
+    }
     h2 {
       font-size: 1.5em;
       line-height: 22px;
