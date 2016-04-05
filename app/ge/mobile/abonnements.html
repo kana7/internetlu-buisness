@@ -105,7 +105,6 @@
       <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='gestion'>Gestion <span class="icon-right-arrow"></span></li>
       <li class="sous-nav">
         <ul class="menu">
           <li class="menu-item link"><a href="../divers/assistance.html">Assistance</a></li>
@@ -153,24 +152,22 @@
         <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
       </ul>
     </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="gestion">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Gestion</li>
-        <li class="menu-item"><a href="../gestion/accueil.html">Accueil Gestion</a></li>
-      </ul>
-    </div>
   </nav>
-  <!-- ./MOBILE MENU -->  <!-- WEBSITE -->
+  <!-- ./MOBILE MENU -->
+  <!-- WEBSITE -->
   <div id="siteWrap">
     <header>
       <div id="top-menu-header">
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="http://www.internet.lu/">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/business/ge/accueil.html">PME</a></li>
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
             <nav class="pull-right hidden-phone hidden-tab">
               <ul class="top-menu-header-links right">
@@ -203,7 +200,7 @@
           <div class="row">
             <div class="pull-left">
               <div class="logo">
-                <a href="../../index.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                <a href="../../index.htm"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
               </div><!--
               --><nav class="bottom-menu-header-links">
               <ul class="main-menu">
@@ -230,31 +227,25 @@
             <a href="../mobile/accueil.html">
               <div class="link">Mobile</div>
             </a>
-          </li><!--
-          --><li>
-          <div class="active-border"></div>
-          <a href="../gestion/accueil.html">
-            <div class="link">Gestion</div>
-          </a>
-        </li>
-      </ul>
-    </nav>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pull-right hidden-phone hidden-tab">
+      <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
+    </div>
   </div>
-  <div class="pull-right hidden-phone hidden-tab">
-    <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
-  </div>
-</div>
 </div>
 </div>
 </header>
 <!-- ./HEADER -->
-<section id="bg-pme-mobile-abo" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+<section id="bg-pme-mobile-abo-header" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
   <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Mobile</a></li><li><span class="icon-right-arrow"></span></li><li>Abonnements</li></ul>
+    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes Entreprises</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Mobile</a></li><li><span class="icon-right-arrow"></span></li><li>Abonnements</li></ul>
     <div class="row clearfix">
       <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase">Nos abonnements <strong>mobiles</strong></h1>
-        <p class="section-text">Avec LOL Mobile, les professionnels bénéficient d’une gamme de 3 forfaits conçus pour répondre à leurs besoins et habitudes de consommation mobiles au Luxembourg et en Europe.</p>
+        <h1 class="section-title lowercase white">Abonnements <strong>mobiles</strong></h1>
+        <p class="section-text white">Découvrez notre gamme d'offres en téléphonie mobile adaptée à vos besoins professionnels.</p>
       </div>
     </div>
   </div>
@@ -262,13 +253,18 @@
 <section class="section-shadow page-content">
   <div class="container-wrapper">
     <div class="row">
-      <div class="subtitle-container">
-        <h2>Des forfaits mobiles pour tous vos besoins :</h2>
+      <div class="phone-3">
+        <img src="" alt="">
       </div>
-      <div class="align-center offer-description black">
-        <p>Avec des forfaits mobiles voix et data adaptés à votre activité et à vos usages professionnels, la téléphonie mobile peut représenter <strong>un atout important au sein de votre entreprise</strong>. Luxembourg Online vous propose des abonnements et équipements adéquats pour répondre à tous vos besoins mobiles. </p>
-        <p>Du simple abonnement mobile sans communications, à l’abonnement incluant l’international, en passant par le <strong>forfait illimité au Grand-Duché</strong>, Luxembourg Online vous accompagne au quotidien avec des forfaits conçus spécialement pour les professionnels au Luxembourg et en Europe. </p>
-        <p>Avec nos différents forfaits voix et data, profitez de <strong>formules attractives adaptées aux besoins mobiles</strong> de toute votre entreprise. </p>
+      <div class="phone-9">
+        <div class="subtitle-container left">
+          <h2>Travailler plus efficacement grâce à une solution mobile adaptée :</h2>
+        </div>
+        <div class="offer-description black">
+          <p>Luxembourg Online met à votre disposition différentes formules d’abonnements voix et data. Découvrez leurs avantages et <strong>tarifs attractifs</strong>.</p>
+          <p>Luxembourg Online vous garantit une solution mobile qui vous convient et au meilleur tarif. Restez connecté en permanence avec vos employés, clients et fournisseurs, présents au Luxembourg ou en Europe. En tant qu’opérateur télécom innovant, Luxembourg Online fournit une technologie mobile qui vous permet de <strong>rester compétitif</strong>, en effectuant vos communications de n'importe où et à tout moment.</p>
+          <p>Avec les différents abonnements mobile voix et data de Luxembourg Online, découvrez des formules attractives, <strong>flexibles et adaptées</strong> aux besoins de votre entreprise. </p>
+        </div>
       </div>
     </div>
   </div>
@@ -399,34 +395,30 @@
 <section class="section-shadow page-content">
   <div class="container-wrapper">
     <div class="row">
-      <div class="subtitle-container">
+      <div class="subtitle-container left">
         <h2>Bénéfices :</h2>
       </div>
-      <div class="clearfix flex">
-        <div class="phone-12 tab-6 desk-4">
+      <div class="clearfixg">
+        <div class="phone-12 tab-6">
           <div class="profit">
-            <div class="icon-tools"></div>
-            <h3>Sur-mesure</h3>
-            <p>Luxembourg Online propose 3 solutions mobiles pour répondre à tous vos besoins professionnels en termes d’appels, SMS et Internet mobile au Luxembourg et en Europe.</p>
+            <h3>Flexibilité</h3>
+            <p>Luxembourg Online propose trois abonnements mobiles conçus spécialement pour répondre à tous vos besoins professionnels, en vous faisant bénéficier de conditions très avantageuses.</p>
           </div>
         </div>
-        <div class="phone-12 tab-6 desk-4">
+        <div class="phone-12 tab-6">
           <div class="profit">
-            <div class="icon-wifi"></div>
             <h3>Connectivité</h3>
-            <p>Au Luxembourg, comme depuis et vers l’étranger, vous pouvez utiliser vos volumes d'appels, SMS et données mobiles quand et où vous le souhaitez.</p>
+            <p>Nos forfaits mobiles vous assurent d’être toujours joignables. Selon l’abonnement choisi, bénéficiez d’appels et SMS nationaux gratuits et de 250 unités d’appels et de SMS vers et en Europe.</p>
           </div>
         </div>
-        <div class="phone-12 tab-6 desk-4">
+        <div class="phone-12 tab-6">
           <div class="profit">
-            <div class="icon-euro"></div>
             <h3>Rentabilité</h3>
-            <p>Avec les abonnements mobiles de Luxembourg Online, bénéficiez de différentes formules attractives et économisez sur vos coûts d’appels au Luxembourg et en Europe.</p>
+            <p>Avec les abonnements mobiles de Luxembourg Online, bénéficiez de formules attractives et économisez sur vos coûts d’appels au Luxembourg et en Europe.</p>
           </div>
         </div>
-        <div class="phone-12 tab-6 desk-4">
+        <div class="phone-12 tab-6">
           <div class="profit">
-            <div class="icon-interrogation"></div>
             <h3>Assistance</h3>
             <p>Une équipe d’experts est disponible pour vous renseigner, vous conseiller et vous suivre au quotidien dans votre solution télécom globale.</p>
           </div>
@@ -448,7 +440,7 @@
     </div>
   </div>
 </section>
-<section style="background-image: url(../../images/pme/gestion/bg-contact.jpg); height: 250px;" class="bg-header">
+<section style="background-image: url(../../images/ge/Contact_img_1055x232.jpg); height: 250px;" class="bg-header">
   <div class="container-wrapper">
     <div style="height: 100%;" class="row">
       <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>

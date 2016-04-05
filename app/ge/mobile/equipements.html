@@ -106,7 +106,6 @@
       <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='gestion'>Gestion <span class="icon-right-arrow"></span></li>
       <li class="sous-nav">
         <ul class="menu">
           <li class="menu-item link"><a href="../divers/assistance.html">Assistance</a></li>
@@ -154,12 +153,6 @@
         <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
       </ul>
     </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="gestion">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Gestion</li>
-        <li class="menu-item"><a href="../gestion/accueil.html">Accueil Gestion</a></li>
-      </ul>
-    </div>
   </nav>
   <!-- ./MOBILE MENU -->
   <!-- WEBSITE -->
@@ -169,10 +162,13 @@
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="http://www.internet.lu/">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/business/ge/accueil.html">PME</a></li>
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
             <nav class="pull-right hidden-phone hidden-tab">
               <ul class="top-menu-header-links right">
@@ -233,13 +229,7 @@
           <a href="../mobile/accueil.html">
             <div class="link">Mobile</div>
           </a>
-        </li><!--
-        --><li>
-        <div class="active-border"></div>
-        <a href="../gestion/accueil.html">
-          <div class="link">Gestion</div>
-        </a>
-      </li>
+        </li>
     </ul>
   </nav>
 </div>
@@ -251,13 +241,13 @@
 </div>
 </header>
 <!-- ./HEADER -->
-<section id="bg-pme-mobile-equip" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+<section id="bg-pme-mobile-mat-header" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
   <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Mobile</a></li><li><span class="icon-right-arrow"></span></li><li>Mobiles & accessoires</li></ul>
+    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes Entreprises</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Mobile</a></li><li><span class="icon-right-arrow"></span></li><li>Équipements</li></ul>
     <div class="row clearfix">
       <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase"><span class="bold">Mobiles</span> & accessoires</h1>
-        <p class="section-text">Téléphones classiques, Smartphones à prix mini, Smartphones les plus performants… Luxembourg Online vous propose une large gamme de téléphones portables et Smartphones pour répondre à tous vos besoins en téléphonie mobile.</p>
+        <h1 class="section-title lowercase white">Abonnements <strong>mobiles</strong></h1>
+        <p class="section-text white">Découvrez notre gamme d'offres en téléphonie mobile adaptée à vos besoins professionnels.</p>
       </div>
     </div>
   </div>

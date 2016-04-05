@@ -1782,7 +1782,7 @@ span[class^=icon-]
     text-align: center;
   }
 }
-.bg-header-ge{
+.bg-header-ge:not(.not-center){
   .section-text{
     max-width: 550px;
     margin: 0 auto;

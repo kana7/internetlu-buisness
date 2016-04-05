@@ -201,6 +201,10 @@
 
   .subtitle-container{
     margin: 0 0 20px;
+    &.left{
+      text-align: left;
+      &:after{margin: 0;}
+    }
   }
 
   .comptype-select{
