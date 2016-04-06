@@ -3025,9 +3025,13 @@ h2.contact-title {
 .header-dropdown{
     position: relative;
     display: inline-block;
-        padding: 0;
+    padding: 0;
+    width: 145px;
     button{
         position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
         z-index: 2;
         outline: 0;
         background: none;
@@ -3047,6 +3051,7 @@ h2.contact-title {
     .drop{
         display: none;
         position: absolute;
+        width: 100%;
         z-index: 1;
         background-color: darken($blue, 3%);
         border-top: 1px solid $blue;
