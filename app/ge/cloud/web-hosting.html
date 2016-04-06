@@ -105,7 +105,6 @@
       <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='gestion'>Gestion <span class="icon-right-arrow"></span></li>
       <li class="sous-nav">
         <ul class="menu">
           <li class="menu-item link"><a href="../divers/assistance.html">Assistance</a></li>
@@ -153,24 +152,22 @@
         <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
       </ul>
     </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="gestion">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Gestion</li>
-        <li class="menu-item"><a href="../gestion/accueil.html">Accueil Gestion</a></li>
-      </ul>
-    </div>
   </nav>
-  <!-- ./MOBILE MENU -->  <!-- WEBSITE -->
+  <!-- ./MOBILE MENU -->
+  <!-- WEBSITE -->
   <div id="siteWrap">
     <header>
       <div id="top-menu-header">
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="http://www.internet.lu/">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/business/ge/accueil.html">PME</a></li>
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
             <nav class="pull-right hidden-phone hidden-tab">
               <ul class="top-menu-header-links right">
@@ -183,11 +180,12 @@
           </div>
         </div>
       </div>
+
       <div id="bottom-menu-header">
         <nav class="bottom-menu-header-links mobile display-phone display-tab">
           <div class="pull-left">
             <div class="logo">
-              <a href="../../index.htm"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+              <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
             </div>
           </div>
           <div class="mobile-menu-button">
@@ -203,7 +201,7 @@
           <div class="row">
             <div class="pull-left">
               <div class="logo">
-                <a href="../../index.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
               </div><!--
               --><nav class="bottom-menu-header-links">
               <ul class="main-menu">
@@ -219,42 +217,36 @@
                   <div class="link">Téléphonie</div>
                 </a>
               </li><!--
-              --><li class="active">
-              <div class="active-border"></div>
-              <a href="../cloud/accueil.html">
-                <div class="link">Cloud</div>
-              </a>
-            </li><!--
-            --><li>
+            --><li class="active">
             <div class="active-border"></div>
-            <a href="../mobile/accueil.html">
-              <div class="link">Mobile</div>
+            <a href="../cloud/accueil.html">
+              <div class="link">Cloud</div>
             </a>
           </li><!--
           --><li>
           <div class="active-border"></div>
-          <a href="../gestion/accueil.html">
-            <div class="link">Gestion</div>
+          <a href="../mobile/accueil.html">
+            <div class="link">Mobile</div>
           </a>
         </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="pull-right hidden-phone hidden-tab">
-    <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
-  </div>
+    </ul>
+  </nav>
+</div>
+<div class="pull-right hidden-phone hidden-tab">
+  <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
+</div>
 </div>
 </div>
 </div>
 </header>
 <!-- ./HEADER -->
-<section id="bg-pme-cloud-host"  class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+<section id="bg-ge-cloud-host-header" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
   <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Cloud</a></li><li><span class="icon-right-arrow"></span></li><li>Web hosting</li></ul>
+    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes entreprises</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Cloud</a></li><li><span class="icon-right-arrow"></span></li><li>Web hosting</li></ul>
     <div class="row clearfix">
       <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase"><span class="extra-bold">Web</span> hosting</h1>
-        <p class="section-text">Selon les besoins de votre entreprise et leur évolution, Luxembourg Online vous offre des solutions sur-mesure pour héberger et développer vos sites et services web.</p>
+        <h1 class="section-title lowercase white"><span class="extra-bold">Web</span> hosting</h1>
+        <p class="section-text white">Pour l’hébergement de vos sites web, Luxembourg Online vous garantit une infrastructure moderne et sécurisée, ainsi que de précieux conseils pour le développement de vos pages web.</p>
       </div>
     </div>
   </div>
@@ -262,318 +254,211 @@
 <section class="section-shadow page-content">
   <div class="container-wrapper">
     <div class="row">
-      <div class="subtitle-container">
-        <h2>Hébergement web pour professionnels :</h2>
+      <div class="phone-12 lgdesk-9 pull-right">
+        <div class="subtitle-container left">
+          <h2> Hébergement web sur des serveurs haute-disponibilité</h2>
+        </div>
+        <div class="offer-description black">
+          <p>Luxembourg Online propose aux professionnels une solution d’hébergement web reposant sur <strong>la confiance, la proximité et la flexibilité</strong>, selon les évolutions de leur entreprise. Qu’il s’agisse d’un site web accueillant des milliers de visiteurs chaque jour ou tout simplement d’un site web qui requiert des configurations de serveurs spécifiques, les professionnels obtiennent ce qu’ils recherchent sans devoir revoir leurs exigences.</p>
+          <p>La location et la maintenance des sites web sont gérées au Luxembourg par notre équipe d’experts, dans une <strong>infrastructure moderne et professionnelle</strong>. Luxembourg Online s’occupe pour vous de l’hébergement de vos solutions web, avec une forte exigence de performance et de fiabilité de ses serveurs. Vos sites web sont hébergés dans des conditions optimales en terme de disponibilité et selon des mesures de sécurité élevées.</p>
+          <p>Luxembourg Online accompagne également leurs clients dans le développement des pages web, leur mise en place et leur administration.</p>
+        </div>
       </div>
-      <div  class="align-center offer-description black">
-        <p>Confiez l’hébergement de vos sites web à un opérateur télécom en qui vous pouvez avoir confiance ! Luxembourg Online vous garantit <strong>une infrastructure moderne et sécurisée</strong>, ainsi qu’un support technique de qualité de la part de nos équipes. L’hébergement web de Luxembourg Online vous permet de mettre en ligne votre site web afin qu’il soit mis à disposition du grand public sur Internet. Si vous recherchez <strong>la stabilité et la sécurité pour tous vos sites web</strong>, la solution d’hébergement web de Luxembourg Online est votre meilleure option.</p>
-        <p>Nos serveurs, <strong>situés au Luxembourg</strong>, offrent la plus haute disponibilité et répondent aux normes de sécurité les plus élevées : approvisionnement électrique dédoublé, connectivité sur-mesure, contrôles de sécurité de l’installation (climatisation, ventilation, accès) garantissant une disponibilité optimale.</p>
-        <p>Luxembourg Online vous propose également <strong>des solutions et conseils pour le développement</strong> de vos pages web, leur mise en place et leur administration.</p>
+      <div class="display-lgdesk phone-2">
+        <img style="max-width: 100%; width: auto; height: auto;" src="../../images/ge/cloud/Cloud_Webhosting.jpg" alt="cloud hosting">
       </div>
     </div>
   </div>
 </section>
-<style>
-.offer-table .offer-table-item:not(.light){padding: 10px 15px;}
-.offer-table-item>div:first-child{font-size: 1.3em; margin-bottom: 8px;}
-.offer-table-item>div:last-child{font-size: 0.8em;}
-.offer-table span[class^="icon-"]:not(.upload){color: #004994; font-size: 1.1em; position: relative; top: 2px;}
-</style>
-<section class="section-shadow phone-pb-30 phone-pt-30 background-lightblue">
+<section class="section-shadow page-content">
   <div class="container-wrapper">
     <div class="row">
-      <div class="subtitle-container">
-        <h2>nos solutions sur mesure pour votre présence en ligne :</h2>
+      <div class="subtitle-container left">
+        <h2>Vos bénéfices</h2>
       </div>
-      <div class="clearfix">
-        <div class="offer-table">
-          <div class="offer-table-col phone-12 tab-6 desk-3">
-            <div class="offer-table-header"><span class="normal">Package</span> 500 MB</div>
-            <div class="offer-table-item"><div>500 MB</div><div class="grey uppercase">espace web</div></div>
-            <div class="offer-table-item"><div>5 GB</div><div class="grey uppercase">trafic mensuel</div></div>
-            <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
-            <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
-            <div class="offer-table-footer fix-height">
-              <div class="offer-price">
-                <div>,00€<span class="exponent">1</span></div>
-                10<span>/mois</span>
-              </div>
-            </div>
-          </div><!--
-          --><div class="offer-table-col phone-12 tab-6 desk-3">
-          <div class="offer-table-header"><span class="normal">Package</span> 2 GB</div>
-          <div class="offer-table-item"><div>2 GB</div><div class="grey uppercase">espace web</div></div>
-          <div class="offer-table-item"><div>20 GB</div><div class="grey uppercase">trafic mensuel</div></div>
-          <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
-          <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
-          <div class="offer-table-footer fix-height">
-            <div class="offer-price">
-              <div>,00€<span class="exponent">1</span></div>
-              20<span>/mois</span>
-            </div>
-          </div>
-        </div><!--
-        --><div class="offer-table-col phone-12 tab-6 desk-3">
-        <div class="offer-table-header"><span class="normal">Package</span> 5 GB</div>
-        <div class="offer-table-item"><div>5 GB</div><div class="grey uppercase">espace web</div></div>
-        <div class="offer-table-item"><div>50 GB</div><div class="grey uppercase">trafic mensuel</div></div>
-        <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
-        <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
-        <div class="offer-table-footer fix-height">
-          <div class="offer-price">
-            <div>,00€<span class="exponent">1</span></div>
-            45<span>/mois</span>
-          </div>
-        </div>
-      </div><!--
-      --><div class="offer-table-col phone-12 tab-6 desk-3">
-      <div class="offer-table-header"><span class="normal">Package</span> 10 GB</div>
-      <div class="offer-table-item"><div>100 GB</div><div class="grey uppercase">espace web</div></div>
-      <div class="offer-table-item"><div>100 GB</div><div class="grey uppercase">trafic mensuel</div></div>
-      <div class="offer-table-item light"><span class="icon-check-ico"></span>Antivirus / anti-spam</div>
-      <div class="offer-table-item"><div>25.00 €</div><div class="grey uppercase">initialisation</div></div>
-      <div class="offer-table-footer fix-height">
-        <div class="offer-price">
-          <div style="right: 35px;">,00€<span class="exponent">1</span></div>
-          125<span>/mois</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-note">1) Prix hors taxes.</div>
-</div>
-<div class="clearfix">
-  <div class="dropdown align-center">
-    <h2 data-trigger="" style="text-align: center; font-size: 1.5em; font-weight: 600;" class="section-subtitle divers-subtitle"><span style="margin-right: 10px;" class="icon-right-arrow"></span><span style="text-decoration: underline;">Caractéristiques :</span></h2>
-    <div class="clearfix phone-mt-5">
-      <div class="offer-table striped">
-        <div class="offer-table-col phone-12 tab-6 desk-3">
-          <div class="offer-table-item"><div>10 (30)</div><div class="grey uppercase">adresses email (alias)</div></div>
-          <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
-          <div class="offer-table-item"><div>10 (30)</div><div class="grey uppercase">sous-domaines</div></div>
-          <div class="offer-table-item"><div>2</div><div class="grey uppercase">accès ftp</div></div>
-          <div class="offer-table-item light"><span class="icon-x-icone"></span>PHP</div>
-          <div class="offer-table-item"><div>0</div><div class="grey uppercase">mysql</div></div>
-          <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
-          <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
-          <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
-        </div><!--
-        --><div class="offer-table-col phone-12 tab-6 desk-3">
-        <div class="offer-table-item"><div>25 (75)</div><div class="grey uppercase">adresses email (alias)</div></div>
-        <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
-        <div class="offer-table-item"><div>25 (75)</div><div class="grey uppercase">sous-domaines</div></div>
-        <div class="offer-table-item"><div>5</div><div class="grey uppercase">accès ftp</div></div>
-        <div class="offer-table-item light"><span class="icon-check-ico"></span>PHP</div>
-        <div class="offer-table-item"><div>2</div><div class="grey uppercase">mysql</div></div>
-        <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
-        <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
-        <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
-      </div><!--
-      --><div class="offer-table-col phone-12 tab-6 desk-3">
-      <div class="offer-table-item"><div>50 (150)</div><div class="grey uppercase">adresses email (alias)</div></div>
-      <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
-      <div class="offer-table-item"><div>50 (150)</div><div class="grey uppercase">sous-domaines</div></div>
-      <div class="offer-table-item"><div>15</div><div class="grey uppercase">accès ftp</div></div>
-      <div class="offer-table-item light"><span class="icon-check-ico"></span>PHP</div>
-      <div class="offer-table-item"><div>3</div><div class="grey uppercase">mysql</div></div>
-      <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
-      <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
-      <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
-    </div><!--
-    --><div class="offer-table-col phone-12 tab-6 desk-3">
-    <div class="offer-table-item"><div>100 (300)</div><div class="grey uppercase">adresses email (alias)</div></div>
-    <div class="offer-table-item light"><span class="icon-check-ico"></span>Nom de domaine</div>
-    <div class="offer-table-item"><div>100 (300)</div><div class="grey uppercase">sous-domaines</div></div>
-    <div class="offer-table-item"><div>30</div><div class="grey uppercase">accès ftp</div></div>
-    <div class="offer-table-item light"><span class="icon-check-ico"></span>PHP</div>
-    <div class="offer-table-item"><div>5</div><div class="grey uppercase">mysql</div></div>
-    <div class="offer-table-item light"><span class="icon-check-ico"></span>Statistique en ligne</div>
-    <div class="offer-table-item light"><span class="icon-check-ico"></span>Fonction back-up</div>
-    <div class="offer-table-item light"><span class="icon-check-ico"></span>Accessibilité IPV4/IPV6</div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="section-shadow phone-pb-30 phone-pt-30">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="subtitle-container">
-        <h2>Bénéfices :</h2>
-      </div>
-      <div class="clearfix flex">
-        <div class="phone-12 tab-6 desk-4">
+      <div class="clearfix left flex">
+        <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
           <div class="profit">
-            <div class="icon-shield"></div>
             <h3>Sécurité</h3>
-            <p>Notre solution d’hébergement web vous offre une surveillance de vos données 24 heures sur 24 par notre équipe d'experts.</p>
+            <p>Pour la protection de vos données 24 h/24, tous les moyens sont mis en oeuvre pour assurer la confidentialité et la sécurité de vos données professionnelles.</p>
           </div>
         </div>
-        <div class="phone-12 tab-6 desk-4">
+        <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
           <div class="profit">
-            <div class="icon-backup"></div>
+            <h3>Personnalisation</h3>
+            <p>Pour compléter votre solution d’hébergement web, une gamme de services supplémentaires est disponible avec des options anti-spam, accès FTP, back-up, accessibilité ipv4/ipv6 etc.</p>
+          </div>
+        </div>
+        <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
+          <div class="profit">
             <h3>Sauvegarde</h3>
             <p>Luxembourg Online met à votre disposition une fonctionnalité de back-up pour sauvegarder toutes vos données hébergées.</p>
           </div>
         </div>
-        <div class="phone-12 tab-6 desk-4">
+        <div class="phone-12 tab-6 tab-pr-15 desk-pl-40">
           <div class="profit">
-            <div class="icon-tools"></div>
-            <h3>Personnalisation</h3>
-            <p>Votre solution globale peut être améliorée grâce à une gamme de services supplémentaires tels que des options anti-spam, accès FTP,, accessibilité ipv4/ipv6 etc.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 desk-4">
-          <div class="profit">
-            <div class="icon-clock-icone"></div>
             <h3>Disponibilité</h3>
-            <p>Nos serveurs, situés au Luxembourg, offrent la plus haute disponibilité dans des conditions optimales avec contrôle de température et mesures de sécurité optimales.</p>
+            <p>Situés au Luxembourg, nos serveurs assurent la plus haute disponibilité avec un contrôle de température et des mesures de sécurité optimales. </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section style="background-image: url(../../images/pme/gestion/bg-contact.jpg); height: 250px;" class="bg-header">
+<section class="section-shadow page-content background-blue">
+  <div class="container-wrapper">
+    <div class="row align-center">
+      <div class="subtitle-container left white">
+        <h2>Caractéristiques</h2>
+      </div>
+        <ul class="function-list white align-left phone-12">
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Nom de domaine</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Statistique en ligne</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> MySQL</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Accessibilité IPV4/IPV6</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Fonction back-up</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> PHP</li>
+        </ul>
+    </div>
+  </div>
+</section>
+<section style="background-image: url(../../images/ge/Contact_img_1055x232.jpg); height: 250px;" class="bg-header">
   <div class="container-wrapper">
     <div style="height: 100%;" class="row">
       <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>
     </div>
   </div>
 </section>
-<!-- FOOTER -->
-<footer>
-  <div id="social-links">
-    <div class="container-wrapper">
-      <div class="row">
-        <div class="subtitle-container grey">
-          <h2>Retrouvez Luxembourg Online sur :</h2>
+  <!-- FOOTER -->
+  <footer>
+    <div id="social-links">
+      <div class="container-wrapper">
+        <div class="row">
+          <div class="subtitle-container grey">
+            <h2>Retrouvez Luxembourg Online sur :</h2>
+          </div>
+          <div class="clearfix tab-mt-30 desk-mt-0">
+            <nav class="align-center">
+              <ul class="center">
+                <li>
+                  <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
+                    <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
+                    <span class="brand-name">LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
+                    <div class="social-icon facebook"><span class="icon-facebook"></span></div>
+                    <span class="brand-name">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.online.lu/" target="blank_">
+                    <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
+                    <span class="brand-name">Online.lu</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="clearfix tab-mt-30 desk-mt-0">
-          <nav class="align-center">
-            <ul class="center">
+      </div>
+    </div>
+    <div class="hidden-phone hidden-tab hidden-desk">
+      <div id="contact">
+        <div class="container-wrapper">
+          <div class="row">
+            <div class="text">Contactez-nous : </div>
+            <ul class="contact-infos spread">
               <li>
-                <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
-                  <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
-                  <span class="brand-name">LinkedIn</span>
-                </a>
+                <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
               </li>
               <li>
-                <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
-                  <div class="social-icon facebook"><span class="icon-facebook"></span></div>
-                  <span class="brand-name">Facebook</span>
-                </a>
+                <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
               </li>
               <li>
-                <a href="http://www.online.lu/" target="blank_">
-                  <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
-                  <span class="brand-name">Online.lu</span>
-                </a>
+                <span class="icon-internet-ico"></span><a href="divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="hidden-phone hidden-tab hidden-desk">
-    <div id="contact">
-      <div class="container-wrapper">
-        <div class="row">
-          <div class="text">Contactez-nous : </div>
-          <ul class="contact-infos spread">
-            <li>
-              <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
-            </li>
-            <li>
-              <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
-            </li>
-            <li>
-              <span class="icon-internet-ico"></span><a href="divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
-      <div class="container-wrapper">
-        <div class="row">
-          <a class="help-link" href="divers/assistance.html">
-            <span class="icon-info-icone"></span>
-            <p>Besoin d'aide ? Accédez à l’espace assistance de Luxembourg Online (FAQ, informations, guides et documents utiles, contrats, divers)</p>
-            <span class="icon-right-arrow"></span>
-          </a>
-          <div class="separator hidden-phone hidden-tab"></div>
-        </div>
-        <div class="row hidden-phone hidden-tab">
-          <div class="footer-top-links">
-            <h4>internet : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="internet/offres.html">Nos abonnements</a></li>
-                <li><a href="promos/fibre.html">LOL FIBRE 100</a></li>
-                <li><a href="internet/equipements.html">Équipements</a></li>
-                <li><a href="internet/equipements.html">S'abonner</a></li>
-              </ul>
-            </nav>
+      <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
+        <div class="container-wrapper">
+          <div class="row">
+            <a class="help-link" href="divers/assistance.html">
+              <span class="icon-info-icone"></span>
+              <p>Besoin d'aide ? Accédez à l’espace assistance de Luxembourg Online (FAQ, informations, guides et documents utiles, contrats, divers)</p>
+              <span class="icon-right-arrow"></span>
+            </a>
+            <div class="separator hidden-phone hidden-tab"></div>
           </div>
-          <div class="footer-top-links">
-            <h4>téléphonie : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="telephonie/tarifs.html">Abonnement</a></li>
-                <li><a href="telephonie/equipements.html">Tarifs détaillés</a></li>
-                <li><a href="telephonie/equipements.html">Équipements</a></li>
-                <li><a href="internet/equipements.html">S'abonner</a></li>
-              </ul>
-            </nav>
+          <div class="row hidden-phone hidden-tab">
+            <div class="footer-top-links">
+              <h4>internet : </h4>
+              <nav>
+                <ul class="links">
+                  <li><a href="internet/offres.html">Nos abonnements</a></li>
+                  <li><a href="promos/fibre.html">LOL FIBRE 100</a></li>
+                  <li><a href="internet/equipements.html">Équipements</a></li>
+                  <li><a href="internet/equipements.html">S'abonner</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-top-links">
+              <h4>téléphonie : </h4>
+              <nav>
+                <ul class="links">
+                  <li><a href="telephonie/tarifs.html">Abonnement</a></li>
+                  <li><a href="telephonie/equipements.html">Tarifs détaillés</a></li>
+                  <li><a href="telephonie/equipements.html">Équipements</a></li>
+                  <li><a href="internet/equipements.html">S'abonner</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-top-links">
+              <h4>Cloud : </h4>
+              <nav>
+                <ul class="links">
+                  <li><a href="tv/offres.html">Abonnement</a></li>
+                  <li><a href="tv/equipements.html">Chaînes</a></li>
+                  <li><a href="promos/offreloltv.html">Équipements</a></li>
+                  <li><a href="promos/offreloltv.html">S'abonner</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-top-links">
+              <h4>mobile : </h4>
+              <nav>
+                <ul class="links">
+                  <li><a href="mobile/abonnements.html">Offre spéciale fibre</a></li>
+                  <li><a href="mobile/equipements.html">TV - installation offerte</a></li>
+                  <li><a href="mobile/equipements.html">Offre spéciale II</a></li>
+                  <li><a href="mobile/equipements.html">Offre spéciale Mobile</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="footer-top-links">
-            <h4>Cloud : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="tv/offres.html">Abonnement</a></li>
-                <li><a href="tv/equipements.html">Chaînes</a></li>
-                <li><a href="promos/offreloltv.html">Équipements</a></li>
-                <li><a href="promos/offreloltv.html">S'abonner</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-top-links">
-            <h4>mobile : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="mobile/abonnements.html">Offre spéciale fibre</a></li>
-                <li><a href="mobile/equipements.html">TV - installation offerte</a></li>
-                <li><a href="mobile/equipements.html">Offre spéciale II</a></li>
-                <li><a href="mobile/equipements.html">Offre spéciale Mobile</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
-          <div class="separator"></div>
-          <div class="phone-12">
-            <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
-            <nav class="hidden-phone">
-              <ul class="footer-bottom-links">
-                <li>© Luxembourg Online S.A. – 2015, tous droits réservés</li>
-                <li><a href="documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
-                <li><a href="divers/emploi.html">Offres d'emploi</a></li>
-                <li><a href="divers/plan.html">Plan du site</a></li>
-                <li><a href="divers/contact.html">Contact</a></li>
-              </ul>
-            </nav>
+          <div class="row">
+            <div class="separator"></div>
+            <div class="phone-12">
+              <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
+              <nav class="hidden-phone">
+                <ul class="footer-bottom-links">
+                  <li>© Luxembourg Online S.A. – 2015, tous droits réservés</li>
+                  <li><a href="documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
+                  <li><a href="divers/emploi.html">Offres d'emploi</a></li>
+                  <li><a href="divers/plan.html">Plan du site</a></li>
+                  <li><a href="divers/contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<!--              ./FOOTER               -->
+  </footer>
+  <!--              ./FOOTER               -->
 </div>
 <!-- ./WEBSITE -->
 
@@ -589,9 +474,8 @@
 
 <!-- build:js(.tmp) ../../scripts/main.js -->
 <script src="../../scripts/main.js"></script>
-<!-- endbuild -->
-
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript" src="../../scripts/analytics.js"></script>
+<!-- endbuild -->
 </body>
 </html>
