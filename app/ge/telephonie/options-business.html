@@ -105,7 +105,6 @@
       <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
       <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='gestion'>Gestion <span class="icon-right-arrow"></span></li>
       <li class="sous-nav">
         <ul class="menu">
           <li class="menu-item link"><a href="../divers/assistance.html">Assistance</a></li>
@@ -153,12 +152,6 @@
         <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
       </ul>
     </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="gestion">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Gestion</li>
-        <li class="menu-item"><a href="../gestion/accueil.html">Accueil Gestion</a></li>
-      </ul>
-    </div>
   </nav>
   <!-- ./MOBILE MENU -->
   <!-- WEBSITE -->
@@ -168,10 +161,13 @@
         <div class="container-wrapper">
           <div class="row">
             <nav class="pull-left">
-              <ul class="top-menu-header-links left">
-                <li><a href="http://www.internet.lu/">Particuliers</a></li>
-                <li><a href="http://www.internet.lu/business/" target="blank_">Business</a></li>
-              </ul>
+              <div class="header-dropdown top-menu-header-links left">
+                <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
+                <ul class="drop">
+                  <li><a href="http://www.internet.lu/business/ge/accueil.html">PME</a></li>
+                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                </ul>
+              </div>
             </nav>
             <nav class="pull-right hidden-phone hidden-tab">
               <ul class="top-menu-header-links right">
@@ -189,7 +185,7 @@
         <nav class="bottom-menu-header-links mobile display-phone display-tab">
           <div class="pull-left">
             <div class="logo">
-              <a href="../../index.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+              <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
             </div>
           </div>
           <div class="mobile-menu-button">
@@ -205,17 +201,17 @@
           <div class="row">
             <div class="pull-left">
               <div class="logo">
-                <a href="../../index.htm"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
               </div><!--
               --><nav class="bottom-menu-header-links">
               <ul class="main-menu">
-                <li class="active">
+                <li>
                   <div class="active-border"></div>
                   <a href="../internet/accueil.html">
                     <div class="link">Internet</div>
                   </a>
                 </li><!--
-                --><li>
+                --><li class="active">
                 <div class="active-border"></div>
                 <a href="../telephonie/accueil.html">
                   <div class="link">Téléphonie</div>
@@ -232,13 +228,7 @@
           <a href="../mobile/accueil.html">
             <div class="link">Mobile</div>
           </a>
-        </li><!--
-        --><li>
-        <div class="active-border"></div>
-        <a href="../gestion/accueil.html">
-          <div class="link">Gestion</div>
-        </a>
-      </li>
+        </li>
     </ul>
   </nav>
 </div>
@@ -250,65 +240,81 @@
 </div>
 </header>
 <!-- ./HEADER -->
-<section id="bg-pme-internet-opt" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+<section id="bg-ge-tel-options-header" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
   <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Internet</a></li><li><span class="icon-right-arrow"></span></li><li>Options business</li></ul>
+    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes entreprises</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Téléphonie</a></li><li><span class="icon-right-arrow"></span></li><li>Options business</li></ul>
     <div class="row clearfix">
       <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase">Options <span class="extra-bold">business</span></h1>
-        <p class="section-text">Pour bénéficier d’une qualité de service irréprochable, Luxembourg Online vous propose ses options Business.</p>
+        <h1 class="section-title lowercase white">Options<span class="extra-bold"> business</span></h1>
+        <p class="section-text white">Réservées aux clients professionnels, ces options business sont disponibles pour toute souscription à une de nos solutions de téléphonie fixe.</p>
       </div>
     </div>
   </div>
 </section>
-<section class="page-content">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="subtitle-container">
-        <h2>La garantie d’une qualité de service optimale :</h2>
-      </div>
-      <div class="align-center offer-description black">
-        <p>Les options business de Luxembourg Online sont disponibles sur demande, pour toutes les petites et moyennes entreprises. Grâce à ces options supplémentaires, vous bénéficiez d’<strong>un service prioritaire</strong>, avec des délais de réponse et d’interventions raccourcis, ainsi que de <strong>nombreux avantages techniques et tarifaires.</strong></p>
-        <p>Ces services, destinés uniquement aux professionnels, sont disponibles de manière optionnelle avec tout abonnement haut débit : choisissez la formule qui vous convient parmi nos deux options business.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-shadow page-content background-lightblue">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="clearfix">
-        <div class="phone-12 desk-6 tab-pr-50 desk-pl-30 lgdesk-pr-50 tab-pl-50">
-          <div class="pme-solution offre desk-mb-0">
-            <div class="header phone-pl-0"><h3 class="align-center">Option business 8h</h3></div>
-            <div class="content">
-              <p>1 adresse IP fixe gratuite</p>
-              <p>Tickets helpdesk prioritaires</p>
-              <p>Accès au suivi des tickets techniques</p>
-              <p>Tarifs préférentiels pour les appels internationaux</p>
-              <p>Dépannage en 8h ouvrables</p>
-              <div class="border-blue pull-right">89€/mois</div>
-            </div>
-          </div>
+<section class="section-shadow page-content">
+  <div class="container-wrapper options-business">
+    <div class="row phone-mb-10 desk-mb-30">
+      <div class="phone-12 desk-9 desk-pl-50 pull-right">
+        <div class="subtitle-container left phone-mb-30">
+          <h2>Conferencing system</h2>
         </div>
-        <div class="phone-12 desk-6 tab-pl-50 desk-pr-30 lgdesk-pr-50 tab-pr-50">
-          <div class="pme-solution offre phone-mb-0 desk-mb-0">
-            <div class="header phone-pl-0"><h3 class="align-center">Option business 4h</h3></div>
-            <div class="content">
-              <p>1 adresse IP fixe gratuite</p>
-              <p>Tickets helpdesk prioritaires</p>
-              <p>Accès au suivi des tickets techniques</p>
-              <p>Tarifs préférentiels pour les appels internationaux</p>
-              <p>Dépannage en 4h ouvrables</p>
-              <div class="border-blue pull-right">139€/mois</div>
-            </div>
-          </div>
+        <div class="offer-description black">
+          <p>Vous souhaitez organiser une conférence téléphonique ? Nous vous communiquons des codes d’accès personnels à partager avec l’ensemble des participants, indépendamment de leur situation géographique. Il leur suffira, au moment de la conférence, de composer le  numéro de la conférence, suivi du code communiqué pour accéder à la conversation.</p>
+          <p>Avec cette option, <strong>l’organisation à distance de vos réunions est simplifiée</strong>, immédiate et ne nécessite aucun déplacement. Votre salle de conférence virtuelle est accessible <strong>24h/24 et 7j/7</strong>.</p>
         </div>
       </div>
+      <div class="display-desk display-lgdesk phone-3">
+        <img style="max-width: 100%; width: auto; height: auto;" src="../../images/ge/telephonie/img-optionsbusiness1.jpg" alt="telephonie sip">
+      </div>
+    </div>
+    <div class="row phone-mb-20 tab-mb-30 desk-mb-30">
+      <div class="phone-12 desk-9 desk-pl-50 pull-right">
+        <div class="subtitle-container left phone-mb-30">
+          <h2>Call center</h2>
+        </div>
+        <div class="offer-description black">
+          <p>Accessible de n’importe où, l’option Call Center vous garantit une <strong>gestion simplifiée</strong> de votre central téléphonique virtuel IP et des fonctions pratiques.</p>
+          <p>Un produit à votre service : <strong>innovation et fonctionnalités</strong> avancées pour une gestion détaillée de l’ensemble de vos appels via notre solution PBX virtuel IP.</p>
+        </div>
+      </div>
+      <div class="display-desk display-lgdesk phone-3">
+        <img style="max-width: 100%; width: auto; height: auto;" src="../../images/ge/telephonie/img-optionsbusiness2.jpg" alt="telephonie sip">
+      </div>
+    </div>
+    <div class="row">
+      <div class="phone-12 desk-9 desk-pl-50 pull-right">
+        <div class="subtitle-container left phone-mb-30">
+          <h2>CTI (Couplage téléphonie informatique)</h2>
+        </div>
+        <div class="offer-description black">
+          <p>L’option CTI permet l’interaction entre les réseaux informatiques des entreprises et leurs systèmes téléphoniques. Cet outil offre <strong>un avantage concurrentiel</strong> au sein des entreprises car il vous fait gagner un temps précieux lors de l'interaction avec les clients et collaborateurs. Les professionnels peuvent effectuer et recevoir des appels à partir de leur ordinateur en un simple clic. Le CTI permet donc d’organiser la réception et la gestion des appels téléphoniques directement sur votre poste de travail.</p>
+        </div>
+      </div>
+      <div class="display-desk display-lgdesk phone-3">
+        <img style="max-width: 100%; width: auto; height: auto;" src="../../images/ge/telephonie/img-optionsbusiness3.jpg" alt="telephonie sip">
+      </div>
     </div>
   </div>
 </section>
-<section style="background-image: url(../../images/pme/gestion/bg-contact.jpg); height: 250px;" class="bg-header">
+<section class="section-shadow page-content background-blue">
+  <div class="container-wrapper">
+    <div class="row align-center">
+      <div class="subtitle-container left white">
+        <h2>Fonctionnalités incluses</h2>
+      </div>
+        <ul style="font-size: 1.37em;" class="function-list white align-left">
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Statistiques d'appels</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Identification des clients</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Boîte vocale et répondeur</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Enregistrement des conversations</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Fonction de rappel</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Accès rapide aux messages vocaux sans contrainte de lieu</li>
+          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Liste des appels totaux ou par poste</li>
+        </ul>
+    </div>
+  </div>
+</section>
+<section style="background-image: url(../../images/ge/Contact_img_1055x232.jpg); height: 250px;" class="bg-header">
   <div class="container-wrapper">
     <div style="height: 100%;" class="row">
       <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>

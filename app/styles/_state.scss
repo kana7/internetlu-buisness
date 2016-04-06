@@ -85,7 +85,7 @@
       margin: 0 0 25px;
       text-align: left;
       p{
-        text-align-last: left; 
+        text-align-last: left;
       }
     }
   }
@@ -825,6 +825,18 @@
   .table-tarifs{
     &.table-tarifs-display-half{
       width: 50%;
+    }
+  }
+  .options-business{
+    .subtitle-container{
+      margin: 0 0 50px;
+      &.left{
+        text-align: left;
+        &:after{
+          left: 0;
+          margin: 0;
+        }
+      }
     }
   }
 }

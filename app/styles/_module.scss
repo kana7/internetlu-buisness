@@ -2128,7 +2128,6 @@ span[class^=icon-]
 //PHONE SECTION
 //---------------------------------------------------
 .function-list{
-  margin-top: 20px;
   text-align: center;
   color: $blue;
   font-size: 1.5em;
@@ -2136,6 +2135,7 @@ span[class^=icon-]
   li{
     min-height: 45px;
     margin-bottom: 10px;
+    line-height: 25px;
     [class^="icon-"]{
       margin-right: 10px;
       font-size: 1em;
