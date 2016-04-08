@@ -40,13 +40,23 @@
   height: 160px;
 }
 #fibre-bg-header{
-  @include bg-propos-section("../images/propos/fibre_optique.jpg");
+  @include bg-propos-section("../images/propos/fibre_optique_phone.jpg");
 }
 #lolphone-bg-header{
-  @include bg-propos-section("../images/propos/telephonie.jpg");
+  @include bg-propos-section("../images/propos/telephonie_phone.jpg");
 }
 #lolcloud-bg-header{
-  @include bg-propos-section("../images/propos/cloud.jpg");
+  @include bg-propos-section("../images/propos/cloud_phone.jpg");
+}
+@include media(tab){
+  #fibre-bg-header{background-image: url("../images/propos/fibre_optique_tab.jpg");}
+  #lolphone-bg-header{background-image: url("../images/propos/telephonie_tab.jpg");}
+  #lolcloud-bg-header{background-image: url("../images/propos/cloud_tab.jpg");}
+}
+@include media(desk){
+  #fibre-bg-header{background-image: url("../images/propos/fibre_optique.jpg");}
+  #lolphone-bg-header{background-image: url("../images/propos/telephonie.jpg");}
+  #lolcloud-bg-header{background-image: url("../images/propos/cloud.jpg");}
 }
 
 #social-links{
