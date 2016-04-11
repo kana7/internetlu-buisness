@@ -1,639 +1,638 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Grandes entreprises : Contactez-nous – Luxembourg Online</title>
-  <meta name="description" content="Vous désirez en savoir plus sur nos produits ou vous êtes intéressés par une de nos offres au Luxembourg? Contactez-nous ou laissez-nous vous rappeler.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <title>Grandes entreprises : Contactez-nous – Luxembourg Online</title>
+        <meta name="description" content="Vous désirez en savoir plus sur nos produits ou vous êtes intéressés par une de nos offres au Luxembourg? Contactez-nous ou laissez-nous vous rappeler.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- build:css(.) ../../styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) ../../styles/main.css -->
-  <link rel="stylesheet" href="../../styles/main.css">
-  <link rel="stylesheet" href="../../styles/bg-img.css">
-  <!-- endbuild -->
-  <!-- build:js ../../scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+        <!-- build:css(.) ../../styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) ../../styles/css/main.css -->
+        <link rel="stylesheet" href="../../styles/css/main.css">
+        <link rel="stylesheet" href="../../styles/css/bg-img.css">
+        <!-- endbuild -->
+        <script src="../../scripts/vendor/modernizr.js"></script>
 
-</head>
-<body>
-  <!-- POPUP ESPACE CLIENT -->
-  <div id="clientSpace" class="popup">
-    <div class="background-client"></div>
-    <div class="white-pannel">
-      <button class="pannel-close"><span class="icon-x-icone"></span></button>
-      <h2>Espace Client</h2>
-      <ul class="client-menu">
-        <li class="active" data-id="mail">Email</li>
-        <li>|</li>
-        <li data-id="account">Mon compte</li>
-        <li>|</li>
-        <li data-id="homepage">Homepage</li>
-      </ul>
-      <div class="pannel-forms">
-        <form id="mail" class="clearfix is-visible" name="ServiceLogin1" method="POST" action="https://email.internet.lu/Scripts/sql.exe?_selection=10">
-          <input type="hidden" name="Sql" value="Default.phs">
-          <input type="hidden" name="SqlDB" value="OMS2">
-          <div class="phone-6 input-left">
-            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <form id="account" class="clearfix" name="LoginPhone" method="POST" action="http://shop.internet.lu/Scripts/sql.exe?LoginScript=LoginClient.phs&NextScript=DisplayAccount.phs&_Login=">
-          <input type="hidden" name="Sql" value="LoginClient_Login.phs">
-          <input type="hidden" name="SqlDB" value="LOLShop">
-          <div class="phone-6 input-left">
-            <input type="text" name="_Username" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="_Password" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <form id="homepage" class="clearfix" name="ServiceLogin3" method="POST" action="http://sites.internet.lu/Scripts/sql.exe">
-          <input type="hidden" name="Sql" value="default.phs">
-          <input type="hidden" name="SqlDB" value="OHPS">
-          <div class="phone-6 input-left">
-            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <div class="contact-infos hidden-phone">
-          Helpdesk: 2899 0000
-          <span>Lu-Ve: 8h00-19h00  l  Sa: 9h00-18h00</span>
-        </div>
-        <div class="contact-infos display-phone">
-          Helpdesk: 2899 0000
-          <span>Lu-Ve: 8h00-19h00<br/>Sa: 9h00-18h00</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./POPUP ESPACE CLIENT -->
-  <!-- FIXED MENU -->
-  <div class="fixed-options hidden-phone hidden-tab">
-    <a href="#">
-      <div class="white-fixed-option">
-        <div class="icon-call-me"></div>
-        <p>Veuillez me rappeler</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="blue-fixed-option">
-        <p>Abonnez-vous<br/> <strong>en ligne </strong><span class="icon-right-arrow"></span></p>
-      </div>
-    </a>
-  </div>
-  <!-- ./FIXED MENU -->
-  <!-- MOBILE MENU -->
-  <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
-    <ul class="menu">
-      <li class="menu-item link"><a href="../accueil.html">Accueil</a></li>
-      <li class="menu-item" data-id='internet'>Internet <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="sous-nav">
-        <ul class="menu">
-          <li class="menu-item link"><a href="../divers/assistance.html">Aide & Support</a></li>
-          <li class="menu-item link"><a href="../divers/news.html">Actualités</a></li>
-          <li class="menu-item link"><a href="../divers/propos.html">À propos</a></li>
-          <li class="menu-item link"><a href="../divers/contact.html">Contact</a></li>
-          
-          <li class="menu-item link"><a href="../divers/plan.html">Plan du site</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="internet">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Internet</li>
-        <li class="menu-item"><a href="../internet/accueil.html">Accueil Internet</a></li>
-        <li class="menu-item"><a href="../internet/sdsl.html">SDSL</a></li>
-        <li class="menu-item"><a href="../internet/fibre.html">Fibre</a></li>
-        <li class="menu-item"><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
-        <li class="menu-item"><a href="../internet/options-business.html">Options business</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="telephone">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Téléphonie</li>
-        <li class="menu-item"><a href="../telephonie/accueil.html">Accueil Téléphonie</a></li>
-        <li class="menu-item"><a href="../telephonie/lolcloud-phone.html">LOL CLOUD phone</a></li>
-        <li class="menu-item"><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
-        <li class="menu-item"><a href="../telephonie/equipements.html">Matériel & accessoires</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="cloud">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Cloud</li>
-        <li class="menu-item"><a href="../cloud/accueil.html">Accueil Cloud</a></li>
-        <li class="menu-item"><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
-        <li class="menu-item"><a href="../cloud/web-hosting.html">Web hosting</a></li>
-        <li class="menu-item"><a href="../cloud/email.html">Email</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="mobile">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Mobile</li>
-        <li class="menu-item"><a href="../mobile/accueil.html">Accueil Mobile</a></li>
-        <li class="menu-item"><a href="../mobile/abonnements.html">Abonnements mobiles</a></li>
-        <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ./MOBILE MENU -->
-  <!-- WEBSITE -->
-  <div id="siteWrap">
-    <header>
-      <div id="top-menu-header">
-        <div class="container-wrapper">
-          <div class="row">
-            <nav class="pull-left">
-              <div class="header-dropdown top-menu-header-links left">
-                <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
-                <ul class="drop">
-                  <li><a href="../../pme/accueil.html">PME</a></li>
-                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!-- POPUP ESPACE CLIENT -->
+        <div id="clientSpace" class="popup">
+            <div class="background-client"></div>
+            <div class="white-pannel">
+                <button class="pannel-close"><span class="icon-x-icone"></span></button>
+                <h2>Espace Client</h2>
+                <ul class="client-menu">
+                    <li class="active" data-id="mail">Email</li>
+                    <li>|</li>
+                    <li data-id="account">Mon compte</li>
+                    <li>|</li>
+                    <li data-id="homepage">Homepage</li>
                 </ul>
-              </div>
-            </nav>
-            <nav class="pull-right hidden-phone hidden-tab">
-              <ul class="top-menu-header-links right">
-                <li><a href="../divers/assistance.html">Aide & Support</a></li>
-                <li><a href="../divers/news.html" target="blank_">Actualités</a></li>
-                <li><a href="../divers/propos.html" target="blank_">À propos</a></li>
-                <li class="active"><a href="../divers/contact.html" target="blank_">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="bottom-menu-header">
-        <nav class="bottom-menu-header-links mobile display-phone display-tab">
-          <div class="pull-left">
-            <div class="logo">
-              <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+                <div class="pannel-forms">
+                    <form id="mail" class="clearfix is-visible" name="ServiceLogin1" method="POST" action="https://email.internet.lu/Scripts/sql.exe?_selection=10">
+                        <input type="hidden" name="Sql" value="Default.phs">
+                        <input type="hidden" name="SqlDB" value="OMS2">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <form id="account" class="clearfix" name="LoginPhone" method="POST" action="http://shop.internet.lu/Scripts/sql.exe?LoginScript=LoginClient.phs&NextScript=DisplayAccount.phs&_Login=">
+                        <input type="hidden" name="Sql" value="LoginClient_Login.phs">
+                        <input type="hidden" name="SqlDB" value="LOLShop">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="_Username" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="_Password" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <form id="homepage" class="clearfix" name="ServiceLogin3" method="POST" action="http://sites.internet.lu/Scripts/sql.exe">
+                        <input type="hidden" name="Sql" value="default.phs">
+                        <input type="hidden" name="SqlDB" value="OHPS">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <div class="contact-infos hidden-phone">
+                        Helpdesk: 2899 0000
+                        <span>Lu-Ve: 8h00-19h00  l  Sa: 9h00-18h00</span>
+                    </div>
+                    <div class="contact-infos display-phone">
+                        Helpdesk: 2899 0000
+                        <span>Lu-Ve: 8h00-19h00<br/>Sa: 9h00-18h00</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mobile-menu-button">
-            <button id="openClientSpaceMobile" class="mobile-button-blue openPopup" data-popup="0">
-              <span class="icon-account-icone"></span>
-            </button>
-            <button class="mobile-button-white">
-              <span class="icon-menu-icone"></span>
-            </button>
-          </div>
-        </nav>
-        <div class="container-wrapper hidden-phone hidden-tab">
-          <div class="row">
-            <div class="pull-left">
-              <div class="logo">
-                <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
-              </div><!--
-              --><nav class="bottom-menu-header-links">
-              <ul class="main-menu">
-                <li>
-                  <div class="active-border"></div>
-                  <a href="../internet/accueil.html">
-                    <div class="link">Internet</div>
-                  </a>
-                </li><!--
-                --><li>
-                <div class="active-border"></div>
-                <a href="../telephonie/accueil.html">
-                  <div class="link">Téléphonie</div>
-                </a>
-              </li><!--
-            --><li>
-            <div class="active-border"></div>
-            <a href="../cloud/accueil.html">
-              <div class="link">Cloud</div>
+        </div>
+        <!-- ./POPUP ESPACE CLIENT -->
+        <!-- FIXED MENU -->
+        <div class="fixed-options hidden-phone hidden-tab">
+            <a href="#">
+                <div class="white-fixed-option">
+                    <div class="icon-call-me"></div>
+                    <p>Veuillez me rappeler</p>
+                </div>
             </a>
-          </li><!--
-          --><li>
-          <div class="active-border"></div>
-          <a href="../mobile/accueil.html">
-            <div class="link">Mobile</div>
-          </a>
-        </li>
-    </ul>
-  </nav>
-</div>
-<div class="pull-right hidden-phone hidden-tab">
-  <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- ./HEADER -->
-<section id="bg-ge-contact" style="height: 300px;" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
-  <div class="container-wrapper">
-    <div class="row clearfix">
-      <div class="phone-12 align-center">
-        <h1 class="section-title white">Contact</h1>
-        <hr style="border-color: white; border-width: 1px; border-style: solid; margin: 0px auto 35px; width: 150px;">
-        <p class="section-text white">Vous êtes intéressé par une de nos offres, ou vous désirez tout simplement obtenir une information, un conseil ou un renseignement ?</p>
-        <div style="font-size: 2.4em;" class="bold phone-mt-15 white"><span class="icon-phone-icone"></span> 2899 0000</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="page-content">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="subtitle-container">
-        <h2>Formulaire de contact</h2>
-      </div>
-    </div>
-    <div class="clearfix">
-      <form enctype="multipart/form-data" id="frmContact" name="frmContact" method="post" action="/Scripts/sql.exe">
-        <input type="hidden" name="SqlDB" value="LOLPublic">
-        <input type="hidden" name="Sql" value="contact.uhs">
-        <input id="ip_adress" type="hidden" value="" name="_ip">
-        <div class="contact-form-info phone-12 desk-6">
-          <h3>Vos coordonnées</h3>
-          <div class="left-container phone-12">
-            <div style="margin-bottom: 20px;" class="input-group">
-              <label style="line-height: 20px;">Êtes-vous client chez Luxembourg Online?</label>
-              <input id="Client" type="radio" name="_client" value="oui"><label for="Client">Oui</label>
-              <input id="NotClient" type="radio" name="_client" value="non"><label for="NotClient">Non</label>
-            </div>
-          </div>
-          <div class="left-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Nom">Nom<span class="red">*</span></label>
-              <input id="Nom" name="_nom" type="text" required="">
-            </div>
-          </div>
-          <div class="right-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="prenom">Prénom<span class="red">*</span></label>
-              <input id="Prenom" name="_prenom" type="text" required="">
-            </div>
-          </div>
-          <div class="left-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Adresse">Adresse<span class="red">*</span></label>
-              <input id="Adresse" name="_adresse" type="text" required="">
-            </div>
-          </div>
-          <div class="right-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Cp">Code postal<span class="red">*</span></label>
-              <input id="Cp" name="_cp" type="text" required="">
-            </div>
-          </div>
-          <div class="left-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Localite">Localité<span class="red">*</span></label>
-              <input id="Localite" name="_localite" type="text" required="">
-            </div>
-          </div>
-          <div class="right-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Tel">Téléphone<span class="red">*</span></label>
-              <input id="Tel" name="_tel" type="text" required="">
-            </div>
-          </div>
-          <div class="left-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Email">E-mail</label>
-              <input id="Email" name="_email" type="text" required="">
-            </div>
-          </div>
-          <div class="right-container phone-12 tab-6">
-            <div class="input-group">
-              <label for="Mobile">Mobile</label>
-              <input id="Mobile" name="_mobile" type="text">
-            </div>
-          </div>
-          <div class="left-container phone-12 tab-6">
-            <div id="fileUpload" class="input-group file">
-              <button type="button" id="fileButton">Joindre un fichier</button>
-              <input type="hidden" id="_DocumentName1" name="_documentName1" value="">
-              <input type="hidden" id="_DocumentName2" name="_documentName2" value="">
-              <input type="hidden" id="_DocumentName3" name="_documentName3" value="">
-              <input style="display: none;" name="_FileName1" type="file" class="custom-file-input">
-              <input style="display: none;" name="_FileName2" type="file" class="custom-file-input">
-              <input style="display: none;" name="_FileName3" type="file" class="custom-file-input">
-              <ul id="fileList">
-              </ul>
-            </div>
-          </div>
-          <div class="right-container phone-12 tab-6">
-            <span class="input-file-info hidden-phone">3 fichiers maximum</span>
-          </div>
-          <div class="phone-12 hidden-phone hidden-tab">
-            <p style="margin: 0;" class="red">*Obligatoire</p>
-          </div>
+            <a href="#">
+                <div class="blue-fixed-option">
+                    <p>Abonnez-vous<br/> <strong>en ligne </strong><span class="icon-right-arrow"></span></p>
+                </div>
+            </a>
         </div>
-        <div class="contact-form-mess pull-right phone-12 desk-6">
-          <h3>Votre demande</h3>
-          <div class="input-group select">
-            <label for="Object">Objet<span class="red">*</span></label>
-            <div class="select-arrow">
-              <select id="Object" name="_object" required="">
-                <option value="" selected="selected">-- Sélectionnez un objet --</option>
-                <option value="demande_infos_commerciales">Demande d'informations commerciales</option>
-                <option value="identifiants_mail">Demande identifiants mail</option>
-                <option value="Suivi_de_commande">Suivi de commande</option>
-                <option value="Probleme_technique">Question technique</option>
-                <option value="Facturation">Facturation</option>
-                <option value="Candidature">Candidature</option>
-                <option value="Autres">Autres</option>
-              </select>
-            </div>
-          </div>
-          <div class="input-group">
-            <label for="Message">Message<span class="red">*</span></label>
-            <textarea name="_message" id="Message" required=""></textarea>
-          </div>
-          <div class="phone-6 display-phone display-tab">
-            <p style="margin: 0;" class="red">*Obligatoire</p>
-          </div>
-          <button type="button" style="padding: 13px 30px;" class="btnSubmitForm btn-blue pull-right" data-form="frmContact">Envoyer</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-<section id="container-map" class="page-content background-lightpink clearfix">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="phone-12 tab-6">
-        <h2 class="bold phone-mt-0">COORDONNÉES</h2>
-        <ul>
-          <li><span class="extra-bold">Appelez-nous :</span> 2899 0000</li>
-          <li style="font-size: 0.85em; margin-top: 5px;">Disponibilités : Lu-Ve: 8h30 - 17h30</li>
-        </ul>
-        <ul>
-          <li><span class="extra-bold">Écrivez-nous :</span> corporate@internet.lu</li>
-        </ul>
-        <ul>
-          <li class="extra-bold">Boutique à Luxembourg-ville :</li>
-          <li>3, avenue de la Porte-Neuve</li>
-          <li>L-2227 Luxembourg</li>
-          <li style="font-size: 0.85em; margin-top: 5px;">Heures d'ouverture : Lu-Sa: 9h30 - 18h00</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div id="map1" class="googleMap phone-12 tab-6"></div>
-</section>
-<section class="padding background-lightgrey section-shadow">
-  <div class="container-wrapper">
-    <div class="contact-details align-center">
-      <div class="title extra-bold">Administration :</div>
-      <ul>
-        <li><span class="extra-bold">Adresse :</span> 14, av. du X Septembre | L-2550 Luxembourg</li>
-        <li><span class="extra-bold">Fax :</span> 2799 3555 (commercial) | 45 93 34 (comptabilité)</li>
-      </ul>
-    </div>
-  </div>
-</section>
-  <!-- FOOTER -->
-  <footer>
-    <div class="hidden-phone hidden-tab">
-      <div id="contact">
-        <div class="container-wrapper">
-          <div class="row">
-            <div class="text">Contactez-nous : </div>
-            <ul class="contact-infos spread">
-              <li>
-                <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
-              </li>
-              <li>
-                <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
-              </li>
-              <li>
-                <span class="icon-internet-ico"></span><a href="../divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
-              </li>
+        <!-- ./FIXED MENU -->
+        <!-- MOBILE MENU -->
+        <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
+            <ul class="menu">
+                <li class="menu-item link"><a href="../accueil.html">Accueil</a></li>
+                <li class="menu-item" data-id='internet'>Internet <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
+                <li class="sous-nav">
+                    <ul class="menu">
+                        <li class="menu-item link"><a href="../divers/assistance.html">Aide & Support</a></li>
+                        <li class="menu-item link"><a href="../divers/news.html">Actualités</a></li>
+                        <li class="menu-item link"><a href="../divers/propos.html">À propos</a></li>
+                        <li class="menu-item link"><a href="../divers/contact.html">Contact</a></li>
+
+                        <li class="menu-item link"><a href="../divers/plan.html">Plan du site</a></li>
+                    </ul>
+                </li>
             </ul>
-          </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="internet">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Internet</li>
+                    <li class="menu-item"><a href="../internet/accueil.html">Accueil Internet</a></li>
+                    <li class="menu-item"><a href="../internet/sdsl.html">SDSL</a></li>
+                    <li class="menu-item"><a href="../internet/fibre.html">Fibre</a></li>
+                    <li class="menu-item"><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
+                    <li class="menu-item"><a href="../internet/options-business.html">Options business</a></li>
+                </ul>
+            </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="telephone">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Téléphonie</li>
+                    <li class="menu-item"><a href="../telephonie/accueil.html">Accueil Téléphonie</a></li>
+                    <li class="menu-item"><a href="../telephonie/lolcloud-phone.html">LOL CLOUD phone</a></li>
+                    <li class="menu-item"><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
+                    <li class="menu-item"><a href="../telephonie/equipements.html">Matériel & accessoires</a></li>
+                </ul>
+            </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="cloud">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Cloud</li>
+                    <li class="menu-item"><a href="../cloud/accueil.html">Accueil Cloud</a></li>
+                    <li class="menu-item"><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
+                    <li class="menu-item"><a href="../cloud/web-hosting.html">Web hosting</a></li>
+                    <li class="menu-item"><a href="../cloud/email.html">Email</a></li>
+                </ul>
+            </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="mobile">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Mobile</li>
+                    <li class="menu-item"><a href="../mobile/accueil.html">Accueil Mobile</a></li>
+                    <li class="menu-item"><a href="../mobile/abonnements.html">Abonnements mobiles</a></li>
+                    <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ./MOBILE MENU -->
+        <!-- WEBSITE -->
+        <div id="siteWrap">
+            <header>
+                <div id="top-menu-header">
+                    <div class="container-wrapper">
+                        <div class="row">
+                            <nav class="pull-left">
+                                <div class="header-dropdown top-menu-header-links left">
+                                    <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
+                                    <ul class="drop">
+                                        <li><a href="../../pme/accueil.html">PME</a></li>
+                                        <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <nav class="pull-right hidden-phone hidden-tab">
+                                <ul class="top-menu-header-links right">
+                                    <li><a href="../divers/assistance.html">Aide & Support</a></li>
+                                    <li><a href="../divers/news.html" target="blank_">Actualités</a></li>
+                                    <li><a href="../divers/propos.html" target="blank_">À propos</a></li>
+                                    <li class="active"><a href="../divers/contact.html" target="blank_">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottom-menu-header">
+                    <nav class="bottom-menu-header-links mobile display-phone display-tab">
+                        <div class="pull-left">
+                            <div class="logo">
+                                <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-button">
+                            <button id="openClientSpaceMobile" class="mobile-button-blue openPopup" data-popup="0">
+                                <span class="icon-account-icone"></span>
+                            </button>
+                            <button class="mobile-button-white">
+                                <span class="icon-menu-icone"></span>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="container-wrapper hidden-phone hidden-tab">
+                        <div class="row">
+                            <div class="pull-left">
+                                <div class="logo">
+                                    <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                                </div><!--
+                                --><nav class="bottom-menu-header-links">
+                                    <ul class="main-menu">
+                                        <li>
+                                            <div class="active-border"></div>
+                                            <a href="../internet/accueil.html">
+                                                <div class="link">Internet</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../telephonie/accueil.html">
+                                                <div class="link">Téléphonie</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../cloud/accueil.html">
+                                                <div class="link">Cloud</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../mobile/accueil.html">
+                                                <div class="link">Mobile</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="pull-right hidden-phone hidden-tab">
+                                <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ./HEADER -->
+            <section id="bg-ge-contact" style="height: 300px;" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
+                <div class="container-wrapper">
+                    <div class="row clearfix">
+                        <div class="phone-12 align-center">
+                            <h1 class="section-title white">Contact</h1>
+                            <hr style="border-color: white; border-width: 1px; border-style: solid; margin: 0px auto 35px; width: 150px;">
+                            <p class="section-text white">Vous êtes intéressé par une de nos offres, ou vous désirez tout simplement obtenir une information, un conseil ou un renseignement ?</p>
+                            <div style="font-size: 2.4em;" class="bold phone-mt-15 white"><span class="icon-phone-icone"></span> 2899 0000</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-content">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="subtitle-container">
+                            <h2>Formulaire de contact</h2>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <form enctype="multipart/form-data" id="frmContact" name="frmContact" method="post" action="/Scripts/sql.exe">
+                            <input type="hidden" name="SqlDB" value="LOLPublic">
+                            <input type="hidden" name="Sql" value="contact.uhs">
+                            <input id="ip_adress" type="hidden" value="" name="_ip">
+                            <div class="contact-form-info phone-12 desk-6">
+                                <h3>Vos coordonnées</h3>
+                                <div class="left-container phone-12">
+                                    <div style="margin-bottom: 20px;" class="input-group">
+                                        <label style="line-height: 20px;">Êtes-vous client chez Luxembourg Online?</label>
+                                        <input id="Client" type="radio" name="_client" value="oui"><label for="Client">Oui</label>
+                                        <input id="NotClient" type="radio" name="_client" value="non"><label for="NotClient">Non</label>
+                                    </div>
+                                </div>
+                                <div class="left-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Nom">Nom<span class="red">*</span></label>
+                                        <input id="Nom" name="_nom" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="right-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="prenom">Prénom<span class="red">*</span></label>
+                                        <input id="Prenom" name="_prenom" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="left-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Adresse">Adresse<span class="red">*</span></label>
+                                        <input id="Adresse" name="_adresse" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="right-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Cp">Code postal<span class="red">*</span></label>
+                                        <input id="Cp" name="_cp" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="left-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Localite">Localité<span class="red">*</span></label>
+                                        <input id="Localite" name="_localite" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="right-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Tel">Téléphone<span class="red">*</span></label>
+                                        <input id="Tel" name="_tel" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="left-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Email">E-mail</label>
+                                        <input id="Email" name="_email" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="right-container phone-12 tab-6">
+                                    <div class="input-group">
+                                        <label for="Mobile">Mobile</label>
+                                        <input id="Mobile" name="_mobile" type="text">
+                                    </div>
+                                </div>
+                                <div class="left-container phone-12 tab-6">
+                                    <div id="fileUpload" class="input-group file">
+                                        <button type="button" id="fileButton">Joindre un fichier</button>
+                                        <input type="hidden" id="_DocumentName1" name="_documentName1" value="">
+                                        <input type="hidden" id="_DocumentName2" name="_documentName2" value="">
+                                        <input type="hidden" id="_DocumentName3" name="_documentName3" value="">
+                                        <input style="display: none;" name="_FileName1" type="file" class="custom-file-input">
+                                        <input style="display: none;" name="_FileName2" type="file" class="custom-file-input">
+                                        <input style="display: none;" name="_FileName3" type="file" class="custom-file-input">
+                                        <ul id="fileList">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right-container phone-12 tab-6">
+                                    <span class="input-file-info hidden-phone">3 fichiers maximum</span>
+                                </div>
+                                <div class="phone-12 hidden-phone hidden-tab">
+                                    <p style="margin: 0;" class="red">*Obligatoire</p>
+                                </div>
+                            </div>
+                            <div class="contact-form-mess pull-right phone-12 desk-6">
+                                <h3>Votre demande</h3>
+                                <div class="input-group select">
+                                    <label for="Object">Objet<span class="red">*</span></label>
+                                    <div class="select-arrow">
+                                        <select id="Object" name="_object" required="">
+                                            <option value="" selected="selected">-- Sélectionnez un objet --</option>
+                                            <option value="demande_infos_commerciales">Demande d'informations commerciales</option>
+                                            <option value="Probleme_technique">Question technique</option>
+                                            <option value="Plan_num">Plan de numérotation</option>
+                                            <option value="Facturation">Facturation</option>
+                                            <option value="Demenagement">Déménagement</option>
+                                            <option value="Autres">Autres</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label for="Message">Message<span class="red">*</span></label>
+                                    <textarea name="_message" id="Message" required=""></textarea>
+                                </div>
+                                <div class="phone-6 display-phone display-tab">
+                                    <p style="margin: 0;" class="red">*Obligatoire</p>
+                                </div>
+                                <button type="button" style="padding: 13px 30px;" class="btnSubmitForm btn-blue pull-right" data-form="frmContact">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="container-map" class="page-content background-lightpink clearfix">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="phone-12 tab-6">
+                            <h2 class="bold phone-mt-0">COORDONNÉES</h2>
+                            <ul>
+                                <li><span class="extra-bold">Appelez-nous :</span> 2899 0000</li>
+                                <li style="font-size: 0.85em; margin-top: 5px;">Disponibilités : Lu-Ve: 8h30 - 17h30</li>
+                            </ul>
+                            <ul>
+                                <li><span class="extra-bold">Écrivez-nous :</span> corporate@internet.lu</li>
+                            </ul>
+                            <ul>
+                                <li class="extra-bold">Boutique à Luxembourg-ville :</li>
+                                <li>3, avenue de la Porte-Neuve</li>
+                                <li>L-2227 Luxembourg</li>
+                                <li style="font-size: 0.85em; margin-top: 5px;">Heures d'ouverture : Lu-Sa: 9h30 - 18h00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="map1" class="googleMap phone-12 tab-6"></div>
+            </section>
+            <section class="padding background-lightgrey section-shadow">
+                <div class="container-wrapper">
+                    <div class="contact-details align-center">
+                        <div class="title extra-bold">Administration :</div>
+                        <ul>
+                            <li><span class="extra-bold">Adresse :</span> 14, av. du X Septembre | L-2550 Luxembourg</li>
+                            <li><span class="extra-bold">Fax :</span> 2799 3555 (commercial) | 45 93 34 (comptabilité)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer>
+                <div class="hidden-phone hidden-tab">
+                    <div id="contact">
+                        <div class="container-wrapper">
+                            <div class="row">
+                                <div class="text">Contactez-nous : </div>
+                                <ul class="contact-infos spread">
+                                    <li>
+                                        <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
+                                    </li>
+                                    <li>
+                                        <span class="icon-internet-ico"></span><a href="../divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
+                        <div class="container-wrapper">
+                            <div class="row hidden-phone hidden-tab">
+                                <div class="footer-top-links">
+                                    <h4>internet : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../internet/fibre.html">Abonnements</a></li>
+                                            <li><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
+                                            <li><a href="../internet/vpn.html">VPN</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>téléphonie : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../telephonie/lolcloud-phone.html">LOL Cloud Phone</a></li>
+                                            <li><a href="../telephonie/sip-trunking.html">Téléphones</a></li>
+                                            <li><a href="../telephonie/options-business.html">Options téléphonie</a></li>
+                                            <li><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>mobile : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../mobile/abonnements.html">Abonnements</a></li>
+                                            <li><a href="../mobile/equipements.html">Téléphones mobiles</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>Cloud : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../cloud/lolcloud.html">LOL Cloud</a></li>
+                                            <li><a href="../cloud/web-hosting.html">Hébergement web</a></li>
+                                            <li><a href="../cloud/rackspace.html">Rackspace</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="separator"></div>
+                                <div class="phone-12">
+                                    <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
+                                    <nav class="hidden-phone">
+                                        <ul class="footer-bottom-links">
+                                            <li>© Luxembourg Online S.A. – 2016, tous droits réservés</li>
+                                            <li><a href="http://www.internet.lu/documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
+                                            <li><a href="../divers/plan.html">Plan du site</a></li>
+                                            <li><a href="../divers/contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--              ./FOOTER               -->
         </div>
-      </div>
-      <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
-        <div class="container-wrapper">
-          <div class="row hidden-phone hidden-tab">
-            <div class="footer-top-links">
-              <h4>internet : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="../internet/fibre.html">Abonnements</a></li>
-                  <li><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
-                  <li><a href="../internet/vpn.html">VPN</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-top-links">
-              <h4>téléphonie : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="../telephonie/lolcloud-phone.html">LOL Cloud Phone</a></li>
-                  <li><a href="../telephonie/sip-trunking.html">Téléphones</a></li>
-                  <li><a href="../telephonie/options-business.html">Options téléphonie</a></li>
-                  <li><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-top-links">
-              <h4>mobile : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="../mobile/abonnements.html">Abonnements</a></li>
-                  <li><a href="../mobile/equipements.html">Téléphones mobiles</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-top-links">
-              <h4>Cloud : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="../cloud/lolcloud.html">LOL Cloud</a></li>
-                  <li><a href="../cloud/web-hosting.html">Hébergement web</a></li>
-                  <li><a href="../cloud/rackspace.html">Rackspace</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="row">
-            <div class="separator"></div>
-            <div class="phone-12">
-              <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
-              <nav class="hidden-phone">
-                <ul class="footer-bottom-links">
-                  <li>© Luxembourg Online S.A. – 2016, tous droits réservés</li>
-                  <li><a href="http://www.internet.lu/documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
-                  <li><a href="../divers/plan.html">Plan du site</a></li>
-                  <li><a href="../divers/contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--              ./FOOTER               -->
-</div>
-<!-- ./WEBSITE -->
+        <!-- ./WEBSITE -->
 
 
 
-<!-- build:js(.) ../../scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+        <!-- build:js(.) ../../scripts/vendor.js -->
+        <!-- bower:js -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
 
 
 
-<!-- build:js(.tmp) ../../scripts/main.js -->
-<script src="../../scripts/main.js"></script>
-<script type="text/javascript">
-var verifMessage = "Veuillez entrer tous les champs dans le formulaire";
-$(function () {
-  $('input[name^="_FileName"').on('change', function () {
-    $('#fileList').append('<li data-input="' + $(this).attr('name') + '" title="destroy">' + this.value.replace("C:\\fakepath\\", "") + '<span class="icon-x-icone"></span></li>');
-    if ($('#fileList>li').length === 3) {
-      $('#fileButton').addClass('disabled');
-    }
-  });
-  $('#Object').on('change', function () {
-    if ($(this).val() == "identifiants_mail") {
-      $('#Email, #_DocumentName1, input[name="_FileName1"]').prop('required', true);
-      $('label[for="Email"]').html("E-mail<span class='red'>*</span>");
-      $('#fileButton').html("Joindre un fichier*");
-      $('#Message').prop('placeholder', "Merci de nous fournir une adresse mail valide ainsi qu'une copie de votre pièce d'identité afin que nous puissions traiter votre demande.");
-    } else {
-      $('#Email, #_DocumentName1, input[name="_FileName1"]').prop('required', false);
-      $('label[for="Email"]').html("E-mail");
-      $('#fileButton').html("Joindre un fichier");
-      $('#Message').removeAttr('placeholder');
-    }
-  });
+        <script src="../../scripts/vendor/jquery.min.js"></script>
+        <script src="../../scripts/main.js"></script>
+        <script type="text/javascript">
+            var verifMessage = "Veuillez entrer tous les champs dans le formulaire";
+            $(function () {
+                $('input[name^="_FileName"').on('change', function () {
+                    $('#fileList').append('<li data-input="' + $(this).attr('name') + '" title="destroy">' + this.value.replace("C:\\fakepath\\", "") + '<span class="icon-x-icone"></span></li>');
+                    if ($('#fileList>li').length === 3) {
+                        $('#fileButton').addClass('disabled');
+                    }
+                });
+                $('#Object').on('change', function () {
+                    if ($(this).val() == "identifiants_mail") {
+                        $('#Email, #_DocumentName1, input[name="_FileName1"]').prop('required', true);
+                        $('label[for="Email"]').html("E-mail<span class='red'>*</span>");
+                        $('#fileButton').html("Joindre un fichier*");
+                        $('#Message').prop('placeholder', "Merci de nous fournir une adresse mail valide ainsi qu'une copie de votre pièce d'identité afin que nous puissions traiter votre demande.");
+                    } else {
+                        $('#Email, #_DocumentName1, input[name="_FileName1"]').prop('required', false);
+                        $('label[for="Email"]').html("E-mail");
+                        $('#fileButton').html("Joindre un fichier");
+                        $('#Message').removeAttr('placeholder');
+                    }
+                });
 
-  $('#fileButton').click(function () {
-    $('input[name^="_FileName"').each(function () {
-      if (!$(this).val()) {
-        $(this).trigger('click');
-        return false;
-      }
-    });
-  });
-  $('#fileList').on('click', 'li', function () {
-    $('input[name=' + $(this).attr('data-input') + ']').val('');
-    $(this).remove();
-    if ($('#fileList>li').length < 3) {
-      $('#fileButton').removeClass('disabled');
-    }
-  });
+                $('#fileButton').click(function () {
+                    $('input[name^="_FileName"').each(function () {
+                        if (!$(this).val()) {
+                            $(this).trigger('click');
+                            return false;
+                        }
+                    });
+                });
+                $('#fileList').on('click', 'li', function () {
+                    $('input[name=' + $(this).attr('data-input') + ']').val('');
+                    $(this).remove();
+                    if ($('#fileList>li').length < 3) {
+                        $('#fileButton').removeClass('disabled');
+                    }
+                });
 
-  $('input[required], textarea[required], select[required]').blur(function () {
-    $(this).removeClass('not-fill');
-  });
+                $('input[required], textarea[required], select[required]').blur(function () {
+                    $(this).removeClass('not-fill');
+                });
 
-  $(".btnSubmitForm").click(function (e) {
-    e.preventDefault();
-    var form = $(this).attr("data-form");
-    var filename;
-    for (var i = 1; i <= 3; i++) {
-      if ($("#" + form).find('[name=_FileName' + i + ']').val()) {
-        filename = $("#" + form).find('[name=_FileName' + i + ']').val();
-        $("#" + form).find('[name=_documentName' + i + ']').val(filename);
-      }
-    }
-    if (!verifyForm(form)) {
-      if ($('#Object').val() == "identifiants_mail") {
-        alert(verifMessage + " ainsi qu'une copie de votre carte d'identité en pièce jointe.");
-      } else {
-        alert(verifMessage + ".");
-      }
-      flag = 0;
-    } else {
-      getIp();
-      submitForm();
-    }
-  });
-  $(window).load(function () {
-    var hash = document.URL.substr(document.URL.indexOf('#') + 1);
-    if (window.location.hash) {
-      if (hash === "success") {
-        alert('Merci. Votre demande sera traitée dans les meilleurs délais. ');
-      } else {
-        if (hash !== "form") {
-          $('#Object').val(hash).trigger('change');
-        }
-        $('#form').goTo();
-      }
-    }
-  });
-});
-function getIp() {
-  $.get("http://ipinfo.io", function (response) {
-    $('#ip_adress').val(response.city + ", " + response.country);
-  }, "jsonp");
-}
-function verifyForm(form) {
-  var flag = true;
-  var vform = form;
-  var mail = $("#" + vform).find("input[name=_email]");
-  if (mail.val()) {
-    if (!testEmail(mail.val())) {
-      alert("E-mail invalide! Assurez-vous d'avoir correctement saisi votre adresse électronique.");
-      return false;
-    }
-  }
-  $('#' + vform).find('[required]').each(function () {
-    if (!$(this).val()) {
-      flag = false;
-      $(this).addClass('not-fill');
-    }
-  });
-  return flag;
-}
-function submitForm() {
-  if ($('#ip_adress').val()) {
-    $('#frmContact').submit();
-  } else {
-    setTimeout(submitForm, 250);
-  }
-}
-</script>
-<script>
-var map;
-function initMap() {
-  var luxVille = {lat: 49.612368, lng: 6.127969};
-  map = new google.maps.Map(document.getElementById('map1'), {
-    center: luxVille,
-    zoom: 16
-  });
-  var marker = new google.maps.Marker({
-    position: luxVille,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: '3, avenue de la Porte-Neuve'
-  });
-  var trafficLayer = new google.maps.TrafficLayer();
-  trafficLayer.setMap(map);
-}
-</script>
-<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuu7e1_LY895Sdb36SLlyE77QmBZ_5zss&amp;callback=initMap&amp;language=fr"></script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script type="text/javascript" src="../../scripts/analytics.js"></script>
-<!-- endbuild -->
-</body>
+                $(".btnSubmitForm").click(function (e) {
+                    e.preventDefault();
+                    var form = $(this).attr("data-form");
+                    var filename;
+                    for (var i = 1; i <= 3; i++) {
+                        if ($("#" + form).find('[name=_FileName' + i + ']').val()) {
+                            filename = $("#" + form).find('[name=_FileName' + i + ']').val();
+                            $("#" + form).find('[name=_documentName' + i + ']').val(filename);
+                        }
+                    }
+                    if (!verifyForm(form)) {
+                        if ($('#Object').val() == "identifiants_mail") {
+                            alert(verifMessage + " ainsi qu'une copie de votre carte d'identité en pièce jointe.");
+                        } else {
+                            alert(verifMessage + ".");
+                        }
+                        flag = 0;
+                    } else {
+                        getIp();
+                        submitForm();
+                    }
+                });
+                $(window).load(function () {
+                    var hash = document.URL.substr(document.URL.indexOf('#') + 1);
+                    if (window.location.hash) {
+                        if (hash === "success") {
+                            alert('Merci. Votre demande sera traitée dans les meilleurs délais. ');
+                        } else {
+                            if (hash !== "form") {
+                                $('#Object').val(hash).trigger('change');
+                            }
+                            $('#form').goTo();
+                        }
+                    }
+                });
+            });
+            function getIp() {
+                $.get("http://ipinfo.io", function (response) {
+                    $('#ip_adress').val(response.city + ", " + response.country);
+                }, "jsonp");
+            }
+            function verifyForm(form) {
+                var flag = true;
+                var vform = form;
+                var mail = $("#" + vform).find("input[name=_email]");
+                if (mail.val()) {
+                    if (!testEmail(mail.val())) {
+                        alert("E-mail invalide! Assurez-vous d'avoir correctement saisi votre adresse électronique.");
+                        return false;
+                    }
+                }
+                $('#' + vform).find('[required]').each(function () {
+                    if (!$(this).val()) {
+                        flag = false;
+                        $(this).addClass('not-fill');
+                    }
+                });
+                return flag;
+            }
+            function submitForm() {
+                if ($('#ip_adress').val()) {
+                    $('#frmContact').submit();
+                } else {
+                    setTimeout(submitForm, 250);
+                }
+            }
+        </script>
+        <script>
+            var map;
+            function initMap() {
+                var luxVille = {lat: 49.612368, lng: 6.127969};
+                map = new google.maps.Map(document.getElementById('map1'), {
+                    center: luxVille,
+                    zoom: 16
+                });
+                var marker = new google.maps.Marker({
+                    position: luxVille,
+                    animation: google.maps.Animation.DROP,
+                    map: map,
+                    title: '3, avenue de la Porte-Neuve'
+                });
+                var trafficLayer = new google.maps.TrafficLayer();
+                trafficLayer.setMap(map);
+            }
+        </script>
+        <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuu7e1_LY895Sdb36SLlyE77QmBZ_5zss&amp;callback=initMap&amp;language=fr"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script type="text/javascript" src="../../scripts/analytics.js"></script>
+        <!-- endbuild -->
+    </body>
 </html>
