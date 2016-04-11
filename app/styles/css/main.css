@@ -4770,9 +4770,9 @@ span[class^=icon-] {
     opacity: 0.6;
     z-index: 0; }
   .comptype-select#ge {
-    background-image: url(../images/homepage/Homepage_GE_600x306px.jpg); }
+    background-image: url(../../images/homepage/Homepage_GE_600x306px.jpg); }
   .comptype-select#pme {
-    background-image: url(../images/homepage/Homepage_PME_600x306px.jpg); }
+    background-image: url(../../images/homepage/Homepage_PME_600x306px.jpg); }
   .comptype-select .comptype-select-box {
     display: inline-block;
     position: relative;
@@ -4914,7 +4914,7 @@ span[class^=icon-] {
   position: relative;
   border: 1px solid #c0c0c0;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   -moz-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
   -o-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
   -webkit-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
@@ -4961,6 +4961,40 @@ span[class^=icon-] {
       bottom: 0;
       font-size: 2.5em;
       line-height: 75px; }
+  .pme-solution .blue-circle {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    bottom: -19px;
+    border: 2px solid #004994;
+    background-color: #fff;
+    color: #004994;
+    text-align: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+    .pme-solution .blue-circle span[class^="icon-"] {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 0;
+      bottom: 0;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      font-size: 1.2em;
+      line-height: 42px; }
+    .pme-solution .blue-circle.is-active span[class^="icon-"] {
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      line-height: 40px; }
   .pme-solution p {
     color: #004994;
     margin: 0;
@@ -4981,8 +5015,9 @@ span[class^=icon-] {
       .pme-solution.offre .header h3 {
         text-transform: initial; }
     .pme-solution.offre .content {
-      padding: 20px 20px 10px;
-      background-color: #fff; }
+      display: block;
+      background-color: #fff;
+      padding: 20px 20px 10px; }
       .pme-solution.offre .content:before {
         content: "";
         display: table; }
@@ -4995,6 +5030,31 @@ span[class^=icon-] {
         margin: 0 0 15px;
         min-height: initial !important;
         text-align: justify; }
+
+.gestion .pme-solution.offre .content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  padding: 0; }
+  .gestion .pme-solution.offre .content:before {
+    content: "";
+    display: table; }
+  .gestion .pme-solution.offre .content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .gestion .pme-solution.offre .content p {
+    padding: 20px 20px 10px;
+    margin: 0 0 15px;
+    min-height: initial !important;
+    text-align: justify; }
+  .gestion .pme-solution.offre .content.is-open {
+    max-height: 250px; }
 
 .pme-devis p {
   margin-top: 0;
@@ -6098,7 +6158,7 @@ h2.contact-title {
   .propos-section-header .title {
     text-align: center; } }
 @media screen and (min-width: 672px) and (max-width: 1056px) {
-  .pme-solution.offre .content {
+  div:not(.gestion) .pme-solution.offre .content {
     min-height: 159px; } }
 @media screen and (min-width: 672px) {
   .left .profit {

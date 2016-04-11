@@ -50,9 +50,15 @@ $(function () {
             temp.init();
         });
     }
+    if ($('.gestion .pme-solution.offre')) {
+        $('.gestion .pme-solution.offre').each(function () {
+            temp = new solutionDropDown($(this));
+            temp.init();
+        });
+    }
     if ($('#select-text')) {
-      temp = new selectText($('#select-text'));
-      temp.init();
+        temp = new selectText($('#select-text'));
+        temp.init();
     }
 });
 //test si l'adresse email est eligible
@@ -92,29 +98,29 @@ function printDispo() {
     }
 }
 
-var selectText = function(element){
-  var $element = element;
-  var $buttonList = $element.find('ul>li');
-  var $textBox = $element.find('.select-box');
-  var $textList = $element.find('.select-box>div');
+var selectText = function (element) {
+    var $element = element;
+    var $buttonList = $element.find('ul>li');
+    var $textBox = $element.find('.select-box');
+    var $textList = $element.find('.select-box>div');
 
-  this.init = function(){
-    _bindEvents();
-  };
-  var _bindEvents = function(){
-    $buttonList.on('click', function(){
-      _showText($(this));
-    });
-  };
-  var _showText = function($target){
-    if($target.hasClass('is-selected')===false){
-      var textData = $target.attr('data-select');
-      $textList.removeClass('is-visible');
-      $buttonList.removeClass('is-selected');
-      $target.addClass('is-selected');
-      $textBox.find('div[data-select="'+textData+'"]').addClass('is-visible');
-    }
-  };
+    this.init = function () {
+        _bindEvents();
+    };
+    var _bindEvents = function () {
+        $buttonList.on('click', function () {
+            _showText($(this));
+        });
+    };
+    var _showText = function ($target) {
+        if ($target.hasClass('is-selected') === false) {
+            var textData = $target.attr('data-select');
+            $textList.removeClass('is-visible');
+            $buttonList.removeClass('is-selected');
+            $target.addClass('is-selected');
+            $textBox.find('div[data-select="' + textData + '"]').addClass('is-visible');
+        }
+    };
 };
 
 //Affiche un container au clique sur un élément dans un container .dropdown
@@ -134,7 +140,32 @@ var DropDown = function (element) {
     };
 };
 
-var HeaderDropDown = (function(){
+var solutionDropDown = function (element) {
+    var $element = element;
+    var $button = $element.find('.blue-circle');
+    var $content = $element.find('.content');
+    this.init = function () {
+        _bindEvents();
+    };
+    var _bindEvents = function () {
+        $button.on('click', _triggerDrop);
+    };
+    var _triggerDrop = function () {
+        if ($content.hasClass('is-open')) {
+            $content.removeClass('is-open');
+            $button.removeClass('is-active');
+        } else {
+            $content.addClass('is-open');
+            $button.addClass('is-active');
+            setTimeout(function () {
+                $('.gestion .pme-solution.offre .content').not($content).removeClass('is-open');
+                $('.gestion .pme-solution.offre .blue-circle').not($button).removeClass('is-active');
+            }, 100);
+        }
+    };
+};
+
+var HeaderDropDown = (function () {
     var $document = $('html');
     var $element = $('.header-dropdown');
     var $button = $element.find('button');
@@ -143,8 +174,8 @@ var HeaderDropDown = (function(){
     var init = function () {
         _bindEvents();
     };
-    var _bindEvents = function(){
-        $button.on('click', function(){
+    var _bindEvents = function () {
+        $button.on('click', function () {
             _toggleDrop();
         });
         $document.on('click', function () {
@@ -156,25 +187,25 @@ var HeaderDropDown = (function(){
             }
         });
     };
-    var _toggleDrop = function(){
+    var _toggleDrop = function () {
         flag = "0";
-        if ($button.hasClass('is-active')){
+        if ($button.hasClass('is-active')) {
             _closeDrop();
-        }else{
+        } else {
             _openDrop();
         }
     };
-    var _openDrop = function(){
+    var _openDrop = function () {
         $button.addClass('is-active');
         $drop.addClass('is-visible');
     };
-    var _closeDrop = function(){
-      $button.removeClass('is-active');
-      $drop.removeClass('is-visible');
+    var _closeDrop = function () {
+        $button.removeClass('is-active');
+        $drop.removeClass('is-visible');
     };
 
     return{
-        init : init
+        init: init
     };
 })();
 
