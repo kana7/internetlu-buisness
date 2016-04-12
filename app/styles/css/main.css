@@ -3211,7 +3211,7 @@ svg:not(:root) {
   color: #818181 !important; }
 
 .black {
-  color: #07040D !important; }
+  color: #212121 !important; }
 
 .red {
   color: #DC0000 !important; }
@@ -3220,7 +3220,7 @@ svg:not(:root) {
   background-color: #e3eee3; }
 
 .background-black {
-  background-color: #07040D; }
+  background-color: #212121; }
 
 .background-lightgrey {
   background-color: #f8f8f8; }
@@ -3861,22 +3861,22 @@ span[class^=icon-] {
 
 .btn-outline-black, .btn-outline-inv, .btn-outline-inv-blue {
   border: 2px solid #fff;
-  background-color: #07040D;
+  background-color: #212121;
   color: #fff; }
   .btn-outline-black:hover, .btn-outline-inv:hover, .btn-outline-inv-blue:hover {
     background-color: #fff;
-    color: #07040D; }
+    color: #212121; }
 
 .btn-outline-inv {
-  border-color: #07040D;
+  border-color: #212121;
   border-width: 1px;
-  color: #07040D;
+  color: #212121;
   background-color: transparent;
   border-radius: 0;
   padding: 12px 15px;
   font-weight: 800; }
   .btn-outline-inv:hover {
-    background-color: #07040D;
+    background-color: #212121;
     color: #fff; }
   .btn-outline-inv.white {
     border-color: #fff;
@@ -3898,14 +3898,12 @@ span[class^=icon-] {
     color: #fff; }
 
 .border-blue {
-  border-color: #004994;
-  border: 1px solid;
-  border-width: 1px;
   color: #004994;
   background-color: transparent;
   border-radius: 0;
   padding: 12px 15px;
-  font-weight: 800; }
+  font-weight: 800;
+  font-size: 1.3em; }
 
 #offers-section .section-subtitle {
   margin-bottom: 40px;
@@ -4734,7 +4732,7 @@ span[class^=icon-] {
   -webkit-filter: grayscale(100%);
   -webkit-filter: grayscale(1);
   filter: grayscale(100%);
-  filter: url("../images/grey.svg#grayscale");
+  filter: url("../../images/grey.svg#grayscale");
   filter: gray; }
   .comptype-select, .comptype-select .overlay, .comptype-select comptype-select-box, .comptype-select p, .comptype-select h3 {
     -moz-transition: all 0.8s ease;
@@ -4814,7 +4812,7 @@ span[class^=icon-] {
     right: 0;
     margin: 0 auto;
     text-align: center;
-    background-color: #07040D;
+    background-color: #212121;
     height: 1px;
     width: 150px; }
   .subtitle-container.grey:after, .title-container.grey:after {
@@ -4827,7 +4825,7 @@ span[class^=icon-] {
     color: #fff !important; }
   .subtitle-container h2, .subtitle-container:not(.subtitle-container) h1, .subtitle-container.big h2, .title-container h2, .title-container:not(.subtitle-container) h1, .title-container.big h2 {
     margin: 0;
-    color: #07040D;
+    color: #212121;
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 600;
@@ -4865,13 +4863,13 @@ span[class^=icon-] {
   top: -10px;
   left: 0;
   color: #8e8e8e;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 30px; }
   .bg-header-pme .breadcrumb [class^="icon-"], .bg-header-ge .breadcrumb [class^="icon-"] {
-    font-size: 0.75em; }
+    font-size: 0.65em; }
   .bg-header-pme .breadcrumb li:not(:last-child), .bg-header-ge .breadcrumb li:not(:last-child) {
-    margin-right: 15px; }
+    margin-right: 5px; }
     .bg-header-pme .breadcrumb li:not(:last-child) a:hover, .bg-header-ge .breadcrumb li:not(:last-child) a:hover {
       text-decoration: underline; }
 
@@ -5288,7 +5286,7 @@ span[class^=icon-] {
     margin: 10px 0 15px; }
   .profit p {
     font-size: 1.1em;
-    color: #07040D;
+    color: #212121;
     text-align: justify;
     text-align-last: center;
     line-height: 20px;
@@ -6556,7 +6554,7 @@ h2.contact-title {
     font-size: 47px;
     line-height: 55px; }
   #slider-contents p.top-details {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 32px;
     text-align: center;
     text-align-last: auto; }

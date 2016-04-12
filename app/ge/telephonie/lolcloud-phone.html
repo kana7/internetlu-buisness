@@ -1,558 +1,559 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Téléphonie : LOL Cloud Phone – Luxembourg Online</title>
-  <meta name="description" content="Avec le LOL Cloud Phone, disposez d’un central téléphonique de haut niveau, enrichi de nombreuses fonctionnalités et parfaitement adaptable à votre entreprise.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <title>Téléphonie : LOL CLOUD Phone – Luxembourg Online</title>
+        <meta name="description" content="Avec LOL CLOUD Phone, disposez d’un central téléphonique de haut niveau, enrichi de nombreuses fonctionnalités et parfaitement adaptable à votre entreprise.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- build:css(.) ../../styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) ../../styles/css/main.css -->
-  <link rel="stylesheet" href="../../styles/css/main.css">
-  <link rel="stylesheet" href="../../styles/css/bg-img.css">
-  <!-- endbuild -->
-<script src="../../scripts/vendor/modernizr.js"></script>
+        <!-- build:css(.) ../../styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) ../../styles/css/main.css -->
+        <link rel="stylesheet" href="../../styles/css/main.css">
+        <link rel="stylesheet" href="../../styles/css/bg-img.css">
+        <!-- endbuild -->
+        <script src="../../scripts/vendor/modernizr.js"></script>
 
-  <!-- endbuild -->
+        <!-- endbuild -->
 
-</head>
-<body>
-  <!-- POPUP ESPACE CLIENT -->
-  <div id="clientSpace" class="popup">
-    <div class="background-client"></div>
-    <div class="white-pannel">
-      <button class="pannel-close"><span class="icon-x-icone"></span></button>
-      <h2>Espace Client</h2>
-      <ul class="client-menu">
-        <li class="active" data-id="mail">Email</li>
-        <li>|</li>
-        <li data-id="account">Mon compte</li>
-        <li>|</li>
-        <li data-id="homepage">Homepage</li>
-      </ul>
-      <div class="pannel-forms">
-        <form id="mail" class="clearfix is-visible" name="ServiceLogin1" method="POST" action="https://email.internet.lu/Scripts/sql.exe?_selection=10">
-          <input type="hidden" name="Sql" value="Default.phs">
-          <input type="hidden" name="SqlDB" value="OMS2">
-          <div class="phone-6 input-left">
-            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <form id="account" class="clearfix" name="LoginPhone" method="POST" action="http://shop.internet.lu/Scripts/sql.exe?LoginScript=LoginClient.phs&NextScript=DisplayAccount.phs&_Login=">
-          <input type="hidden" name="Sql" value="LoginClient_Login.phs">
-          <input type="hidden" name="SqlDB" value="LOLShop">
-          <div class="phone-6 input-left">
-            <input type="text" name="_Username" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="_Password" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <form id="homepage" class="clearfix" name="ServiceLogin3" method="POST" action="http://sites.internet.lu/Scripts/sql.exe">
-          <input type="hidden" name="Sql" value="default.phs">
-          <input type="hidden" name="SqlDB" value="OHPS">
-          <div class="phone-6 input-left">
-            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <div class="contact-infos hidden-phone">
-          Helpdesk: 2899 0000
-          <span>Lu-Ve: 8h00-19h00  l  Sa: 9h00-18h00</span>
-        </div>
-        <div class="contact-infos display-phone">
-          Helpdesk: 2899 0000
-          <span>Lu-Ve: 8h00-19h00<br/>Sa: 9h00-18h00</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./POPUP ESPACE CLIENT -->
-  <!-- FIXED MENU -->
-  <div class="fixed-options hidden-phone hidden-tab">
-    <a href="#">
-      <div class="white-fixed-option">
-        <div class="icon-call-me"></div>
-        <p>Veuillez me rappeler</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="blue-fixed-option">
-        <p>Abonnez-vous<br/> <strong>en ligne </strong><span class="icon-right-arrow"></span></p>
-      </div>
-    </a>
-  </div>
-  <!-- ./FIXED MENU -->
-  <!-- MOBILE MENU -->
-  <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
-    <ul class="menu">
-      <li class="menu-item link"><a href="../accueil.html">Accueil</a></li>
-      <li class="menu-item" data-id='internet'>Internet <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="sous-nav">
-        <ul class="menu">
-          <li class="menu-item link"><a href="../divers/assistance.html">Aide & Support</a></li>
-          <li class="menu-item link"><a href="../divers/news.html">Actualités</a></li>
-          <li class="menu-item link"><a href="../divers/propos.html">À propos</a></li>
-          <li class="menu-item link"><a href="../divers/contact.html">Contact</a></li>
-          
-          <li class="menu-item link"><a href="../divers/plan.html">Plan du site</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="internet">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Internet</li>
-        <li class="menu-item"><a href="../internet/accueil.html">Accueil Internet</a></li>
-        <li class="menu-item"><a href="../internet/sdsl.html">SDSL</a></li>
-        <li class="menu-item"><a href="../internet/fibre.html">Fibre</a></li>
-        <li class="menu-item"><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
-        <li class="menu-item"><a href="../internet/options-business.html">Options business</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="telephone">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Téléphonie</li>
-        <li class="menu-item"><a href="../telephonie/accueil.html">Accueil Téléphonie</a></li>
-        <li class="menu-item"><a href="../telephonie/lolcloud-phone.html">LOL CLOUD phone</a></li>
-        <li class="menu-item"><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
-        <li class="menu-item"><a href="../telephonie/equipements.html">Matériel & accessoires</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="cloud">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Cloud</li>
-        <li class="menu-item"><a href="../cloud/accueil.html">Accueil Cloud</a></li>
-        <li class="menu-item"><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
-        <li class="menu-item"><a href="../cloud/web-hosting.html">Web hosting</a></li>
-        <li class="menu-item"><a href="../cloud/email.html">Email</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="mobile">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Mobile</li>
-        <li class="menu-item"><a href="../mobile/accueil.html">Accueil Mobile</a></li>
-        <li class="menu-item"><a href="../mobile/abonnements.html">Abonnements mobiles</a></li>
-        <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ./MOBILE MENU -->
-  <!-- WEBSITE -->
-  <div id="siteWrap">
-    <header>
-      <div id="top-menu-header">
-        <div class="container-wrapper">
-          <div class="row">
-            <nav class="pull-left">
-              <div class="header-dropdown top-menu-header-links left">
-                <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
-                <ul class="drop">
-                  <li><a href="../../pme/accueil.html">PME</a></li>
-                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+    </head>
+    <body>
+        <!-- POPUP ESPACE CLIENT -->
+        <div id="clientSpace" class="popup">
+            <div class="background-client"></div>
+            <div class="white-pannel">
+                <button class="pannel-close"><span class="icon-x-icone"></span></button>
+                <h2>Espace Client</h2>
+                <ul class="client-menu">
+                    <li class="active" data-id="mail">Email</li>
+                    <li>|</li>
+                    <li data-id="account">Mon compte</li>
+                    <li>|</li>
+                    <li data-id="homepage">Homepage</li>
                 </ul>
-              </div>
-            </nav>
-            <nav class="pull-right hidden-phone hidden-tab">
-              <ul class="top-menu-header-links right">
-                <li><a href="../divers/assistance.html">Aide & Support</a></li>
-                <li><a href="../divers/news.html" target="blank_">Actualités</a></li>
-                <li><a href="../divers/propos.html" target="blank_">À propos</a></li>
-                <li><a href="../divers/contact.html" target="blank_">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-
-      <div id="bottom-menu-header">
-        <nav class="bottom-menu-header-links mobile display-phone display-tab">
-          <div class="pull-left">
-            <div class="logo">
-              <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+                <div class="pannel-forms">
+                    <form id="mail" class="clearfix is-visible" name="ServiceLogin1" method="POST" action="https://email.internet.lu/Scripts/sql.exe?_selection=10">
+                        <input type="hidden" name="Sql" value="Default.phs">
+                        <input type="hidden" name="SqlDB" value="OMS2">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <form id="account" class="clearfix" name="LoginPhone" method="POST" action="http://shop.internet.lu/Scripts/sql.exe?LoginScript=LoginClient.phs&NextScript=DisplayAccount.phs&_Login=">
+                        <input type="hidden" name="Sql" value="LoginClient_Login.phs">
+                        <input type="hidden" name="SqlDB" value="LOLShop">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="_Username" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="_Password" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <form id="homepage" class="clearfix" name="ServiceLogin3" method="POST" action="http://sites.internet.lu/Scripts/sql.exe">
+                        <input type="hidden" name="Sql" value="default.phs">
+                        <input type="hidden" name="SqlDB" value="OHPS">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <div class="contact-infos hidden-phone">
+                        Helpdesk: 2899 0000
+                        <span>Lu-Ve: 8h00-19h00  l  Sa: 9h00-18h00</span>
+                    </div>
+                    <div class="contact-infos display-phone">
+                        Helpdesk: 2899 0000
+                        <span>Lu-Ve: 8h00-19h00<br/>Sa: 9h00-18h00</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mobile-menu-button">
-            <button id="openClientSpaceMobile" class="mobile-button-blue openPopup" data-popup="0">
-              <span class="icon-account-icone"></span>
-            </button>
-            <button class="mobile-button-white">
-              <span class="icon-menu-icone"></span>
-            </button>
-          </div>
-        </nav>
-        <div class="container-wrapper hidden-phone hidden-tab">
-          <div class="row">
-            <div class="pull-left">
-              <div class="logo">
-                <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
-              </div><!--
-              --><nav class="bottom-menu-header-links">
-              <ul class="main-menu">
-                <li>
-                  <div class="active-border"></div>
-                  <a href="../internet/accueil.html">
-                    <div class="link">Internet</div>
-                  </a>
-                </li><!--
-                --><li class="active">
-                <div class="active-border"></div>
-                <a href="../telephonie/accueil.html">
-                  <div class="link">Téléphonie</div>
-                </a>
-              </li><!--
-            --><li>
-            <div class="active-border"></div>
-            <a href="../cloud/accueil.html">
-              <div class="link">Cloud</div>
+        </div>
+        <!-- ./POPUP ESPACE CLIENT -->
+        <!-- FIXED MENU -->
+        <div class="fixed-options hidden-phone hidden-tab">
+            <a href="#">
+                <div class="white-fixed-option">
+                    <div class="icon-call-me"></div>
+                    <p>Veuillez me rappeler</p>
+                </div>
             </a>
-          </li><!--
-          --><li>
-          <div class="active-border"></div>
-          <a href="../mobile/accueil.html">
-            <div class="link">Mobile</div>
-          </a>
-        </li>
-    </ul>
-  </nav>
-</div>
-<div class="pull-right hidden-phone hidden-tab">
-  <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- ./HEADER -->
-<section id="bg-ge-tel-lolphone-header" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
-  <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes entreprises</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Téléphonie</a></li><li><span class="icon-right-arrow"></span></li><li>LOL CLOUD Phone</li></ul>
-    <div class="row clearfix">
-      <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase white"><span class="extra-bold">LOL CLOUD</span> Phone</h1>
-        <p class="section-text white">Disposez d’un central téléphonique de haut niveau, sans vous soucier de son coût ou de son entretien : notre central téléphonique virtuel IP est la solution idéale pour votre entreprise.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-shadow page-content">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="phone-12 lgdesk-9 pull-right">
-        <div class="subtitle-container left">
-          <h2>Le central téléphonique nouvelle génération</h2>
+            <a href="#">
+                <div class="blue-fixed-option">
+                    <p>Abonnez-vous<br/> <strong>en ligne </strong><span class="icon-right-arrow"></span></p>
+                </div>
+            </a>
         </div>
-        <div class="offer-description black">
-          <p>Avec le <strong>LOL Cloud Phone</strong>, Luxembourg Online vous propose le nec plus ultra en matière de téléphonie, tout en s’occupant pour vous de l’installation du matériel et de la maintenance du central. <strong>Parfaitement adaptable</strong>, ce système téléphonique vous permet de conserver vos numéros téléphoniques existants et peut également évoluer à mesure que votre entreprise se développe. </p>
-          <p>Le <strong>LOL CLOUD Phone</strong> booste vos communications téléphoniques, améliore la productivité de vos employés et vous fait économiser sur vos coûts d’appels. En optant pour le <strong>système PBX</strong> de Luxembourg Online, tous les collaborateurs d’une même entreprise peuvent travailler sans contrainte, depuis des lieux géographiques différents. </p>
-          <p>Cette <strong>nouvelle génération</strong> de central téléphonique offre tout le pannel de services possibles pour la communication sur Internet, notamment le renvoi d'appel, l'enregistrement des appels, l'appel conférence, les applications mobiles, l’interphone, et bien plus.  Avec Luxembourg Online, bénéficiez du meilleur de la technologie et améliorez dès aujourd’hui la <strong>performance de votre entreprise</strong>. Profitez également de nos offres avantageuses et réduisez vos coûts.</p>
-          <p>Pour les grandes entreprises, Luxembourg Online propose un examen de votre solution existante et un <strong>audit détaillé</strong> de votre infrastructure. De plus, vous bénéficiez d’un <strong>SLA rapide</strong> et d’un numéro prioritaire en cas de besoin.</p>
-        </div>
-      </div>
-      <div class="display-lgdesk phone-2">
-        <img style="max-width: 100%; width: auto; height: auto;" src="../../images/ge/telephonie/img-cloud.jpg" alt="telephonie lol phone">
-      </div>
-    </div>
-  </div>
-</section>
-<style>
-.offer-table .offer-table-item {
-  font-size: 1.4em;
-}
-</style>
-<section class="section-shadow page-content background-lightblue">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="subtitle-container">
-        <h2>Notre offre téléphonie : </h2>
-      </div>
-      <div class="clearfix">
-        <div class="offer-table mono-offer">
-          <div style="height: 165px;" class="offer-table-col desk-offset-3 phone-12 tab-6 desk-3">
-            <div class="offer-table-header">LOL CLOUD<span class="normal"> PHONE</span></div>
-            <div style="height:107px;" class="offer-table-footer fix-height">
-              <div style="font-size: 0.8em; line-height: 20px; padding: 5px 0;">TARIF DÉGRESSIF</div>
-              <div style="margin: -7px auto; height: 64px;" class="offer-price">
-                <div style="right: 65px;">,50€<span class="exponent">1</span></div>
-                6<span>/poste<span class="exponent">2</span></span>
-              </div>
-              <div style="font-size: 0.7em; line-height: 20px;" class="grey">FRAIS MENSUEL</div>
-            </div>
-          </div>
-          <div style="height:165px;" class="offer-table-col phone-12 tab-6 desk-3">
-            <div style="height:33.33333%;" class="offer-table-item"><span class="icon-check-ico"></span> Appels nationaux fixes</div>
-            <div style="height:33.33333%;" class="offer-table-item"><span class="icon-check-ico"></span>Appels mobiles LOL</div>
-            <div style="height:33.33333%;" class="offer-table-item"><span class="icon-check-ico"></span>120 minutes en Europe</div>
-          </div>
-      </div>
-      <div class="footer-note phone-mb-0">1) Prix hors taxes.</div>
-      <div class="footer-note phone-mt-0">2) Installation pour un technicien 20.00€/poste.</div>
-    </div>
-    <div class="clearfix align-center phone-mt-10">
-      <a class="btn-outline-inv-blue" href="./options-business.html">En savoir plus sur nos option business</a>
-    </div>
-  </div>
-</section>
-<section class="section-shadow page-content">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="subtitle-container left">
-        <h2>Vos bénéfices</h2>
-      </div>
-      <div class="clearfix left flex">
-        <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
-          <div class="profit">
-            <h3>Expertise</h3>
-            <p>Une équipe d’experts est là pour vous renseigner, vous conseiller et vous suivre au quotidien dans votre solution télécom globale.</p>
-          </div>
-        </div>
-          <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
-          <div class="profit">
-            <h3>Fiabilité</h3>
-            <p>Luxembourg online met à votre disposition des solutions en téléphonie fiables pour vous accompagner dans la performance globale de votre entreprise.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
-          <div class="profit">
-            <h3>Economie</h3>
-            <p>Luxembourg Online vous garantit de nombreux avantages économiques en réduisant vos coûts de communication et en s’occupant pour vous de l’achat et de l’entretien du central téléphonique.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
-          <div class="profit">
-            <h3>Facilité</h3>
-            <p>Avec le LOL Cloud Phone, vous bénéficiez d’un central téléphonique de haut niveau à un prix avantageux, sans vous soucier de son installation. Vous conservez tous vos numéros.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
-          <div class="profit">
-            <h3>Multi-Site</h3>
-            <p>Il s’agit de la solution sur-mesure idéale, qui s’adapte à vos besoins professionnels, quel que soit le nombre de postes utilisés dans votre entreprise.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
-          <div class="profit">
-            <h3>Multi-fonction</h3>
-            <p>Luxembourg Online propose un grand nombre de fonctions incluses telles que la messagerie vocale, le transfert d’appels, l’appel en conférence et bien plus encore.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
-          <div class="profit">
-            <h3>Connectivité</h3>
-            <p>Luxembourg Online vous offre les appels nationaux fixes et vers mobiles LOL en illimité, ainsi que 120 minutes gratuites vers l’Europe fixe pour chacun de vos postes.</p>
-          </div>
-        </div>
-        <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
-          <div class="profit">
-            <h3>Assistance prioritaire</h3>
-            <p>Pour votre solution PBX, notre équipe vous offre un service prioritaire, avec des délais de réponse et d’interventions raccourcis.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-shadow page-content background-blue">
-  <div class="container-wrapper">
-    <div class="row align-center">
-      <div class="subtitle-container left white">
-        <h2>Fonctionnalités</h2>
-      </div>
-        <ul style="font-size: 1.37em;" class="function-list white align-left">
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Messagerie vocale</li>
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Musique d’attente</li>
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Identification des appelants</li>
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Déviation et transfert d’appels</li>
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Appels en conférence</li>
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Appels en attente</li>
-          <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Mail to fax – fax to mail</li>
-        </ul>
-    </div>
-  </div>
-</section>
-<section style="background-image: url(../../images/pme/telephonie/bg-materiel.jpg);" class="bg-header">
-  <div class="container-wrapper">
-    <div class="row">
-      <div class="txt phone-12 desk-6 pull-left">
-        <div style="background-color: white; padding: 25px 35px; margin: 20px 0;">
-          <h1 style="margin-top: 0;" class="section-title lowercase">Notre <span class="bold">matériel</span></h1>
-          <p class="section-text">Découvrez les téléphones de bureau ainsi que les accessoires proposés avec nos offres de téléphonies IP.</p>
-          <a href="../telephonie/equipements.html" class="btn-outline-inv-blue">Découvrez notre matériel</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="background-image: url(../../images/ge/Contact_img_1055x232.jpg); height: 250px;" class="bg-header">
-  <div class="container-wrapper">
-    <div style="height: 100%;" class="row">
-      <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>
-    </div>
-  </div>
-</section>
-  <!-- FOOTER -->
-  <footer>
-    <div id="social-links">
-      <div class="container-wrapper">
-        <div class="row">
-          <div class="subtitle-container grey">
-            <h2>Retrouvez Luxembourg Online sur :</h2>
-          </div>
-          <div class="clearfix tab-mt-30 desk-mt-0">
-            <nav class="align-center">
-              <ul class="center">
-                <li>
-                  <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
-                    <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
-                    <span class="brand-name">LinkedIn</span>
-                  </a>
+        <!-- ./FIXED MENU -->
+        <!-- MOBILE MENU -->
+        <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
+            <ul class="menu">
+                <li class="menu-item link"><a href="../accueil.html">Accueil</a></li>
+                <li class="menu-item" data-id='internet'>Internet <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
+                <li class="sous-nav">
+                    <ul class="menu">
+                        <li class="menu-item link"><a href="../divers/assistance.html">Aide & Support</a></li>
+                        <li class="menu-item link"><a href="../divers/news.html">Actualités</a></li>
+                        <li class="menu-item link"><a href="../divers/propos.html">À propos</a></li>
+                        <li class="menu-item link"><a href="../divers/contact.html">Contact</a></li>
+
+                        <li class="menu-item link"><a href="../divers/plan.html">Plan du site</a></li>
+                    </ul>
                 </li>
-                <li>
-                  <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
-                    <div class="social-icon facebook"><span class="icon-facebook"></span></div>
-                    <span class="brand-name">Facebook</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.online.lu/" target="blank_">
-                    <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
-                    <span class="brand-name">Online.lu</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hidden-phone hidden-tab hidden-desk">
-      <div id="contact">
-        <div class="container-wrapper">
-          <div class="row">
-            <div class="text">Contactez-nous : </div>
-            <ul class="contact-infos spread">
-              <li>
-                <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
-              </li>
-              <li>
-                <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
-              </li>
-              <li>
-                <span class="icon-internet-ico"></span><a href=" ../divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
-              </li>
             </ul>
-          </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="internet">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Internet</li>
+                    <li class="menu-item"><a href="../internet/accueil.html">Accueil Internet</a></li>
+                    <li class="menu-item"><a href="../internet/sdsl.html">SDSL</a></li>
+                    <li class="menu-item"><a href="../internet/fibre.html">Fibre</a></li>
+                    <li class="menu-item"><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
+                    <li class="menu-item"><a href="../internet/options-business.html">Options business</a></li>
+                </ul>
+            </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="telephone">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Téléphonie</li>
+                    <li class="menu-item"><a href="../telephonie/accueil.html">Accueil Téléphonie</a></li>
+                    <li class="menu-item"><a href="../telephonie/lolcloud-phone.html">LOL CLOUD phone</a></li>
+                    <li class="menu-item"><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
+                    <li class="menu-item"><a href="../telephonie/equipements.html">Matériel & accessoires</a></li>
+                </ul>
+            </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="cloud">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Cloud</li>
+                    <li class="menu-item"><a href="../cloud/accueil.html">Accueil Cloud</a></li>
+                    <li class="menu-item"><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
+                    <li class="menu-item"><a href="../cloud/web-hosting.html">Web hosting</a></li>
+                    <li class="menu-item"><a href="../cloud/email.html">Email</a></li>
+                </ul>
+            </div>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="mobile">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Mobile</li>
+                    <li class="menu-item"><a href="../mobile/accueil.html">Accueil Mobile</a></li>
+                    <li class="menu-item"><a href="../mobile/abonnements.html">Abonnements mobiles</a></li>
+                    <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ./MOBILE MENU -->
+        <!-- WEBSITE -->
+        <div id="siteWrap">
+            <header>
+                <div id="top-menu-header">
+                    <div class="container-wrapper">
+                        <div class="row">
+                            <nav class="pull-left">
+                                <div class="header-dropdown top-menu-header-links left">
+                                    <button class="">Grandes entreprises<span class="icon-right-arrow"></span></button>
+                                    <ul class="drop">
+                                        <li><a href="../../pme/accueil.html">PME</a></li>
+                                        <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <nav class="pull-right hidden-phone hidden-tab">
+                                <ul class="top-menu-header-links right">
+                                    <li><a href="../divers/assistance.html">Aide & Support</a></li>
+                                    <li><a href="../divers/news.html">Actualités</a></li>
+                                    <li><a href="../divers/propos.html">À propos</a></li>
+                                    <li><a href="../divers/contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bottom-menu-header">
+                    <nav class="bottom-menu-header-links mobile display-phone display-tab">
+                        <div class="pull-left">
+                            <div class="logo">
+                                <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-button">
+                            <button id="openClientSpaceMobile" class="mobile-button-blue openPopup" data-popup="0">
+                                <span class="icon-account-icone"></span>
+                            </button>
+                            <button class="mobile-button-white">
+                                <span class="icon-menu-icone"></span>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="container-wrapper hidden-phone hidden-tab">
+                        <div class="row">
+                            <div class="pull-left">
+                                <div class="logo">
+                                    <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                                </div><!--
+                                --><nav class="bottom-menu-header-links">
+                                    <ul class="main-menu">
+                                        <li>
+                                            <div class="active-border"></div>
+                                            <a href="../internet/accueil.html">
+                                                <div class="link">Internet</div>
+                                            </a>
+                                        </li><!--
+                                        --><li class="active">
+                                            <div class="active-border"></div>
+                                            <a href="../telephonie/accueil.html">
+                                                <div class="link">Téléphonie</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../cloud/accueil.html">
+                                                <div class="link">Cloud</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../mobile/accueil.html">
+                                                <div class="link">Mobile</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="pull-right hidden-phone hidden-tab">
+                                <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ./HEADER -->
+            <section id="bg-ge-tel-lolphone-header" class="bg-header-ge not-center section-layout right-orientation header-section-height section-shadow">
+                <div class="container-wrapper">
+                    <ul class="breadcrumb"><li><a href="../accueil.html">Grandes entreprises</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Téléphonie</a></li><li><span class="icon-right-arrow"></span></li><li>LOL CLOUD Phone</li></ul>
+                    <div class="row clearfix">
+                        <div class="phone-12 desk-6">
+                            <h1 class="section-title lowercase white"><span class="extra-bold">LOL CLOUD</span> Phone</h1>
+                            <p class="section-text white">Disposez d’un central téléphonique de haut niveau, sans vous soucier de son coût ou de son entretien : notre central téléphonique virtuel IP est la solution idéale pour votre entreprise.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-shadow page-content">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="phone-12 lgdesk-9 pull-right">
+                            <div class="subtitle-container left">
+                                <h2>Le central téléphonique nouvelle génération</h2>
+                            </div>
+                            <div class="offer-description black">
+                                <p>Avec <strong>LOL CLOUD Phone</strong>, Luxembourg Online vous propose le nec plus ultra en matière de téléphonie, tout en s’occupant pour vous de l’installation du matériel et de la maintenance du central. <strong>Parfaitement adaptable</strong>, ce système téléphonique vous permet de conserver vos numéros téléphoniques existants et peut également évoluer à mesure que votre entreprise se développe. </p>
+                                <p><strong>LOL CLOUD Phone</strong> booste vos communications téléphoniques, améliore la productivité de vos employés et vous fait économiser sur vos coûts d’appels. En optant pour le <strong>système PBX</strong> de Luxembourg Online, tous les collaborateurs d’une même entreprise peuvent travailler sans contrainte, depuis des lieux géographiques différents. </p>
+                                <p>Cette <strong>nouvelle génération</strong> de central téléphonique offre tout le pannel de services possibles pour la communication sur Internet, notamment le renvoi d'appel, l'enregistrement des appels, l'appel conférence, les applications mobiles, l’interphone, et bien plus.  Avec Luxembourg Online, bénéficiez du meilleur de la technologie et améliorez dès aujourd’hui la <strong>performance de votre entreprise</strong>. Profitez également de nos offres avantageuses et réduisez vos coûts.</p>
+                                <p>Pour les grandes entreprises, Luxembourg Online propose un examen de votre solution existante et un <strong>audit détaillé</strong> de votre infrastructure. De plus, vous bénéficiez d’un <strong>SLA rapide</strong> et d’un numéro prioritaire en cas de besoin.</p>
+                            </div>
+                        </div>
+                        <div class="display-lgdesk phone-2">
+                            <img style="max-width: 100%; width: auto; height: auto;" src="../../images/ge/telephonie/img-cloud.jpg" alt="telephonie lol phone">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <style>
+                .offer-table .offer-table-item {
+                    font-size: 1.4em;
+                }
+            </style>
+            <section class="section-shadow page-content background-lightblue">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="subtitle-container">
+                            <h2>Notre offre téléphonie : </h2>
+                        </div>
+                        <div class="clearfix">
+                            <div class="offer-table mono-offer">
+                                <div style="height: 165px;" class="offer-table-col desk-offset-3 phone-12 tab-6 desk-3">
+                                    <div class="offer-table-header">LOL CLOUD<span class="normal"> PHONE</span></div>
+                                    <div style="height:107px;" class="offer-table-footer fix-height">
+                                        <div style="font-size: 0.8em; line-height: 20px; padding: 5px 0;">TARIF DÉGRESSIF</div>
+                                        <div style="margin: -7px auto; height: 64px;" class="offer-price">
+                                            <div style="right: 65px;">,50€<span class="exponent">1</span></div>
+                                            6<span>/poste<span class="exponent">2</span></span>
+                                        </div>
+                                        <div style="font-size: 0.7em; line-height: 20px;" class="grey">FRAIS MENSUEL</div>
+                                    </div>
+                                </div>
+                                <div style="height:165px;" class="offer-table-col phone-12 tab-6 desk-3">
+                                    <div style="height:33.33333%;" class="offer-table-item"><span class="icon-check-ico"></span> Appels nationaux fixes</div>
+                                    <div style="height:33.33333%;" class="offer-table-item"><span class="icon-check-ico"></span>Appels mobiles LOL</div>
+                                    <div style="height:33.33333%;" class="offer-table-item"><span class="icon-check-ico"></span>120 minutes en Europe<span class="exponent">3</span></div>
+                                </div>
+                            </div>
+                            <div class="footer-note phone-mb-0">1) Prix hors taxes.</div>
+                            <div class="footer-note phone-mt-0 phone-mb-0">2) Installation pour un technicien 20.00€/poste.</div>
+                            <div class="footer-note phone-mt-0">3) Pays membres de l'U.E</div>
+                        </div>
+                        <div class="clearfix align-center phone-mt-10">
+                            <a class="btn-outline-inv-blue" href="./options-business.html">En savoir plus sur nos options business</a>
+                        </div>
+                    </div>
+            </section>
+            <section class="section-shadow page-content">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="subtitle-container left">
+                            <h2>Vos bénéfices</h2>
+                        </div>
+                        <div class="clearfix left flex">
+                            <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
+                                <div class="profit">
+                                    <h3>Expertise</h3>
+                                    <p>Une équipe d’experts est là pour vous renseigner, vous conseiller et vous suivre au quotidien dans votre solution télécom globale.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
+                                <div class="profit">
+                                    <h3>Fiabilité</h3>
+                                    <p>Luxembourg online met à votre disposition des solutions en téléphonie fiables pour vous accompagner dans la performance globale de votre entreprise.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
+                                <div class="profit">
+                                    <h3>Economie</h3>
+                                    <p>Luxembourg Online vous garantit de nombreux avantages économiques en réduisant vos coûts de communication et en s’occupant pour vous de l’achat et de l’entretien du central téléphonique.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
+                                <div class="profit">
+                                    <h3>Facilité</h3>
+                                    <p>Avec LOL CLOUD Phone, vous bénéficiez d’un central téléphonique de haut niveau à un prix avantageux, sans vous soucier de son installation. Vous conservez tous vos numéros.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
+                                <div class="profit">
+                                    <h3>Multi-Site</h3>
+                                    <p>Il s’agit de la solution sur-mesure idéale, qui s’adapte à vos besoins professionnels, quel que soit le nombre de postes utilisés dans votre entreprise.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
+                                <div class="profit">
+                                    <h3>Multi-fonction</h3>
+                                    <p>Luxembourg Online propose un grand nombre de fonctions incluses telles que la messagerie vocale, le transfert d’appels, l’appel en conférence et bien plus encore.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pr-15 desk-pr-40">
+                                <div class="profit">
+                                    <h3>Connectivité</h3>
+                                    <p>Luxembourg Online vous offre les appels nationaux fixes et vers mobiles LOL en illimité, ainsi que 120 minutes gratuites vers l’Europe fixe pour chacun de vos postes.</p>
+                                </div>
+                            </div>
+                            <div class="phone-12 tab-6 tab-pl-15 desk-pl-40">
+                                <div class="profit">
+                                    <h3>Assistance prioritaire</h3>
+                                    <p>Pour votre solution PBX, notre équipe vous offre un service prioritaire, avec des délais de réponse et d’interventions raccourcis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-shadow page-content background-blue">
+                <div class="container-wrapper">
+                    <div class="row align-center">
+                        <div class="subtitle-container left white">
+                            <h2>Fonctionnalités</h2>
+                        </div>
+                        <ul style="font-size: 1.37em;" class="function-list white align-left">
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Messagerie vocale</li>
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Musique d’attente</li>
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Identification des appelants</li>
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Déviation et transfert d’appels</li>
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Appels en conférence</li>
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Appels en attente</li>
+                            <li class="phone-12 tab-6 desk-4"><span class="icon-check-ico"></span> Mail to fax – fax to mail</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section style="background-image: url(../../images/pme/telephonie/bg-materiel.jpg);" class="bg-header">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="txt phone-12 desk-6 pull-left">
+                            <div style="background-color: white; padding: 25px 35px; margin: 20px 0;">
+                                <h1 style="margin-top: 0;" class="section-title lowercase">Notre <span class="bold">matériel</span></h1>
+                                <p class="section-text">Découvrez les téléphones de bureau ainsi que les accessoires proposés avec nos offres de téléphonies IP.</p>
+                                <a href="../telephonie/equipements.html" class="btn-outline-inv-blue">Découvrez notre matériel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="background-image: url(../../images/ge/Contact_img_1055x232.jpg); height: 250px;" class="bg-header">
+                <div class="container-wrapper">
+                    <div style="height: 100%;" class="row">
+                        <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer>
+                <div id="social-links">
+                    <div class="container-wrapper">
+                        <div class="row">
+                            <div class="subtitle-container grey">
+                                <h2>Retrouvez Luxembourg Online sur :</h2>
+                            </div>
+                            <div class="clearfix tab-mt-30 desk-mt-0">
+                                <nav class="align-center">
+                                    <ul class="center">
+                                        <li>
+                                            <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
+                                                <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
+                                                <span class="brand-name">LinkedIn</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
+                                                <div class="social-icon facebook"><span class="icon-facebook"></span></div>
+                                                <span class="brand-name">Facebook</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.online.lu/" target="blank_">
+                                                <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
+                                                <span class="brand-name">Online.lu</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-phone hidden-tab hidden-desk">
+                    <div id="contact">
+                        <div class="container-wrapper">
+                            <div class="row">
+                                <div class="text">Contactez-nous : </div>
+                                <ul class="contact-infos spread">
+                                    <li>
+                                        <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
+                                    </li>
+                                    <li>
+                                        <span class="icon-internet-ico"></span><a href=" ../divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
+                        <div class="container-wrapper">
+                            <div class="row">
+                                <a class="help-link" href="divers/assistance.html">
+                                    <span class="icon-info-icone"></span>
+                                    <p>Besoin d'aide ? Accédez à l’espace assistance de Luxembourg Online (FAQ, informations, guides et documents utiles, contrats, divers)</p>
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                                <div class="separator hidden-phone hidden-tab"></div>
+                            </div>
+                            <div class="row hidden-phone hidden-tab">
+                                <div class="footer-top-links">
+                                    <h4>internet : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="internet/offres.html">Nos abonnements</a></li>
+                                            <li><a href="promos/fibre.html">LOL FIBRE 100</a></li>
+                                            <li><a href="internet/equipements.html">Équipements</a></li>
+                                            <li><a href="internet/equipements.html">S'abonner</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>téléphonie : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="telephonie/tarifs.html">Abonnement</a></li>
+                                            <li><a href="telephonie/equipements.html">Tarifs détaillés</a></li>
+                                            <li><a href="telephonie/equipements.html">Équipements</a></li>
+                                            <li><a href="internet/equipements.html">S'abonner</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>Cloud : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="tv/offres.html">Abonnement</a></li>
+                                            <li><a href="tv/equipements.html">Chaînes</a></li>
+                                            <li><a href="promos/offreloltv.html">Équipements</a></li>
+                                            <li><a href="promos/offreloltv.html">S'abonner</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>mobile : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="mobile/abonnements.html">Offre spéciale fibre</a></li>
+                                            <li><a href="mobile/equipements.html">TV - installation offerte</a></li>
+                                            <li><a href="mobile/equipements.html">Offre spéciale II</a></li>
+                                            <li><a href="mobile/equipements.html">Offre spéciale Mobile</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="separator"></div>
+                                <div class="phone-12">
+                                    <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
+                                    <nav class="hidden-phone">
+                                        <ul class="footer-bottom-links">
+                                            <li>© Luxembourg Online S.A. – 2016, tous droits réservés</li>
+                                            <li><a href="http://www.internet.lu/documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
+                                            <li><a href="divers/emploi.html">Offres d'emploi</a></li>
+                                            <li><a href="divers/plan.html">Plan du site</a></li>
+                                            <li><a href="divers/contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--              ./FOOTER               -->
         </div>
-      </div>
-      <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
-        <div class="container-wrapper">
-          <div class="row">
-            <a class="help-link" href="divers/assistance.html">
-              <span class="icon-info-icone"></span>
-              <p>Besoin d'aide ? Accédez à l’espace assistance de Luxembourg Online (FAQ, informations, guides et documents utiles, contrats, divers)</p>
-              <span class="icon-right-arrow"></span>
-            </a>
-            <div class="separator hidden-phone hidden-tab"></div>
-          </div>
-          <div class="row hidden-phone hidden-tab">
-            <div class="footer-top-links">
-              <h4>internet : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="internet/offres.html">Nos abonnements</a></li>
-                  <li><a href="promos/fibre.html">LOL FIBRE 100</a></li>
-                  <li><a href="internet/equipements.html">Équipements</a></li>
-                  <li><a href="internet/equipements.html">S'abonner</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-top-links">
-              <h4>téléphonie : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="telephonie/tarifs.html">Abonnement</a></li>
-                  <li><a href="telephonie/equipements.html">Tarifs détaillés</a></li>
-                  <li><a href="telephonie/equipements.html">Équipements</a></li>
-                  <li><a href="internet/equipements.html">S'abonner</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-top-links">
-              <h4>Cloud : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="tv/offres.html">Abonnement</a></li>
-                  <li><a href="tv/equipements.html">Chaînes</a></li>
-                  <li><a href="promos/offreloltv.html">Équipements</a></li>
-                  <li><a href="promos/offreloltv.html">S'abonner</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-top-links">
-              <h4>mobile : </h4>
-              <nav>
-                <ul class="links">
-                  <li><a href="mobile/abonnements.html">Offre spéciale fibre</a></li>
-                  <li><a href="mobile/equipements.html">TV - installation offerte</a></li>
-                  <li><a href="mobile/equipements.html">Offre spéciale II</a></li>
-                  <li><a href="mobile/equipements.html">Offre spéciale Mobile</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="row">
-            <div class="separator"></div>
-            <div class="phone-12">
-              <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
-              <nav class="hidden-phone">
-                <ul class="footer-bottom-links">
-                  <li>© Luxembourg Online S.A. – 2016, tous droits réservés</li>
-                  <li><a href="http://www.internet.lu/documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
-                  <li><a href="divers/emploi.html">Offres d'emploi</a></li>
-                  <li><a href="divers/plan.html">Plan du site</a></li>
-                  <li><a href="divers/contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--              ./FOOTER               -->
-</div>
-<!-- ./WEBSITE -->
+        <!-- ./WEBSITE -->
 
 
 
-<!-- build:js(.) ../../scripts/vendor.js -->
-<!-- bower:js -->
+        <!-- build:js(.) ../../scripts/vendor.js -->
+        <!-- bower:js -->
 
-<!-- endbower -->
-<!-- endbuild -->
+        <!-- endbower -->
+        <!-- endbuild -->
 
 
 
-<script src="../../scripts/vendor/jquery.min.js"></script>
-<script src="../../scripts/main.js"></script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script type="text/javascript" src="../../scripts/analytics.js"></script>
-<!-- endbuild -->
-</body>
+        <script src="../../scripts/vendor/jquery.min.js"></script>
+        <script src="../../scripts/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script type="text/javascript" src="../../scripts/analytics.js"></script>
+        <!-- endbuild -->
+    </body>
 </html>

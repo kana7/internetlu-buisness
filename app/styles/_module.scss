@@ -767,14 +767,12 @@ span[class^=icon-]
 }
 
 .border-blue{
-    border-color: $blue;
-    border: 1px solid;
-    border-width: 1px;
     color: $blue;
     background-color: transparent;
     border-radius: 0;
     padding: 12px 15px;
     font-weight: 800;
+    font-size: 1.3em;
 }
 
 #offers-section{
@@ -1568,7 +1566,7 @@ span[class^=icon-]
     -webkit-filter: grayscale(100%);
     -webkit-filter: grayscale(1);
     filter: grayscale(100%);
-    filter: url('../images/grey.svg#grayscale');
+    filter: url('../../images/grey.svg#grayscale');
     filter: gray;
     &, & .overlay, & comptype-select-box, & p, & h3{
         @include transition(all .8s ease);
@@ -1730,12 +1728,12 @@ span[class^=icon-]
         top: -10px;
         left: 0;
         color: lighten($dark-grey, 5%);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 30px;
-        [class^="icon-"]{font-size: 0.75em;}
+        [class^="icon-"]{font-size: 0.65em;}
         li{&:not(:last-child){
-               margin-right: 15px;
+               margin-right: 5px;
                a:hover{
                    text-decoration: underline;
                }
