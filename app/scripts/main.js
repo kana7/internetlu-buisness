@@ -123,7 +123,7 @@ var selectText = function (element) {
     };
 };
 
-//Affiche un container au clique sur un élément dans un container .dropdown
+//Affiche un container au clic sur un élément dans un container .dropdown
 var DropDown = function (element) {
     var $dropdown = element;
     var $dropButton = $dropdown.children('[data-trigger]');
@@ -165,6 +165,7 @@ var solutionDropDown = function (element) {
     };
 };
 
+// Gère le dropdown dans le header tout en haut de la page (particuliers, buisness, pme)
 var HeaderDropDown = (function () {
     var $document = $('html');
     var $element = $('.header-dropdown');
