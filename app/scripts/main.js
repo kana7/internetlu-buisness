@@ -160,7 +160,7 @@ var solutionDropDown = function (element) {
             setTimeout(function () {
                 $('.gestion .pme-solution.offre .content').not($content).removeClass('is-open');
                 $('.gestion .pme-solution.offre .blue-circle').not($button).removeClass('is-active');
-            }, 100);
+            }, 150);
         }
     };
 };

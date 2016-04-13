@@ -1891,6 +1891,12 @@ span[class^=icon-]
                 text-align: justify;
             }
         }
+        &:hover{
+            .btn-outline-inv-blue{
+                background-color: $blue;
+                color: $white;
+            }  
+        } 
     }
 }
 .gestion .pme-solution.offre{

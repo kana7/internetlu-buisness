@@ -5028,6 +5028,9 @@ span[class^=icon-] {
         margin: 0 0 15px;
         min-height: initial !important;
         text-align: justify; }
+    .pme-solution.offre:hover .btn-outline-inv-blue {
+      background-color: #004994;
+      color: #fff; }
 
 .gestion .pme-solution.offre .content {
   display: block;
