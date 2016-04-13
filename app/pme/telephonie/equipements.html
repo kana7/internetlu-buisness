@@ -1,694 +1,694 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Téléphonie : Equipements téléphonie - Luxembourg Online</title>
-  <meta name="description" content="Luxembourg Online vous propose une gamme complète de téléphones de bureau et accessoires simples d’utilisation et de haute qualité.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <title>Téléphonie : Equipements téléphonie - Luxembourg Online</title>
+        <meta name="description" content="Luxembourg Online vous propose une gamme complète de téléphones de bureau et accessoires simples d’utilisation et de haute qualité.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- build:css(.) ../../styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) ../../styles/css/main.css -->
-  <link rel="stylesheet" href="../../styles/css/main.css">
-  <link rel="stylesheet" href="../../styles/css/bg-img.css">
-  <link rel="stylesheet" href="../../styles/css/flickity.css">
-  <!-- endbuild -->
-<script src="../../scripts/vendor/modernizr.js"></script>
+        <!-- build:css(.) ../../styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) ../../styles/css/main.css -->
+        <link rel="stylesheet" href="../../styles/css/main.css">
+        <link rel="stylesheet" href="../../styles/css/bg-img.css">
+        <link rel="stylesheet" href="../../styles/css/flickity.css">
+        <!-- endbuild -->
+        <script src="../../scripts/vendor/modernizr.js"></script>
 
-  <!-- endbuild -->
+        <!-- endbuild -->
 
-</head>
-<body>
-  <!-- POPUP ESPACE CLIENT -->
-  <div id="clientSpace" class="popup">
-    <div class="background-client"></div>
-    <div class="white-pannel">
-      <button class="pannel-close"><span class="icon-x-icone"></span></button>
-      <h2>Espace Client</h2>
-      <ul class="client-menu">
-        <li class="active" data-id="mail">Email</li>
-        <li>|</li>
-        <li data-id="account">Mon compte</li>
-        <li>|</li>
-        <li data-id="homepage">Homepage</li>
-      </ul>
-      <div class="pannel-forms">
-        <form id="mail" class="clearfix is-visible" name="ServiceLogin1" method="POST" action="https://email.internet.lu/Scripts/sql.exe?_selection=10">
-          <input type="hidden" name="Sql" value="Default.phs">
-          <input type="hidden" name="SqlDB" value="OMS2">
-          <div class="phone-6 input-left">
-            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <form id="account" class="clearfix" name="LoginPhone" method="POST" action="http://shop.internet.lu/Scripts/sql.exe?LoginScript=LoginClient.phs&NextScript=DisplayAccount.phs&_Login=">
-          <input type="hidden" name="Sql" value="LoginClient_Login.phs">
-          <input type="hidden" name="SqlDB" value="LOLShop">
-          <div class="phone-6 input-left">
-            <input type="text" name="_Username" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="_Password" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <form id="homepage" class="clearfix" name="ServiceLogin3" method="POST" action="http://sites.internet.lu/Scripts/sql.exe">
-          <input type="hidden" name="Sql" value="default.phs">
-          <input type="hidden" name="SqlDB" value="OHPS">
-          <div class="phone-6 input-left">
-            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
-          </div>
-          <div class="phone-6 input-right">
-            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
-          </div>
-          <button class="btn-blue" type="submit">Se connecter</button>
-        </form>
-        <div class="contact-infos hidden-phone">
-          Helpdesk: 2899 0000
-          <span>Lu-Ve: 8h00-19h00  l  Sa: 9h00-18h00</span>
-        </div>
-        <div class="contact-infos display-phone">
-          Helpdesk: 2899 0000
-          <span>Lu-Ve: 8h00-19h00<br/>Sa: 9h00-18h00</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./POPUP ESPACE CLIENT -->
-  <!-- FIXED MENU -->
-  <div class="fixed-options hidden-phone hidden-tab">
-    <a href="#">
-      <div class="white-fixed-option">
-        <div class="icon-call-me"></div>
-        <p>Veuillez me rappeler</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="blue-fixed-option">
-        <p>Abonnez-vous<br/> <strong>en ligne </strong><span class="icon-right-arrow"></span></p>
-      </div>
-    </a>
-  </div>
-  <!-- ./FIXED MENU -->
-  <!-- MOBILE MENU -->
-  <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
-    <ul class="menu">
-      <li class="menu-item link"><a href="../accueil.html">Accueil</a></li>
-      <li class="menu-item" data-id='internet'>Internet <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
-      <li class="menu-item" data-id='gestion'>Gestion <span class="icon-right-arrow"></span></li>
-      <li class="sous-nav">
-        <ul class="menu">
-          <li class="menu-item link"><a href="../divers/assistance.html">Aide & Support</a></li>
-          <li class="menu-item link"><a href="../divers/news.html">Actualités</a></li>
-          <li class="menu-item link"><a href="../divers/propos.html">À propos</a></li>
-          <li class="menu-item link"><a href="../divers/contact.html">Contact</a></li>
-          
-          <li class="menu-item link"><a href="../divers/plan.html">Plan du site</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="internet">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Internet</li>
-        <li class="menu-item"><a href="../internet/accueil.html">Accueil Internet</a></li>
-        <li class="menu-item"><a href="../internet/sdsl.html">SDSL</a></li>
-        <li class="menu-item"><a href="../internet/fibre.html">Fibre</a></li>
-        <li class="menu-item"><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
-        <li class="menu-item"><a href="../internet/options-business.html">Options business</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="telephone">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Téléphonie</li>
-        <li class="menu-item"><a href="../telephonie/accueil.html">Accueil Téléphonie</a></li>
-        <li class="menu-item"><a href="../telephonie/lolcloud-phone.html">LOL CLOUD phone</a></li>
-        <li class="menu-item"><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
-        <li class="menu-item"><a href="../telephonie/equipements.html">Matériel & accessoires</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="cloud">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Cloud</li>
-        <li class="menu-item"><a href="../cloud/accueil.html">Accueil Cloud</a></li>
-        <li class="menu-item"><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
-        <li class="menu-item"><a href="../cloud/web-hosting.html">Web hosting</a></li>
-        <li class="menu-item"><a href="../cloud/email.html">Email</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="mobile">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Mobile</li>
-        <li class="menu-item"><a href="../mobile/accueil.html">Accueil Mobile</a></li>
-        <li class="menu-item"><a href="../mobile/abonnements.html">Abonnements mobiles</a></li>
-        <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
-      </ul>
-    </div>
-    <div class="menu-links-wrapper">
-      <ul class="menu-links" id="gestion">
-        <li class="menu-item back"><span class="icon-right-arrow"></span>Gestion</li>
-        <li class="menu-item"><a href="../gestion/accueil.html">Accueil Gestion</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ./MOBILE MENU -->  <!-- WEBSITE -->
-  <div id="siteWrap">
-    <header>
-      <div id="top-menu-header">
-        <div class="container-wrapper">
-          <div class="row">
-            <nav class="pull-left">
-              <div class="header-dropdown top-menu-header-links left">
-                <button class="">PME<span class="icon-right-arrow"></span></button>
-                <ul class="drop">
-                  <li><a href="../../ge/accueil.html">Grandes Entreprises</a></li>
-                  <li><a href="http://www.internet.lu/">Particuliers</a></li>
+    </head>
+    <body>
+        <!-- POPUP ESPACE CLIENT -->
+        <div id="clientSpace" class="popup">
+            <div class="background-client"></div>
+            <div class="white-pannel">
+                <button class="pannel-close"><span class="icon-x-icone"></span></button>
+                <h2>Espace Client</h2>
+                <ul class="client-menu">
+                    <li class="active" data-id="mail">Email</li>
+                    <li>|</li>
+                    <li data-id="account">Mon compte</li>
+                    <li>|</li>
+                    <li data-id="homepage">Homepage</li>
                 </ul>
-              </div>
-            </nav>
-            <nav class="pull-right hidden-phone hidden-tab">
-              <ul class="top-menu-header-links right">
-                <li><a href="../divers/assistance.html">Aide & Support</a></li>
-                <li><a href="../divers/news.html">Actualités</a></li>
-                <li><a href="../divers/propos.html">À propos</a></li>
-                <li><a href="../divers/contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="bottom-menu-header">
-        <nav class="bottom-menu-header-links mobile display-phone display-tab">
-          <div class="pull-left">
-            <div class="logo">
-              <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+                <div class="pannel-forms">
+                    <form id="mail" class="clearfix is-visible" name="ServiceLogin1" method="POST" action="https://email.internet.lu/Scripts/sql.exe?_selection=10">
+                        <input type="hidden" name="Sql" value="Default.phs">
+                        <input type="hidden" name="SqlDB" value="OMS2">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <form id="account" class="clearfix" name="LoginPhone" method="POST" action="http://shop.internet.lu/Scripts/sql.exe?LoginScript=LoginClient.phs&NextScript=DisplayAccount.phs&_Login=">
+                        <input type="hidden" name="Sql" value="LoginClient_Login.phs">
+                        <input type="hidden" name="SqlDB" value="LOLShop">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="_Username" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="_Password" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <form id="homepage" class="clearfix" name="ServiceLogin3" method="POST" action="http://sites.internet.lu/Scripts/sql.exe">
+                        <input type="hidden" name="Sql" value="default.phs">
+                        <input type="hidden" name="SqlDB" value="OHPS">
+                        <div class="phone-6 input-left">
+                            <input type="text" name="xuser" placeholder="Nom d'utilisateur"/>
+                        </div>
+                        <div class="phone-6 input-right">
+                            <input class="pull-right" type="password" name="xpw" placeholder="Mot de passe"/>
+                        </div>
+                        <button class="btn-blue" type="submit">Se connecter</button>
+                    </form>
+                    <div class="contact-infos hidden-phone">
+                        Helpdesk: 2899 0000
+                        <span>Lu-Ve: 8h00-19h00  l  Sa: 9h00-18h00</span>
+                    </div>
+                    <div class="contact-infos display-phone">
+                        Helpdesk: 2899 0000
+                        <span>Lu-Ve: 8h00-19h00<br/>Sa: 9h00-18h00</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mobile-menu-button">
-            <button id="openClientSpaceMobile" class="mobile-button-blue openPopup" data-popup="0">
-              <span class="icon-account-icone"></span>
-            </button>
-            <button class="mobile-button-white">
-              <span class="icon-menu-icone"></span>
-            </button>
-          </div>
-        </nav>
-        <div class="container-wrapper hidden-phone hidden-tab">
-          <div class="row">
-            <div class="pull-left">
-              <div class="logo">
-                <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
-              </div><!--
-              --><nav class="bottom-menu-header-links">
-              <ul class="main-menu">
-                <li>
-                  <div class="active-border"></div>
-                  <a href="../internet/accueil.html">
-                    <div class="link">Internet</div>
-                  </a>
-                </li><!--
-                --><li class="active">
-                <div class="active-border"></div>
-                <a href="../telephonie/accueil.html">
-                  <div class="link">Téléphonie</div>
-                </a>
-              </li><!--
-              --><li>
-              <div class="active-border"></div>
-              <a href="../cloud/accueil.html">
-                <div class="link">Cloud</div>
-              </a>
-            </li><!--
-            --><li>
-            <div class="active-border"></div>
-            <a href="../mobile/accueil.html">
-              <div class="link">Mobile</div>
+        </div>
+        <!-- ./POPUP ESPACE CLIENT -->
+        <!-- FIXED MENU -->
+        <div class="fixed-options hidden-phone hidden-tab">
+            <a href="#">
+                <div class="white-fixed-option">
+                    <div class="icon-call-me"></div>
+                    <p>Veuillez me rappeler</p>
+                </div>
             </a>
-          </li><!--
-          --><li>
-          <div class="active-border"></div>
-          <a href="../gestion/accueil.html">
-            <div class="link">Gestion</div>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="pull-right hidden-phone hidden-tab">
-    <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
-  </div>
-</div>
-</div>
-</div>
-</header>
-<!-- ./HEADER -->
-<section id="bg-pme-telephonie-mat" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
-  <div class="container-wrapper">
-    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Téléphonie</a></li><li><span class="icon-right-arrow"></span></li><li>Matériel & accessoires</li></ul>
-    <div class="row clearfix">
-      <div class="phone-12 desk-6">
-        <h1 class="section-title lowercase"><span class="extra-bold">Matériel</span> & accessoires</h1>
-        <p class="section-text">Luxembourg Online propose une large gamme de téléphones fixes adaptés à tous les usages professionnels. Que vous recherchiez un téléphone simple d’utilisation ou de haute qualité, améliorez votre productivité grâce à des communications professionnelles et riches en fonctionnalités.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="equipement-section" class="background-lightgrey page-content">
-  <div class="container-wrapper">
-    <div class="row hidden-desk hidden-lgdesk">
-      <h1 class="content-title">Nos équipements : </h1>
-    </div>
-    <div  class="row display-phone display-tab">
-      <div class="phone-12">
-        <div class="searchMenu">
-          <button>
-            <span class="icon-right-arrow"></span> Affiner votre recherche :
-          </button>
-          <ul class="dropdown">
-            <li data-cat="ipMobile">Téléphones IP</li>
-            <li data-cat="accessoiresMobile">Accessoires</li>
-          </ul>
+            <a href="#">
+                <div class="blue-fixed-option">
+                    <p>Abonnez-vous<br/> <strong>en ligne </strong><span class="icon-right-arrow"></span></p>
+                </div>
+            </a>
         </div>
-        <div data-cat="ipMobile" class="philter">
-          <button>
-            <span class="selectedPhilter">Téléphones IP</span>
-          </button>
-        </div>
-      </div>
-      <div class="phone-12">
-        <div id="ipMobile" class="main-gallery equipementCat">
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_t41p.png" alt="yealink t41p"/>
+        <!-- ./FIXED MENU -->
+        <!-- MOBILE MENU -->
+        <nav class="mobile-side-menu hidden-desk hidden-lgdesk">
+            <ul class="menu">
+                <li class="menu-item link"><a href="../accueil.html">Accueil</a></li>
+                <li class="menu-item" data-id='internet'>Internet <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='telephone'>Téléphonie <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='cloud'>Cloud <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='mobile'>Mobile <span class="icon-right-arrow"></span></li>
+                <li class="menu-item" data-id='gestion'>Gestion <span class="icon-right-arrow"></span></li>
+                <li class="sous-nav">
+                    <ul class="menu">
+                        <li class="menu-item link"><a href="../divers/assistance.html">Aide & Support</a></li>
+                        <li class="menu-item link"><a href="../divers/news.html">Actualités</a></li>
+                        <li class="menu-item link"><a href="../divers/propos.html">À propos</a></li>
+                        <li class="menu-item link"><a href="../divers/contact.html">Contact</a></li>
+
+                        <li class="menu-item link"><a href="../divers/plan.html">Plan du site</a></li>
+                    </ul>
                 </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">YEALINK T-41P</div>
-                  <div class="sub">Téléphone professionnel simple et design destiné aux PME. Il a été conçu de façon à être facile d’utilisation, même dans les moindres détails.</div>
-                </li>
-              </ul>
+            </ul>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="internet">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Internet</li>
+                    <li class="menu-item"><a href="../internet/accueil.html">Accueil Internet</a></li>
+                    <li class="menu-item"><a href="../internet/sdsl.html">SDSL</a></li>
+                    <li class="menu-item"><a href="../internet/fibre.html">Fibre</a></li>
+                    <li class="menu-item"><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
+                    <li class="menu-item"><a href="../internet/options-business.html">Options business</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_t46g.png" alt="yealink t46g"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">YEALINK T-46G</div>
-                  <div class="sub">Téléphone destiné aux professionnels les plus exigeants. Grâce à ses touches programmables, il prend en charge de vastes fonctionnalités. De plus, son écran LCD couleur vous permet d’intégrer le logo de votre entreprise ou tout autre visuel de votre choix.</div>
-                </li>
-              </ul>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="telephone">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Téléphonie</li>
+                    <li class="menu-item"><a href="../telephonie/accueil.html">Accueil Téléphonie</a></li>
+                    <li class="menu-item"><a href="../telephonie/lolcloud-phone.html">LOL CLOUD phone</a></li>
+                    <li class="menu-item"><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
+                    <li class="menu-item"><a href="../telephonie/equipements.html">Matériel & accessoires</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_w52p.png" alt="yealink w52p"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">YEALINK W52P</div>
-                  <div class="sub">En associant les avantages de la communication sans fil et d’abondantes fonctions professionnelles, l’utilisateur bénéficie d’une grande liberté de mouvement et de communications.</div>
-                </li>
-              </ul>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="cloud">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Cloud</li>
+                    <li class="menu-item"><a href="../cloud/accueil.html">Accueil Cloud</a></li>
+                    <li class="menu-item"><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
+                    <li class="menu-item"><a href="../cloud/web-hosting.html">Web hosting</a></li>
+                    <li class="menu-item"><a href="../cloud/email.html">Email</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_cisco_spa525.png" alt="cisco spa525 g2"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">CISCO SPA525 G2</div>
-                  <div class="sub">Téléphone professionnel connectable via ethernet ou wifi. Il vous permet de profiter d’une expérience utilisateur de haute qualité.</div>
-                </li>
-              </ul>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="mobile">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Mobile</li>
+                    <li class="menu-item"><a href="../mobile/accueil.html">Accueil Mobile</a></li>
+                    <li class="menu-item"><a href="../mobile/abonnements.html">Abonnements mobiles</a></li>
+                    <li class="menu-item"><a href="../mobile/equipements.html">Mobiles & accessoires</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_polycom_ip6000.png" alt="polycom sound station ip6000"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">POLYCOM SOUND STATION IP6000</div>
-                  <div class="sub">Téléphone de conférence haut de gamme spécialement étudié pour les salles de conférence de taille moyenne. Il offre une clarté de communication remarquable grâce à sa technologie HD Voice.</div>
-                </li>
-              </ul>
+            <div class="menu-links-wrapper">
+                <ul class="menu-links" id="gestion">
+                    <li class="menu-item back"><span class="icon-right-arrow"></span>Gestion</li>
+                    <li class="menu-item"><a href="../gestion/accueil.html">Accueil Gestion</a></li>
+                </ul>
             </div>
-          </div>
+        </nav>
+        <!-- ./MOBILE MENU -->  <!-- WEBSITE -->
+        <div id="siteWrap">
+            <header>
+                <div id="top-menu-header">
+                    <div class="container-wrapper">
+                        <div class="row">
+                            <nav class="pull-left">
+                                <div class="header-dropdown top-menu-header-links left">
+                                    <button class="">PME<span class="icon-right-arrow"></span></button>
+                                    <ul class="drop">
+                                        <li><a href="../../ge/accueil.html">Grandes Entreprises</a></li>
+                                        <li><a href="http://www.internet.lu/">Particuliers</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <nav class="pull-right hidden-phone hidden-tab">
+                                <ul class="top-menu-header-links right">
+                                    <li><a href="../divers/assistance.html">Aide & Support</a></li>
+                                    <li><a href="../divers/news.html">Actualités</a></li>
+                                    <li><a href="../divers/propos.html">À propos</a></li>
+                                    <li><a href="../divers/contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottom-menu-header">
+                    <nav class="bottom-menu-header-links mobile display-phone display-tab">
+                        <div class="pull-left">
+                            <div class="logo">
+                                <a href="../accueil.html"><img src="../../images/Icone/Img/Logo-LOL.png" alt="logo LOL" /></a>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-button">
+                            <button id="openClientSpaceMobile" class="mobile-button-blue openPopup" data-popup="0">
+                                <span class="icon-account-icone"></span>
+                            </button>
+                            <button class="mobile-button-white">
+                                <span class="icon-menu-icone"></span>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="container-wrapper hidden-phone hidden-tab">
+                        <div class="row">
+                            <div class="pull-left">
+                                <div class="logo">
+                                    <a href="../accueil.html"><img src="../../images/Icone/img/Logo-LOL.png" alt="logo LOL"></a>
+                                </div><!--
+                                --><nav class="bottom-menu-header-links">
+                                    <ul class="main-menu">
+                                        <li>
+                                            <div class="active-border"></div>
+                                            <a href="../internet/accueil.html">
+                                                <div class="link">Internet</div>
+                                            </a>
+                                        </li><!--
+                                        --><li class="active">
+                                            <div class="active-border"></div>
+                                            <a href="../telephonie/accueil.html">
+                                                <div class="link">Téléphonie</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../cloud/accueil.html">
+                                                <div class="link">Cloud</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../mobile/accueil.html">
+                                                <div class="link">Mobile</div>
+                                            </a>
+                                        </li><!--
+                                        --><li>
+                                            <div class="active-border"></div>
+                                            <a href="../gestion/accueil.html">
+                                                <div class="link">Gestion</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="pull-right hidden-phone hidden-tab">
+                                <button id="openClientSpace" class="btn-blue openPopup" data-popup="0">Espace client</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ./HEADER -->
+            <section id="bg-pme-telephonie-mat" class="bg-header-pme section-layout right-orientation header-section-height section-shadow">
+                <div class="container-wrapper">
+                    <ul class="breadcrumb"><li><a href="../accueil.html">PME</a></li><li><span class="icon-right-arrow"></span></li><li><a href="./accueil.html">Téléphonie</a></li><li><span class="icon-right-arrow"></span></li><li>Matériel & accessoires</li></ul>
+                    <div class="row clearfix">
+                        <div class="phone-12 desk-6">
+                            <h1 class="section-title lowercase"><span class="extra-bold">Matériel</span> & accessoires</h1>
+                            <p class="section-text">Luxembourg Online propose une large gamme de téléphones fixes adaptés à tous les usages professionnels. Que vous recherchiez un téléphone simple d’utilisation ou de haute qualité, améliorez votre productivité grâce à des communications professionnelles et riches en fonctionnalités.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="equipement-section" class="background-lightgrey page-content">
+                <div class="container-wrapper">
+                    <div class="row hidden-desk hidden-lgdesk">
+                        <h1 class="content-title">Nos équipements : </h1>
+                    </div>
+                    <div  class="row display-phone display-tab">
+                        <div class="phone-12">
+                            <div class="searchMenu">
+                                <button>
+                                    <span class="icon-right-arrow"></span> Affiner votre recherche :
+                                </button>
+                                <ul class="dropdown">
+                                    <li data-cat="ipMobile">Téléphones IP</li>
+                                    <li data-cat="accessoiresMobile">Accessoires</li>
+                                </ul>
+                            </div>
+                            <div data-cat="ipMobile" class="philter">
+                                <button>
+                                    <span class="selectedPhilter">Téléphones IP</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="phone-12">
+                            <div id="ipMobile" class="main-gallery equipementCat">
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_yealink_t41p.png" alt="yealink t41p"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">YEALINK T-41P</div>
+                                                <div class="sub">Téléphone professionnel simple et design destiné aux PME. Il a été conçu de façon à être facile d’utilisation, même dans les moindres détails.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_yealink_t46g.png" alt="yealink t46g"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">YEALINK T-46G</div>
+                                                <div class="sub">Téléphone destiné aux professionnels les plus exigeants. Grâce à ses touches programmables, il prend en charge de vastes fonctionnalités. De plus, son écran LCD couleur vous permet d’intégrer le logo de votre entreprise ou tout autre visuel de votre choix.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_yealink_w52p.png" alt="yealink w52p"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">YEALINK W52P</div>
+                                                <div class="sub">En associant les avantages de la communication sans fil et d’abondantes fonctions professionnelles, l’utilisateur bénéficie d’une grande liberté de mouvement et de communications.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_cisco_spa525.png" alt="cisco spa525 g2"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">CISCO SPA525 G2</div>
+                                                <div class="sub">Téléphone professionnel connectable via ethernet ou wifi. Il vous permet de profiter d’une expérience utilisateur de haute qualité.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_polycom_ip6000.png" alt="polycom sound station ip6000"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">POLYCOM SOUND STATION IP6000</div>
+                                                <div class="sub">Téléphone de conférence haut de gamme spécialement étudié pour les salles de conférence de taille moyenne. Il offre une clarté de communication remarquable grâce à sa technologie HD Voice.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accessoiresMobile" class="main-gallery equipementCat is-hidden">
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_yealink_exp40.png" alt="yealink exp40"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">YEALINK EXP40</div>
+                                                <div class="sub">Module d’extension conçu pour augmenter la capacité fonctionnelle de votre téléphone à un niveau supérieur. Il est équipé d’un grand écran d’affichage LCD et permet de programmer jusqu’à 40 fonctions différentes.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_2n_helios.png" alt="2n helios ip verso"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9">
+                                            <li class="item-name">
+                                                <div class="main">2N HELIOS IP VERSO</div>
+                                                <div class="sub">Grâce à sa grande modularité, ce visiophone s’adapte à toutes les fonctionnalités dont vous avez besoin. Durable et résistant, il convient à toutes les conditions météorologiques.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell">
+                                    <div class="equipement-item-blue">
+                                        <ul class="phone-12 desk-3">
+                                            <li class="main-image fillHeight">
+                                                <img src="../../images/pme/telephonie/equipements/materiel_plantronics_cs520.png" alt="plantronics cs520"/>
+                                            </li>
+                                        </ul>
+                                        <ul class="details phone-12 desk-9 ">
+                                            <li class="item-name">
+                                                <div class="main">HEADSET PLANTRONICS CS520</div>
+                                                <div class="sub">Micro casque sans fil assurant un confort optimal et une immersion totale dans vos communications. Spécialement conçu pour les environnements bruyants, il convient aussi bien aux employés de bureau qu’aux centres d’appels.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: -20px; margin-right: -20px;" class="row hidden-phone hidden-tab">
+                        <div style="padding-right: 15px;" class="phone-3">
+                            <div class="searchMenu">
+                                <ul class="DesktopMenu">
+                                    <li class="is-active" data-cat="ip">Téléphones IP</li>
+                                    <li data-cat="accessoires">Accessoires</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="phone-9">
+                            <div id="ip" class="equipementCat">
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_yealink_t41p.png" alt="yealink t41p"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">YEALINK T-41P</div>
+                                            <div class="sub">Téléphone professionnel simple et design destiné aux PME. Il a été conçu de façon à être facile d’utilisation, même dans les moindres détails.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_yealink_t46g.png" alt="yealink t46g"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">YEALINK T-46G</div>
+                                            <div class="sub">Téléphone destiné aux professionnels les plus exigeants. Grâce à ses touches programmables, il prend en charge de vastes fonctionnalités. De plus, son écran LCD couleur vous permet d’intégrer le logo de votre entreprise ou tout autre visuel de votre choix.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_yealink_w52p.png" alt="yealink w52p"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">YEALINK W52P</div>
+                                            <div class="sub">En associant les avantages de la communication sans fil et d’abondantes fonctions professionnelles, l’utilisateur bénéficie d’une grande liberté de mouvement et de communications.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_cisco_spa525.png" alt="cisco spa525 g2"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">CISCO SPA525 G2</div>
+                                            <div class="sub">Téléphone professionnel connectable via ethernet ou wifi. Il vous permet de profiter d’une expérience utilisateur de haute qualité.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_polycom_ip6000.png" alt="polycom sound station ip6000"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">POLYCOM SOUND STATION IP6000</div>
+                                            <div class="sub">Téléphone de conférence haut de gamme spécialement étudié pour les salles de conférence de taille moyenne. Il offre une clarté de communication remarquable grâce à sa technologie HD Voice.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="accessoires" class="equipementCat is-hidden">
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_yealink_exp40.png" alt="yealink exp40"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">YEALINK EXP40</div>
+                                            <div class="sub">Module d’extension conçu pour augmenter la capacité fonctionnelle de votre téléphone à un niveau supérieur. Il est équipé d’un grand écran d’affichage LCD et permet de programmer jusqu’à 40 fonctions différentes.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_2n_helios.png" alt="2n helios ip verso"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">2N HELIOS IP VERSO</div>
+                                            <div class="sub">Grâce à sa grande modularité, ce visiophone s’adapte à toutes les fonctionnalités dont vous avez besoin. Durable et résistant, il convient à toutes les conditions météorologiques.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="equipement-item-blue">
+                                    <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
+                                        <li class="main-image fillHeight">
+                                            <img src="../../images/pme/telephonie/equipements/materiel_plantronics_cs520.png" alt="plantronics cs520"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="details phone-12 desk-9 vertical-align-middle">
+                                        <li class="item-name">
+                                            <div class="main">HEADSET PLANTRONICS CS520</div>
+                                            <div class="sub">Micro casque sans fil assurant un confort optimal et une immersion totale dans vos communications. Spécialement conçu pour les environnements bruyants, il convient aussi bien aux employés de bureau qu’aux centres d’appels.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="background-image: url(../../images/pme/gestion/bg-contact.jpg); height: 250px;" class="bg-header">
+                <div class="container-wrapper">
+                    <div style="height: 100%;" class="row">
+                        <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer>
+                <div id="social-links">
+                    <div class="container-wrapper">
+                        <div class="row">
+                            <div class="subtitle-container grey">
+                                <h2>Retrouvez Luxembourg Online sur :</h2>
+                            </div>
+                            <div class="clearfix tab-mt-30 desk-mt-0">
+                                <nav class="align-center">
+                                    <ul class="center">
+                                        <li>
+                                            <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
+                                                <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
+                                                <span class="brand-name">LinkedIn</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
+                                                <div class="social-icon facebook"><span class="icon-facebook"></span></div>
+                                                <span class="brand-name">Facebook</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.online.lu/" target="blank_">
+                                                <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
+                                                <span class="brand-name">Online.lu</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-phone hidden-tab">
+                    <div id="contact">
+                        <div class="container-wrapper">
+                            <div class="row">
+                                <div class="text">Contactez-nous : </div>
+                                <ul class="contact-infos spread">
+                                    <li>
+                                        <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
+                                    </li>
+                                    <li>
+                                        <span class="icon-internet-ico"></span><a href=" ../divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
+                        <div class="container-wrapper">
+                            <div class="row hidden-phone hidden-tab">
+                                <div class="footer-top-links">
+                                    <h4>internet : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../internet/sdsl.html">Internet SDSL</a></li>
+                                            <li><a href="../internet/fibre.html">Internet Fibre</a></li>
+                                            <li><a href="../internet/fibre-sym.html">Internet Fibre Symétrique</a></li>
+                                            <li><a href="../internet/options-business.html">Options business</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>téléphonie : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../telephonie/lolcloud-phone.html">LOL CLOUD Phone</a></li>
+                                            <li><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
+                                            <li><a href="../telephonie/equipements.html">Nos équipements</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>Cloud : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../cloud/lolcloud.html">LOL CLOUD</a></li>
+                                            <li><a href="../cloud/web-hosting.html">Web hosting</a></li>
+                                            <li><a href="../cloud/email.html">Email</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="footer-top-links">
+                                    <h4>mobile : </h4>
+                                    <nav>
+                                        <ul class="links">
+                                            <li><a href="../mobile/abonnements.html">Abonnements</a></li>
+                                            <li><a href="../mobile/equipements.html">Equipements mobiles</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="separator"></div>
+                                <div class="phone-12">
+                                    <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
+                                    <nav class="hidden-phone">
+                                        <ul class="footer-bottom-links">
+                                            <li>© Luxembourg Online S.A. – 2016, tous droits réservés</li>
+                                            <li><a href="http://www.internet.lu/documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
+                                            <li><a href="../divers/plan.html">Plan du site</a></li>
+                                            <li><a href="../divers/contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div></footer>
+            <!--              ./FOOTER               -->
         </div>
-        <div id="accessoiresMobile" class="main-gallery equipementCat is-hidden">
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_exp40.png" alt="yealink exp40"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">YEALINK EXP40</div>
-                  <div class="sub">Module d’extension conçu pour augmenter la capacité fonctionnelle de votre téléphone à un niveau supérieur. Il est équipé d’un grand écran d’affichage LCD et permet de programmer jusqu’à 40 fonctions différentes.</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_2n_helios.png" alt="2n helios ip verso"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9">
-                <li class="item-name">
-                  <div class="main">2N HELIOS IP VERSO</div>
-                  <div class="sub">Grâce à sa grande modularité, ce visiophone s’adapte à toutes les fonctionnalités dont vous avez besoin. Durable et résistant, il convient à toutes les conditions météorologiques.</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="gallery-cell">
-            <div class="equipement-item-blue">
-              <ul class="phone-12 desk-3">
-                <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_plantronics_cs520.png" alt="plantronics cs520"/>
-                </li>
-              </ul>
-              <ul class="details phone-12 desk-9 ">
-                <li class="item-name">
-                  <div class="main">HEADSET PLANTRONICS CS520</div>
-                  <div class="sub">Micro casque sans fil assurant un confort optimal et une immersion totale dans vos communications. Spécialement conçu pour les environnements bruyants, il convient aussi bien aux employés de bureau qu’aux centres d’appels.</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="margin-left: -20px; margin-right: -20px;" class="row hidden-phone hidden-tab">
-      <div style="padding-right: 15px;" class="phone-3">
-        <div class="searchMenu">
-          <ul class="DesktopMenu">
-            <li class="is-active" data-cat="ip">Téléphones IP</li>
-            <li data-cat="accessoires">Accessoires</li>
-          </ul>
-        </div>
-      </div>
-      <div class="phone-9">
-        <div id="ip" class="equipementCat">
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_t41p.png" alt="yealink t41p"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">YEALINK T-41P</div>
-                <div class="sub">Téléphone professionnel simple et design destiné aux PME. Il a été conçu de façon à être facile d’utilisation, même dans les moindres détails.</div>
-              </li>
-            </ul>
-          </div>
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_t46g.png" alt="yealink t46g"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">YEALINK T-46G</div>
-                <div class="sub">Téléphone destiné aux professionnels les plus exigeants. Grâce à ses touches programmables, il prend en charge de vastes fonctionnalités. De plus, son écran LCD couleur vous permet d’intégrer le logo de votre entreprise ou tout autre visuel de votre choix.</div>
-              </li>
-            </ul>
-          </div>
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_w52p.png" alt="yealink w52p"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">YEALINK W52P</div>
-                <div class="sub">En associant les avantages de la communication sans fil et d’abondantes fonctions professionnelles, l’utilisateur bénéficie d’une grande liberté de mouvement et de communications.</div>
-              </li>
-            </ul>
-          </div>
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image">
-                  <img src="../../images/pme/telephonie/equipements/materiel_cisco_spa525.png" alt="cisco spa525 g2"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">CISCO SPA525 G2</div>
-                <div class="sub">Téléphone professionnel connectable via ethernet ou wifi. Il vous permet de profiter d’une expérience utilisateur de haute qualité.</div>
-              </li>
-            </ul>
-          </div>
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_polycom_ip6000.png" alt="polycom sound station ip6000"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">POLYCOM SOUND STATION IP6000</div>
-                <div class="sub">Téléphone de conférence haut de gamme spécialement étudié pour les salles de conférence de taille moyenne. Il offre une clarté de communication remarquable grâce à sa technologie HD Voice.</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="accessoires" class="equipementCat is-hidden">
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_yealink_exp40.png" alt="yealink exp40"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">YEALINK EXP40</div>
-                <div class="sub">Module d’extension conçu pour augmenter la capacité fonctionnelle de votre téléphone à un niveau supérieur. Il est équipé d’un grand écran d’affichage LCD et permet de programmer jusqu’à 40 fonctions différentes.</div>
-              </li>
-            </ul>
-          </div>
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_2n_helios.png" alt="2n helios ip verso"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">2N HELIOS IP VERSO</div>
-                <div class="sub">Grâce à sa grande modularité, ce visiophone s’adapte à toutes les fonctionnalités dont vous avez besoin. Durable et résistant, il convient à toutes les conditions météorologiques.</div>
-              </li>
-            </ul>
-          </div>
-          <div class="equipement-item-blue">
-            <ul class="phone-12 desk-3 vertical-align-middle popup-gallery">
-              <li class="main-image fillHeight">
-                  <img src="../../images/pme/telephonie/equipements/materiel_plantronics_cs520.png" alt="plantronics cs520"/>
-              </li>
-            </ul>
-            <ul class="details phone-12 desk-9 vertical-align-middle">
-              <li class="item-name">
-                <div class="main">HEADSET PLANTRONICS CS520</div>
-                <div class="sub">Micro casque sans fil assurant un confort optimal et une immersion totale dans vos communications. Spécialement conçu pour les environnements bruyants, il convient aussi bien aux employés de bureau qu’aux centres d’appels.</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="background-image: url(../../images/pme/gestion/bg-contact.jpg); height: 250px;" class="bg-header">
-  <div class="container-wrapper">
-    <div style="height: 100%;" class="row">
-      <p style="margin: 0; font-size: 1.4em; line-height: 24px;" class="white align-center vertical-align-middle">Si vous souhaitez plus d'informations ou pour introduire une demande, <br/>contactez-nous au <strong>2899 0000</strong> ou à l'adresse <strong>corporate@internet.lu</strong></p>
-    </div>
-  </div>
-</section>
-<!-- FOOTER -->
-<footer>
-  <div id="social-links">
-    <div class="container-wrapper">
-      <div class="row">
-        <div class="subtitle-container grey">
-          <h2>Retrouvez Luxembourg Online sur :</h2>
-        </div>
-        <div class="clearfix tab-mt-30 desk-mt-0">
-          <nav class="align-center">
-            <ul class="center">
-              <li>
-                <a href="https://www.linkedin.com/company/2054058?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2054058%2Cidx%3A2-1-2%2CtarId%3A1446712404024%2Ctas%3Aluxembourg%20online" target="blank_">
-                  <div class="social-icon linkedin"><span class="icon-linkedin"></span></div>
-                  <span class="brand-name">LinkedIn</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/Luxembourg.Online" target="blank_">
-                  <div class="social-icon facebook"><span class="icon-facebook"></span></div>
-                  <span class="brand-name">Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.online.lu/" target="blank_">
-                  <div class="social-icon lol"><span class="icon-icone-lol"></span></div>
-                  <span class="brand-name">Online.lu</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hidden-phone hidden-tab">
-    <div id="contact">
-      <div class="container-wrapper">
-        <div class="row">
-          <div class="text">Contactez-nous : </div>
-          <ul class="contact-infos spread">
-            <li>
-              <span class="icon-phone-icone"></span><a href="tel://2799 0000">2899 0000</a>
-            </li>
-            <li>
-              <span class="icon-clock-icone"></span>Lu-Sa: 9h00-18h00
-            </li>
-            <li>
-              <span class="icon-internet-ico"></span><a href=" ../divers/contact.html#demande_infos_commerciales" target="_blank">corporate@internet.lu</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="footer-links" class="hidden-phone hidden-tab hiden-desk">
-      <div class="container-wrapper">
-        <div class="row hidden-phone hidden-tab">
-          <div class="footer-top-links">
-            <h4>internet : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="../internet/sdsl.html">Abonnements</a></li>
-                <li><a href="../internet/fibre.html">Fibre optique</a></li>
-                <li><a href="../internet/fibre-sym.html">Fibre symétrique</a></li>
-                <li><a href="../internet/options-business.html">Options business</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-top-links">
-            <h4>téléphonie : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="../telephonie/lolcloud-phone.html">LOL Cloud Phone</a></li>
-                <li><a href="../telephonie/sip-trunking.html">SIP Trunking</a></li>
-                <li><a href="../telephonie/equipements.html">Téléphones</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-top-links">
-            <h4>mobile : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="../mobile/abonnements.html">Abonnements</a></li>
-                <li><a href="../mobile/equipements.html">Téléphones mobiles</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-top-links">
-            <h4>Cloud : </h4>
-            <nav>
-              <ul class="links">
-                <li><a href="../cloud/lolcloud.html">LOL Cloud</a></li>
-                <li><a href="../cloud/web-hosting.html">Hébergement web</a></li>
-                <li><a href="../cloud/email.html">Email</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
-          <div class="separator"></div>
-          <div class="phone-12">
-            <div class="display-phone copyright">© Luxembourg Online S.A. – 2015, tous droits réservés</div>
-            <nav class="hidden-phone">
-              <ul class="footer-bottom-links">
-                <li>© Luxembourg Online S.A. – 2016, tous droits réservés</li>
-                <li><a href="http://www.internet.lu/documents/MENTIONS_LEGALES.pdf" target="blank_">Mentions légales</a></li>
-                <li><a href="../divers/plan.html">Plan du site</a></li>
-                <li><a href="../divers/contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div></footer>
-<!--              ./FOOTER               -->
-</div>
-<!-- ./WEBSITE -->
+        <!-- ./WEBSITE -->
 
 
 
-<!-- build:js(.) ../../scripts/vendor.js -->
-<!-- bower:js -->
+        <!-- build:js(.) ../../scripts/vendor.js -->
+        <!-- bower:js -->
 
-<!-- endbower -->
-<!-- endbuild -->
+        <!-- endbower -->
+        <!-- endbuild -->
 
 
 
-<script src="../../scripts/vendor/jquery.min.js"></script>
-<script src="../../scripts/vendor/flickity.pkgd.min.js"></script>
-<script src="../../scripts/main.js"></script>
-<!-- endbuild -->
+        <script src="../../scripts/vendor/jquery.min.js"></script>
+        <script src="../../scripts/vendor/flickity.pkgd.min.js"></script>
+        <script src="../../scripts/main.js"></script>
+        <!-- endbuild -->
 
-<script type="text/javascript">
-    $(function () {
-        $('.main-gallery').flickity({
-            // options
-            cellAlign: 'center',
-            contain: true,
-            wrapAround: true,
-            prevNextButtons: false,
-            autoPlay: 2500
-        });
-    });
-</script>
+        <script type="text/javascript">
+            $(function () {
+                $('.main-gallery').flickity({
+                    // options
+                    cellAlign: 'center',
+                    contain: true,
+                    wrapAround: true,
+                    prevNextButtons: false,
+                    autoPlay: 2500
+                });
+            });
+        </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script type="text/javascript" src="../../scripts/analytics.js"></script>
-</body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script type="text/javascript" src="../../scripts/analytics.js"></script>
+    </body>
 </html>
