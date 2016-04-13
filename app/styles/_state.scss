@@ -78,7 +78,7 @@
 }
 
 @include viewport(range, $max: $desk, $min: $tab){
-    div:not(.gestion){
+    .flex:not(.gestion){
         .pme-solution.offre .content{
             min-height: 159px;
         }   

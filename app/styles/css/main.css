@@ -6156,7 +6156,7 @@ h2.contact-title {
   .propos-section-header .title {
     text-align: center; } }
 @media screen and (min-width: 672px) and (max-width: 1056px) {
-  div:not(.gestion) .pme-solution.offre .content {
+  .flex:not(.gestion) .pme-solution.offre .content {
     min-height: 159px; } }
 @media screen and (min-width: 672px) {
   .left .profit {
