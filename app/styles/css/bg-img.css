@@ -162,6 +162,27 @@
 #bg-pme-mobile-equip {
   background-image: url(../../images/pme/mobile/Mobile_Materiel_1055x322px.jpg); }
 
+#bg-pme-internet-telecom {
+  background-image: url(../../images/pme/internet/bg-telecom.jpg); }
+
+#bg-pme-telephonie-telecom {
+  background-image: url(../../images/pme/telephonie/bg-internet.jpg); }
+
+#bg-pme-mobile-telecom {
+  background-image: url(../../images/pme/mobile/bg-cloud.jpg); }
+
+#bg-pme-cloud-telecom {
+  background-image: url(../../images/pme/mobile/bg-mobile.jpg); }
+
+#pme-contact {
+  background-image: url(../../images/pme/divers/Contact2_1055x232px.jpg); }
+
+#business-telephonie-mat {
+  background-image: url(../../images/pme/telephonie/bg-telephonie-materiel.jpg); }
+
+#business-mobile-mat {
+  background-image: url(../../images/pme/mobile/BG_mobile_materiel.jpg); }
+
 #bg-ge-accueil {
   background-image: url(../../images/ge/homepage/Accueil_1055x322px.jpg); }
 
@@ -473,6 +494,27 @@
     background-image: url(../../images/pme/divers/Contact_1920x360px.jpg); }
 
   #bg-pme-mobile-equip {
-    background-image: url(../../images/pme/mobile/Mobile_Materiel_1920x360px.jpg); } }
+    background-image: url(../../images/pme/mobile/Mobile_Materiel_1920x360px.jpg); }
+
+  #bg-pme-internet-telecom {
+    background-image: url(../../images/pme/internet/bg-telecom2.jpg); }
+
+  #bg-pme-telephonie-telecom {
+    background-image: url(../../images/pme/telephonie/bg-internet2.jpg); }
+
+  #bg-pme-mobile-telecom {
+    background-image: url(../../images/pme/mobile/bg-cloud2.jpg); }
+
+  #bg-pme-cloud-telecom {
+    background-image: url(../../images/pme/mobile/bg-mobile2.jpg); }
+
+  #pme-contact {
+    background-image: url(../../images/pme/divers/Contact1_1920x279px.jpg); }
+
+  #business-telephonie-mat {
+    background-image: url(../../images/pme/telephonie/bg-telephonie-materiel2.jpg); }
+
+  #business-mobile-mat {
+    background-image: url(../../images/pme/mobile/BG_mobile_materiel2.jpg); } }
 
 /*# sourceMappingURL=bg-img.css.map */

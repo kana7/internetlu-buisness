@@ -2,71 +2,71 @@
 @import "_mixin.scss";
 
 .bg-header, .bg-header-pme, .bg-header-ge{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .bg-header-ge{height: 375px;}
 .bg-header-pme{
-  @include overlay($white, 0.8);
+    @include overlay($white, 0.8);
 }
 @mixin bg-propos-section($path){
-  background-image: url($path);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  &.right{
-    background-position: center right;
-    text-align: left;
-  }
-  &.left{
-    background-position: center left;
-    text-align: right;
-  }
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    &.right{
+        background-position: center right;
+        text-align: left;
+    }
+    &.left{
+        background-position: center left;
+        text-align: right;
+    }
 }
 #slider-contents{
-  height: 450px;
-  background-image: url(../../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
+    height: 450px;
+    background-image: url(../../images/homepage/slider/Banner_Homepage_1920x600px.jpg);
 }
 #bg-propos-header{
-  height: 400px;
-  background-image: url(../../images/propos/Banner_introduction_1920x600px.jpg);
+    height: 400px;
+    background-image: url(../../images/propos/Banner_introduction_1920x600px.jpg);
 }
 #bg-propos-value{
-  height: 400px;
-  background-image: url(../../images/propos/Banner_valeurs.jpg);
+    height: 400px;
+    background-image: url(../../images/propos/Banner_valeurs.jpg);
 }
 
 #fibre-bg-header, #lolphone-bg-header, #lolcloud-bg-header{
-  height: 160px;
+    height: 160px;
 }
 #fibre-bg-header{
-  @include bg-propos-section("../../images/propos/fibre_optique_phone.jpg");
+    @include bg-propos-section("../../images/propos/fibre_optique_phone.jpg");
 }
 #lolphone-bg-header{
-  @include bg-propos-section("../../images/propos/telephonie_phone.jpg");
+    @include bg-propos-section("../../images/propos/telephonie_phone.jpg");
 }
 #lolcloud-bg-header{
-  @include bg-propos-section("../../images/propos/cloud_phone.jpg");
+    @include bg-propos-section("../../images/propos/cloud_phone.jpg");
 }
 @include media(tab){
-  #fibre-bg-header{background-image: url("../../images/propos/fibre_optique_tab.jpg");}
-  #lolphone-bg-header{background-image: url("../../images/propos/telephonie_tab.jpg");}
-  #lolcloud-bg-header{background-image: url("../../images/propos/cloud_tab.jpg");}
+    #fibre-bg-header{background-image: url("../../images/propos/fibre_optique_tab.jpg");}
+    #lolphone-bg-header{background-image: url("../../images/propos/telephonie_tab.jpg");}
+    #lolcloud-bg-header{background-image: url("../../images/propos/cloud_tab.jpg");}
 }
 @include media(desk){
-  #fibre-bg-header{background-image: url("../../images/propos/fibre_optique.jpg");}
-  #lolphone-bg-header{background-image: url("../../images/propos/telephonie.jpg");}
-  #lolcloud-bg-header{background-image: url("../../images/propos/cloud.jpg");}
+    #fibre-bg-header{background-image: url("../../images/propos/fibre_optique.jpg");}
+    #lolphone-bg-header{background-image: url("../../images/propos/telephonie.jpg");}
+    #lolcloud-bg-header{background-image: url("../../images/propos/cloud.jpg");}
 }
 
 #social-links{
-  height: 200px;
-  background-position: top center;
-  background-size: 672px auto;
-  background-repeat: no-repeat;
-  &{
-    background-image: url(../../images/homepage/Socials/Socials_bandeau_672x200px.jpg);
-  }
+    height: 200px;
+    background-position: top center;
+    background-size: 672px auto;
+    background-repeat: no-repeat;
+    &{
+        background-image: url(../../images/homepage/Socials/Socials_bandeau_672x200px.jpg);
+    }
 }
 
 //HEADER BACKGROUND
@@ -96,6 +96,13 @@
 #bg-pme-news{background-image: url(../../images/pme/divers/Actualites_1055x322px.jpg);}
 #bg-pme-contact{background-image: url(../../images/pme/divers/Contact_1055x322px.jpg);}
 #bg-pme-mobile-equip{background-image: url(../../images/pme/mobile/Mobile_Materiel_1055x322px.jpg);}
+#bg-pme-internet-telecom{background-image: url(../../images/pme/internet/bg-telecom.jpg);}
+#bg-pme-telephonie-telecom{background-image: url(../../images/pme/telephonie/bg-internet.jpg);}
+#bg-pme-mobile-telecom{background-image: url(../../images/pme/mobile/bg-cloud.jpg);}
+#bg-pme-cloud-telecom{background-image: url(../../images/pme/mobile/bg-mobile.jpg);}
+#pme-contact{background-image: url(../../images/pme/divers/Contact2_1055x232px.jpg);}
+#business-telephonie-mat{background-image: url(../../images/pme/telephonie/bg-telephonie-materiel.jpg);}
+#business-mobile-mat{background-image: url(../../images/pme/mobile/BG_mobile_materiel.jpg);}
 
 //GRANDE ENTREPRISE
 //-------------------------
@@ -135,112 +142,120 @@
 
 
 @include media(tab){
-  #bg-propos-value{
-    height: 350px;
-  }
-  #slider-contents{
-    height: 400px;
-  }
-  #social-links{
-    height: 240px;
-    background-size: 1056px auto;
-    &{
-      background-image: url(../../images/homepage/Socials/Socials_bandeau_1056x240px.jpg);
+    #bg-propos-value{
+        height: 350px;
     }
-  }
+    #slider-contents{
+        height: 400px;
+    }
+    #social-links{
+        height: 240px;
+        background-size: 1056px auto;
+        &{
+            background-image: url(../../images/homepage/Socials/Socials_bandeau_1056x240px.jpg);
+        }
+    }
 }
 
 @include media(desk) {
-  .bg-header-pme{
-    background-position: center center;
-    background-size: 1302px auto;
-    &:before{
-      display: none;
+    .bg-header-pme{
+        background-position: center center;
+        background-size: 1302px auto;
+        &:before{
+            display: none;
+        }
     }
-  }
-  #bg-pme-accueil{background-image: url(../../images/pme/homepage/Accueil_1302x330px.jpg);}
-  #bg-pme-cloud-accueil{background-image: url(../../images/pme/cloud/Cloud_1302x330px.jpg);}
-  #bg-pme-cloud-mail{background-image: url(../../images/pme/cloud/Cloud_Email_1302x330px.jpg);}
-  #bg-pme-cloud-lolcloud{background-image: url(../../images/pme/cloud/Cloud_LOLCLOUD_1302x330px.jpg);}
-  #bg-pme-cloud-host{background-image: url(../../images/pme/cloud/Cloud_Webhosting_1302x330px.jpg);}
-  #bg-pme-gestion-accueil{background-image: url(../../images/pme/gestion/Gestion_1302x330px.jpg);}
-  #bg-pme-internet-accueil{background-image: url(../../images/pme/internet/Internet_1302x330px.jpg);}
-  #bg-pme-internet-sdsl{background-image: url(../../images/pme/internet/Internet_SDSL_1302x330px.jpg);}
-  #bg-pme-internet-fibre{background-image: url(../../images/pme/internet/Internet_Fibre_1302x330px.jpg);}
-  #bg-pme-internet-fibresym{background-image: url(../../images/pme/internet/Internet_Fibresymetrique_1302x330px.jpg);}
-  #bg-pme-internet-opt{background-image: url(../../images/pme/internet/Internet_Optionsbusiness_1302x330px.jpg);}
-  #bg-pme-mobile-accueil{background-image: url(../../images/pme/mobile/Mobile_1302x330px.jpg);}
-  #bg-pme-mobile-abo{background-image: url(../../images/pme/mobile/Mobile_Abo_1302x330px.jpg);}
-  #bg-pme-mobile-mat{background-image: url(../../images/pme/mobile/Mobile_Materiel_1302x330px.jpg);}
-  #bg-pme-telephonie-accueil{background-image: url(../../images/pme/telephonie/Telephonie_1302x330px.jpg);}
-  #bg-pme-telephonie-cloud{background-image: url(../../images/pme/telephonie/Telephonie_LOLCLOUDPHONE_1302x330px.jpg);}
-  #bg-pme-telephonie-mat{background-image: url(../../images/pme/telephonie/Telephonie_Materiel_1302x330px.jpg);}
-  #bg-pme-telephonie-sip{background-image: url(../../images/pme/telephonie/Telephonie_SIP_1302x330px.jpg);}
-  #bg-pme-news{background-image: url(../../images/pme/divers/Actualites_1302x330px.jpg);}
-  #bg-pme-contact{background-image: url(../../images/pme/divers/Contact_1302x330px.jpg);}
-  #bg-pme-mobile-equip{background-image: url(../../images/pme/mobile/Mobile_Materiel_1302x330px.jpg);}
-  #bg-ge-accueil{background-image: url(../../images/ge/homepage/Accueil_1920x360px.jpg);}
-  #bg-ge-news{background-image: url(../../images/ge/divers/Actualites_1920x360px.jpg);}
-  #bg-ge-internet-accueil{background-image: url(../../images/ge/internet/Internet_1920x360px.jpg);}
-  #bg-ge-tel-accueil{background-image: url(../../images/ge/telephonie/Telephonie_1920x360px.jpg);}
-  #bg-ge-cloud-accueil{background-image: url(../../images/ge/cloud/Cloud_1920x360px.jpg);}
-  #bg-ge-mobile-accueil{background-image: url(../../images/ge/mobile/Mobiler_1920x360px.jpg);}
-  #bg-ge-mobile-abo-header{background-image: url(../../images/ge/mobile/Mobile_Abonnements_1920x360px.jpg);}
-  #bg-ge-mobile-mat-header{background-image: url(../../images/ge/mobile/Mobile_Materiel_1920x360px.jpg);}
-  #bg-ge-internet-fibre-header{background-image: url(../../images/ge/internet/Internet_FibreOptique_1920x360px.jpg);}
-  #bg-ge-internet-fibresym-header{background-image: url(../../images/ge/internet/Internet_Fibresymetrique_1920x360px.jpg);}
-  #bg-ge-internet-vpn-header{background-image: url(../../images/ge/internet/Internet_VPN_1920x360px.jpg);}
-  #bg-ge-tel-lolphone-header{background-image: url(../../images/ge/telephonie/Telephonie_LOLCLOUDPHONE_1920x360px.jpg);}
-  #bg-ge-tel-mat-header{background-image: url(../../images/ge/telephonie/Telephonie_Equipements_1920x360px.jpg);}
-  #bg-ge-tel-sip-header{background-image: url(../../images/ge/telephonie/Telephonie_SIPTrunking_1920x360px.jpg);}
-  #bg-ge-tel-options-header{background-image: url(../../images/ge/telephonie/Telephonie_Optionsbusiness_1920x360px.jpg);}
-  #bg-ge-cloud-cloud-header{background-image: url(../../images/ge/cloud/Cloud_LOLCLOUD_1920x360px.jpg);}
-  #bg-ge-cloud-rack-header{background-image: url(../../images/ge/cloud/CLoud_Rackspace_1920x360px.jpg);}
-  #bg-ge-cloud-host-header{background-image: url(../../images/ge/cloud/Cloud_Webhosting_1920x360px.jpg);}
-  #bg-ge-contact{background-image: url(../../images/ge/divers/Contact_1055x322px.jpg);}
+    #bg-pme-accueil{background-image: url(../../images/pme/homepage/Accueil_1302x330px.jpg);}
+    #bg-pme-cloud-accueil{background-image: url(../../images/pme/cloud/Cloud_1302x330px.jpg);}
+    #bg-pme-cloud-mail{background-image: url(../../images/pme/cloud/Cloud_Email_1302x330px.jpg);}
+    #bg-pme-cloud-lolcloud{background-image: url(../../images/pme/cloud/Cloud_LOLCLOUD_1302x330px.jpg);}
+    #bg-pme-cloud-host{background-image: url(../../images/pme/cloud/Cloud_Webhosting_1302x330px.jpg);}
+    #bg-pme-gestion-accueil{background-image: url(../../images/pme/gestion/Gestion_1302x330px.jpg);}
+    #bg-pme-internet-accueil{background-image: url(../../images/pme/internet/Internet_1302x330px.jpg);}
+    #bg-pme-internet-sdsl{background-image: url(../../images/pme/internet/Internet_SDSL_1302x330px.jpg);}
+    #bg-pme-internet-fibre{background-image: url(../../images/pme/internet/Internet_Fibre_1302x330px.jpg);}
+    #bg-pme-internet-fibresym{background-image: url(../../images/pme/internet/Internet_Fibresymetrique_1302x330px.jpg);}
+    #bg-pme-internet-opt{background-image: url(../../images/pme/internet/Internet_Optionsbusiness_1302x330px.jpg);}
+    #bg-pme-mobile-accueil{background-image: url(../../images/pme/mobile/Mobile_1302x330px.jpg);}
+    #bg-pme-mobile-abo{background-image: url(../../images/pme/mobile/Mobile_Abo_1302x330px.jpg);}
+    #bg-pme-mobile-mat{background-image: url(../../images/pme/mobile/Mobile_Materiel_1302x330px.jpg);}
+    #bg-pme-telephonie-accueil{background-image: url(../../images/pme/telephonie/Telephonie_1302x330px.jpg);}
+    #bg-pme-telephonie-cloud{background-image: url(../../images/pme/telephonie/Telephonie_LOLCLOUDPHONE_1302x330px.jpg);}
+    #bg-pme-telephonie-mat{background-image: url(../../images/pme/telephonie/Telephonie_Materiel_1302x330px.jpg);}
+    #bg-pme-telephonie-sip{background-image: url(../../images/pme/telephonie/Telephonie_SIP_1302x330px.jpg);}
+    #bg-pme-news{background-image: url(../../images/pme/divers/Actualites_1302x330px.jpg);}
+    #bg-pme-contact{background-image: url(../../images/pme/divers/Contact_1302x330px.jpg);}
+    #bg-pme-mobile-equip{background-image: url(../../images/pme/mobile/Mobile_Materiel_1302x330px.jpg);}
+    #bg-ge-accueil{background-image: url(../../images/ge/homepage/Accueil_1920x360px.jpg);}
+    #bg-ge-news{background-image: url(../../images/ge/divers/Actualites_1920x360px.jpg);}
+    #bg-ge-internet-accueil{background-image: url(../../images/ge/internet/Internet_1920x360px.jpg);}
+    #bg-ge-tel-accueil{background-image: url(../../images/ge/telephonie/Telephonie_1920x360px.jpg);}
+    #bg-ge-cloud-accueil{background-image: url(../../images/ge/cloud/Cloud_1920x360px.jpg);}
+    #bg-ge-mobile-accueil{background-image: url(../../images/ge/mobile/Mobiler_1920x360px.jpg);}
+    #bg-ge-mobile-abo-header{background-image: url(../../images/ge/mobile/Mobile_Abonnements_1920x360px.jpg);}
+    #bg-ge-mobile-mat-header{background-image: url(../../images/ge/mobile/Mobile_Materiel_1920x360px.jpg);}
+    #bg-ge-internet-fibre-header{background-image: url(../../images/ge/internet/Internet_FibreOptique_1920x360px.jpg);}
+    #bg-ge-internet-fibresym-header{background-image: url(../../images/ge/internet/Internet_Fibresymetrique_1920x360px.jpg);}
+    #bg-ge-internet-vpn-header{background-image: url(../../images/ge/internet/Internet_VPN_1920x360px.jpg);}
+    #bg-ge-tel-lolphone-header{background-image: url(../../images/ge/telephonie/Telephonie_LOLCLOUDPHONE_1920x360px.jpg);}
+    #bg-ge-tel-mat-header{background-image: url(../../images/ge/telephonie/Telephonie_Equipements_1920x360px.jpg);}
+    #bg-ge-tel-sip-header{background-image: url(../../images/ge/telephonie/Telephonie_SIPTrunking_1920x360px.jpg);}
+    #bg-ge-tel-options-header{background-image: url(../../images/ge/telephonie/Telephonie_Optionsbusiness_1920x360px.jpg);}
+    #bg-ge-cloud-cloud-header{background-image: url(../../images/ge/cloud/Cloud_LOLCLOUD_1920x360px.jpg);}
+    #bg-ge-cloud-rack-header{background-image: url(../../images/ge/cloud/CLoud_Rackspace_1920x360px.jpg);}
+    #bg-ge-cloud-host-header{background-image: url(../../images/ge/cloud/Cloud_Webhosting_1920x360px.jpg);}
+    #bg-ge-contact{background-image: url(../../images/ge/divers/Contact_1055x322px.jpg);}
 
 
 
 
 
-  #social-links{
-    height: 230px;
-    background-size: 1302px auto;
-    &{
-      background-image: url(../../images/homepage/Socials/Socials_bandeau_1302x230px.jpg);
+    #social-links{
+        height: 230px;
+        background-size: 1302px auto;
+        &{
+            background-image: url(../../images/homepage/Socials/Socials_bandeau_1302x230px.jpg);
+        }
     }
-  }
 }
 @include media(lgdesk) {
-  .bg-header-pme{
-    background-size: 1920px auto;
-  }
-  #social-links{
-    height: 300px;
-    background-size: 1920px auto;
-    &{
-      background-image: url(../../images/homepage/Socials/Socials_bandeau_1920x300px.jpg);
+    .bg-header-pme{
+        background-size: 1920px auto;
     }
-  }
-  #bg-pme-accueil{background-image: url(../../images/pme/homepage/Accueil_1920x360px.jpg);}
-  #bg-pme-cloud-accueil{background-image: url(../../images/pme/cloud/Cloud_1920x360px.jpg);}
-  #bg-pme-cloud-mail{background-image: url(../../images/pme/cloud/Cloud_Email_1920x360px.jpg);}
-  #bg-pme-cloud-lolcloud{background-image: url(../../images/pme/cloud/Cloud_LOLCLOUD_1920x360px.jpg);}
-  #bg-pme-cloud-host{background-image: url(../../images/pme/cloud/Cloud_Webhosting_1920x360px.jpg);}
-  #bg-pme-gestion-accueil{background-image: url(../../images/pme/gestion/Gestion_1920x360px.jpg);}
-  #bg-pme-internet-accueil{background-image: url(../../images/pme/internet/Internet_1920x360px.jpg);}
-  #bg-pme-internet-sdsl{background-image: url(../../images/pme/internet/Internet_SDSL_1920x360px.jpg);}
-  #bg-pme-internet-fibre{background-image: url(../../images/pme/internet/Internet_Fibre_1920x360px.jpg);}
-  #bg-pme-internet-fibresym{background-image: url(../../images/pme/internet/Internet_Fibresymetrique_1920x360px.jpg);}
-  #bg-pme-internet-opt{background-image: url(../../images/pme/internet/Internet_Optionsbusiness_1920x360px.jpg);}
-  #bg-pme-mobile-accueil{background-image: url(../../images/pme/mobile/Mobile_1920x360px.jpg);}
-  #bg-pme-mobile-abo{background-image: url(../../images/pme/mobile/Mobile_Abo_1920x360px.jpg);}
-  #bg-pme-mobile-mat{background-image: url(../../images/pme/mobile/Mobile_Materiel_1920x360px.jpg);}
-  #bg-pme-telephonie-accueil{background-image: url(../../images/pme/telephonie/Telephonie_1920x360px.jpg);}
-  #bg-pme-telephonie-cloud{background-image: url(../../images/pme/telephonie/Telephonie_LOLCLOUDPHONE_1920x360px.jpg);}
-  #bg-pme-telephonie-mat{background-image: url(../../images/pme/telephonie/Telephonie_Materiel_1920x360px.jpg);}
-  #bg-pme-telephonie-sip{background-image: url(../../images/pme/telephonie/Telephonie_SIP_1920x360px.jpg);}
-  #bg-pme-news{background-image: url(../../images/pme/divers/Actualites_1920x360px.jpg);}
-  #bg-pme-contact{background-image: url(../../images/pme/divers/Contact_1920x360px.jpg);}
-  #bg-pme-mobile-equip{background-image: url(../../images/pme/mobile/Mobile_Materiel_1920x360px.jpg);}
+    #social-links{
+        height: 300px;
+        background-size: 1920px auto;
+        &{
+            background-image: url(../../images/homepage/Socials/Socials_bandeau_1920x300px.jpg);
+        }
+    }
+    #bg-pme-accueil{background-image: url(../../images/pme/homepage/Accueil_1920x360px.jpg);}
+    #bg-pme-cloud-accueil{background-image: url(../../images/pme/cloud/Cloud_1920x360px.jpg);}
+    #bg-pme-cloud-mail{background-image: url(../../images/pme/cloud/Cloud_Email_1920x360px.jpg);}
+    #bg-pme-cloud-lolcloud{background-image: url(../../images/pme/cloud/Cloud_LOLCLOUD_1920x360px.jpg);}
+    #bg-pme-cloud-host{background-image: url(../../images/pme/cloud/Cloud_Webhosting_1920x360px.jpg);}
+    #bg-pme-gestion-accueil{background-image: url(../../images/pme/gestion/Gestion_1920x360px.jpg);}
+    #bg-pme-internet-accueil{background-image: url(../../images/pme/internet/Internet_1920x360px.jpg);}
+    #bg-pme-internet-sdsl{background-image: url(../../images/pme/internet/Internet_SDSL_1920x360px.jpg);}
+    #bg-pme-internet-fibre{background-image: url(../../images/pme/internet/Internet_Fibre_1920x360px.jpg);}
+    #bg-pme-internet-fibresym{background-image: url(../../images/pme/internet/Internet_Fibresymetrique_1920x360px.jpg);}
+    #bg-pme-internet-opt{background-image: url(../../images/pme/internet/Internet_Optionsbusiness_1920x360px.jpg);}
+    #bg-pme-mobile-accueil{background-image: url(../../images/pme/mobile/Mobile_1920x360px.jpg);}
+    #bg-pme-mobile-abo{background-image: url(../../images/pme/mobile/Mobile_Abo_1920x360px.jpg);}
+    #bg-pme-mobile-mat{background-image: url(../../images/pme/mobile/Mobile_Materiel_1920x360px.jpg);}
+    #bg-pme-telephonie-accueil{background-image: url(../../images/pme/telephonie/Telephonie_1920x360px.jpg);}
+    #bg-pme-telephonie-cloud{background-image: url(../../images/pme/telephonie/Telephonie_LOLCLOUDPHONE_1920x360px.jpg);}
+    #bg-pme-telephonie-mat{background-image: url(../../images/pme/telephonie/Telephonie_Materiel_1920x360px.jpg);}
+    #bg-pme-telephonie-sip{background-image: url(../../images/pme/telephonie/Telephonie_SIP_1920x360px.jpg);}
+    #bg-pme-news{background-image: url(../../images/pme/divers/Actualites_1920x360px.jpg);}
+    #bg-pme-contact{background-image: url(../../images/pme/divers/Contact_1920x360px.jpg);}
+    #bg-pme-mobile-equip {
+        background-image: url(../../images/pme/mobile/Mobile_Materiel_1920x360px.jpg); }
+    #bg-pme-internet-telecom{background-image: url(../../images/pme/internet/bg-telecom2.jpg);}
+    #bg-pme-telephonie-telecom{background-image: url(../../images/pme/telephonie/bg-internet2.jpg);}
+    #bg-pme-mobile-telecom{background-image: url(../../images/pme/mobile/bg-cloud2.jpg);}
+    #bg-pme-cloud-telecom{background-image: url(../../images/pme/mobile/bg-mobile2.jpg);}
+    #pme-contact{background-image: url(../../images/pme/divers/Contact1_1920x279px.jpg);}
+    #business-telephonie-mat{background-image: url(../../images/pme/telephonie/bg-telephonie-materiel2.jpg);}
+    #business-mobile-mat{background-image: url(../../images/pme/mobile/BG_mobile_materiel2.jpg);}
 }
