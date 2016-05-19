@@ -153,6 +153,9 @@
 #bg-pme-telephonie-sip {
   background-image: url(../../images/pme/telephonie/Telephonie_SIP_1055x322px.jpg); }
 
+#bg-pme-telephonie-visio {
+  background-image: url(../../images/pme/telephonie/LOLVISIO_PME_1055x322px.jpg); }
+
 #bg-pme-news {
   background-image: url(../../images/pme/divers/Actualites_1055x322px.jpg); }
 
@@ -267,6 +270,12 @@
 #bg-ge-tel-sip-header {
   background-image: url(../../images/ge/telephonie/Telephonie_SIPTrunking_1055x322px.jpg); }
 
+#bg-ge-tel-visio {
+  background-image: url(../../images/ge/telephonie/bg-lolvisio.jpg); }
+
+#bg-ge-tel-visio-header {
+  background-image: url(../../images/ge/telephonie/LOLVISIO_1055x322px.jpg); }
+
 #bg-ge-cloud-cloud-header {
   background-image: url(../../images/ge/cloud/CLOUD_LOLCLOUD_1055x322px.jpg); }
 
@@ -352,6 +361,9 @@
   #bg-pme-telephonie-sip {
     background-image: url(../../images/pme/telephonie/Telephonie_SIP_1302x330px.jpg); }
 
+  #bg-pme-telephonie-visio {
+    background-image: url(../../images/pme/telephonie/LOLVISIO_PME_1302x330px.jpg); }
+
   #bg-pme-news {
     background-image: url(../../images/pme/divers/Actualites_1302x330px.jpg); }
 
@@ -402,6 +414,9 @@
 
   #bg-ge-tel-sip-header {
     background-image: url(../../images/ge/telephonie/Telephonie_SIPTrunking_1920x360px.jpg); }
+
+  #bg-ge-tel-visio-header {
+    background-image: url(../../images/ge/telephonie/LOLVISIO_1920x360px.jpg); }
 
   #bg-ge-tel-options-header {
     background-image: url(../../images/ge/telephonie/Telephonie_Optionsbusiness_1920x360px.jpg); }
@@ -486,6 +501,9 @@
 
   #bg-pme-telephonie-sip {
     background-image: url(../../images/pme/telephonie/Telephonie_SIP_1920x360px.jpg); }
+
+  #bg-pme-telephonie-visio {
+    background-image: url(../../images/pme/telephonie/LOLVISIO_PME_1920x360px.jpg); }
 
   #bg-pme-news {
     background-image: url(../../images/pme/divers/Actualites_1920x360px.jpg); }

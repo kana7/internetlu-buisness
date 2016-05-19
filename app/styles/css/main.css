@@ -2608,6 +2608,9 @@ hr {
 .icon-www:before {
   content: "\4b"; }
 
+.icon-proximite-icone:before {
+  content: "\4c"; }
+
 @-ms-viewport {
   width: auto !important; }
 .answer li {
