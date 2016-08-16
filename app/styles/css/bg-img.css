@@ -38,56 +38,35 @@
   height: 160px; }
 
 #fibre-bg-header {
-  background-image: url("../../images/propos/fibre_optique_phone.jpg");
+  background-image: url("../../images/propos/fibre_optique.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%; }
+  background-size: auto 100%;
+  background-position: center center; }
   #fibre-bg-header.right {
-    background-position: center right;
     text-align: left; }
   #fibre-bg-header.left {
-    background-position: center left;
     text-align: right; }
 
 #lolphone-bg-header {
-  background-image: url("../../images/propos/telephonie_phone.jpg");
+  background-image: url("../../images/propos/telephonie.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%; }
+  background-size: auto 100%;
+  background-position: center center; }
   #lolphone-bg-header.right {
-    background-position: center right;
     text-align: left; }
   #lolphone-bg-header.left {
-    background-position: center left;
     text-align: right; }
 
 #lolcloud-bg-header {
-  background-image: url("../../images/propos/cloud_phone.jpg");
+  background-image: url("../../images/propos/cloud.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%; }
+  background-size: auto 100%;
+  background-position: center center; }
   #lolcloud-bg-header.right {
-    background-position: center right;
     text-align: left; }
   #lolcloud-bg-header.left {
-    background-position: center left;
     text-align: right; }
 
-@media screen and (min-width: 672px) {
-  #fibre-bg-header {
-    background-image: url("../../images/propos/fibre_optique_tab.jpg"); }
-
-  #lolphone-bg-header {
-    background-image: url("../../images/propos/telephonie_tab.jpg"); }
-
-  #lolcloud-bg-header {
-    background-image: url("../../images/propos/cloud_tab.jpg"); } }
-@media screen and (min-width: 1056px) {
-  #fibre-bg-header {
-    background-image: url("../../images/propos/fibre_optique.jpg"); }
-
-  #lolphone-bg-header {
-    background-image: url("../../images/propos/telephonie.jpg"); }
-
-  #lolcloud-bg-header {
-    background-image: url("../../images/propos/cloud.jpg"); } }
 #social-links {
   height: 200px;
   background-position: top center;
@@ -287,6 +266,10 @@
 
 #bg-ge-contact {
   background-image: url(../../images/ge/divers/Contact_1055x322px.jpg); }
+
+#bg-ge-footerContact {
+  background-image: url(../../images/ge/Contact_img_1055x232.jpg);
+  height: 232px; }
 
 @media screen and (min-width: 672px) {
   #bg-propos-value {
@@ -533,6 +516,10 @@
     background-image: url(../../images/pme/telephonie/bg-telephonie-materiel2.jpg); }
 
   #business-mobile-mat {
-    background-image: url(../../images/pme/mobile/BG_mobile_materiel2.jpg); } }
+    background-image: url(../../images/pme/mobile/BG_mobile_materiel2.jpg); }
+
+  #bg-ge-footerContact {
+    background-image: url(../../images/ge/Contact_img_1920x279.jpg);
+    height: 279px; } }
 
 /*# sourceMappingURL=bg-img.css.map */

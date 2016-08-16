@@ -5,7 +5,7 @@
 }
 .container-wrapper
 {
-  position: relative;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
     padding-right: ($gridGutterWidth/2);
@@ -42,8 +42,8 @@
     text-align: left !important;
 }
 .align-justify-center{
-  text-align: justify;
-  text-align-last: center;
+    text-align: justify;
+    text-align-last: center;
 }
 .background-image-right
 {
@@ -58,28 +58,28 @@
 }
 
 .fill-height{
-  .container-wrapper{
-    height: 100%;
-    .row{
-      height: 100%;
+    .container-wrapper{
+        height: 100%;
+        .row{
+            height: 100%;
+        }
     }
-  }
 }
 
 .spread-element{
-  @include spread-element();
+    @include spread-element();
 }
 
 //SPREAD CENTER SUPPORT
 .flexbox{
-  .flex{
-    @include display-flex-center;
-  }
+    .flex{
+        @include display-flex-center;
+    }
 }
 .no-flexbox{
-  .flex{
-    @include spread-element();
-  }
+    .flex{
+        @include spread-element();
+    }
 }
 
 // FIXED ELEMENT
@@ -302,8 +302,8 @@ header{
     }
 }
 .page-content{
-  position: relative;
-  padding: 30px 0;
+    position: relative;
+    padding: 30px 0;
 }
 .logo
 {
@@ -322,7 +322,7 @@ header{
         max-height: 44px;
     }
     a{
-      display: initial;
+        display: initial;
     }
 }
 
@@ -416,8 +416,8 @@ header{
         height: 100%;
     }
     .row>div{
-      @include vertical-align-middle;
-      text-align: left;
+        @include vertical-align-middle;
+        text-align: left;
     }
     img
     {
@@ -516,7 +516,7 @@ footer
 }
 
 #social-links .brand-name{
-  font-size: 21px;
+    font-size: 21px;
     display: none;
 }
 
@@ -542,7 +542,7 @@ footer
         width: 100%;
     }
     li{
-      text-align: center;
+        text-align: center;
     }
 }
 
@@ -561,7 +561,8 @@ footer
         display: inline-block;
     }
     a{
-      display: initial;
+        display: inline-block;
+        display: initial;
     }
 }
 
