@@ -2515,12 +2515,6 @@ hr {
 .icon-call-me:before {
   content: "\66"; }
 
-.icon-check-ico:before {
-  content: "\67"; }
-
-.icon-clock-icone:before {
-  content: "\68"; }
-
 .icon-cloudphone:before {
   content: "\69"; }
 
@@ -2610,6 +2604,12 @@ hr {
 
 .icon-proximite-icone:before {
   content: "\4c"; }
+
+.icon-check-ico:before {
+  content: "\4d"; }
+
+.icon-clock-icone:before {
+  content: "\67"; }
 
 @-ms-viewport {
   width: auto !important; }
@@ -5027,8 +5027,6 @@ span[class^=icon-] {
     .pme-solution.offre .header {
       text-align: left;
       padding: 15px 0px 15px 30px; }
-      .pme-solution.offre .header h3 {
-        text-transform: initial; }
     .pme-solution.offre .content {
       display: block;
       background-color: #fff;
@@ -5254,14 +5252,15 @@ span[class^=icon-] {
     .offer-table .offer-table-col .offer-table-footer {
       border-radius: 0 0 6px 6px; }
   .offer-table .offer-table-header, .offer-table .offer-table-item, .offer-table .offer-table-footer {
-    padding: 16px 13px;
+    padding: 16px 0;
     border-right: 1px solid #004994;
     border-left: 1px solid #004994; }
   .offer-table .offer-table-header {
     background-color: #004994;
     color: #fff;
     font-size: 2em;
-    font-weight: 600; }
+    font-weight: 600;
+    white-space: nowrap; }
   .offer-table .offer-table-item {
     position: relative;
     font-weight: 800;
@@ -5300,6 +5299,9 @@ span[class^=icon-] {
     bottom: 1px;
     font-size: 0.7em;
     margin-right: 15px; }
+  .offer-table .icon-check-ico {
+    bottom: 0px;
+    font-size: 0.9em; }
   .offer-table [class^="icon-"]:not(.upload) {
     color: #e75e0a; }
   .offer-table .upload {
@@ -6271,7 +6273,7 @@ h2.contact-title {
     border-top: 1px solid #004994;
     border-radius: 0 6px 0 0; }
   .offer-table.mono-offer .offer-table-col:last-child .offer-table-item {
-    line-height: 20px; }
+    line-height: 22px; }
   .offer-table.mono-offer .offer-table-col:last-child .offer-table-item:last-child {
     border-radius: 0 0 6px 0; }
 

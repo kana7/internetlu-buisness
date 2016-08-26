@@ -56,12 +56,6 @@
 .icon-call-me:before {
   content: "\66";
 }
-.icon-check-ico:before {
-  content: "\67";
-}
-.icon-clock-icone:before {
-  content: "\68";
-}
 .icon-cloudphone:before {
   content: "\69";
 }
@@ -151,4 +145,10 @@
 }
 .icon-proximite-icone:before {
   content: "\4c";
+}
+.icon-check-ico:before {
+  content: "\4d";
+}
+.icon-clock-icone:before {
+  content: "\67";
 }

@@ -1875,9 +1875,6 @@ span[class^=icon-]
         .header{
             text-align: left;
             padding: 15px 0px 15px 30px;
-            h3{
-                text-transform: initial;
-            }
         }
         .content{
             @include clearfix;
@@ -2109,7 +2106,7 @@ span[class^=icon-]
         }
     }
     .offer-table-header, .offer-table-item, .offer-table-footer{
-        padding: 16px 13px;
+        padding: 16px 0;
         border-right: 1px solid $blue;
         border-left: 1px solid $blue;
     }
@@ -2118,6 +2115,7 @@ span[class^=icon-]
         color: $white;
         font-size: 2em;
         font-weight: 600;
+        white-space: nowrap;
     }
     .offer-table-item{
         position: relative;
@@ -2161,6 +2159,10 @@ span[class^=icon-]
         bottom: 1px;
         font-size: 0.7em;
         margin-right: 15px;
+    }
+    .icon-check-ico{
+        bottom: 0px;
+        font-size: 0.9em;
     }
     [class^="icon-"]:not(.upload){
         color: $orange;
