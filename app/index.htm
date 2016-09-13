@@ -254,6 +254,18 @@
 
         <script src="scripts/vendor/jquery.min.js"></script>
         <script src="scripts/main.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $(window).load(function () {
+                    var hash = document.URL.substr(document.URL.indexOf('#') + 1);
+                    if (window.location.hash) {
+                        if (hash === "success") {
+                            alert('Merci. Votre demande sera traitée dans les meilleurs délais. ');
+                        }
+                    }
+                });
+            });
+        </script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
