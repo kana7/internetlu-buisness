@@ -186,6 +186,9 @@
 #ge-internet-vpn {
   background-image: url(../../images/ge/internet/bg-vpn.jpg); }
 
+#ge-internet-astra {
+  background-image: url(../../images/ge/internet/bg-astraconnectpro.jpg); }
+
 #bg-ge-tel-cloud {
   background-image: url(../../images/ge/telephonie/bg-cloud.jpg); }
 
@@ -239,6 +242,9 @@
 
 #bg-ge-internet-vpn-header {
   background-image: url(../../images/ge/internet/Internet_VPN_1055x322px.jpg); }
+
+#bg-ge-internet-astra-header {
+  background-image: url(../../images/ge/internet/AstraConnect_1055x322px.jpg); }
 
 #bg-ge-tel-lolphone-header {
   background-image: url(../../images/ge/telephonie/Telephonie_LOLCLOUDPHONE_1055x322px.jpg); }
@@ -388,6 +394,9 @@
 
   #bg-ge-internet-vpn-header {
     background-image: url(../../images/ge/internet/Internet_VPN_1920x360px.jpg); }
+
+  #bg-ge-internet-astra-header {
+    background-image: url(../../images/ge/internet/AstraConnect_1920x360px.jpg); }
 
   #bg-ge-tel-lolphone-header {
     background-image: url(../../images/ge/telephonie/Telephonie_LOLCLOUDPHONE_1920x360px.jpg); }

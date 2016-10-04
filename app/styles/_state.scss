@@ -86,6 +86,12 @@
 }
 
 @include media(tab){
+    .page-content{
+        .video-container {
+            height: 360px;
+            margin-bottom: 10px;
+        }
+    }
     .left{
         .profit{
             max-width: none;
@@ -361,6 +367,14 @@
 }
 
 @include media(desk){
+    .page-content{
+        .video-container {
+            margin: 0;
+            padding-left: 16px;
+            padding-top: 35px;
+            padding-bottom: 36px;
+        }
+    }
     .bg-header-pme{
         .row>div{
             text-align: left;
@@ -921,6 +935,12 @@
 @include media(lgdesk){
     .page-content{
         padding: 50px 0;
+        .video-container {
+            padding-left: 20px;
+            padding-top: 16px;
+            padding-bottom: 17px;
+        }
+
     }
     /*PAGE PROPOS*/
     /*------------------------------------------------*/
