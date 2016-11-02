@@ -3659,16 +3659,19 @@ span[class^=icon-] {
 .top-menu-header-links {
   font-size: 13px;
   font-weight: 400;
-  padding: 9px 0 8px;
   color: #fff;
   text-shadow: 0 1px 5px #818181; }
-  .top-menu-header-links li.active {
-    text-decoration: underline;
-    font-weight: bold; }
-  .top-menu-header-links.left li {
-    margin-right: 30px; }
-  .top-menu-header-links.right li {
+  .top-menu-header-links > li {
+    padding: 11px 0px 10px; }
+  .top-menu-header-links.left > li {
+    padding: 11px 10px 10px; }
+    .top-menu-header-links.left > li.active {
+      background-color: #0056ae; }
+  .top-menu-header-links.right > li {
     margin-left: 30px; }
+    .top-menu-header-links.right > li.active {
+      font-weight: 600;
+      text-decoration: underline; }
 
 .bottom-menu-header-links .main-menu {
   font-size: 16px;
@@ -6084,8 +6087,8 @@ h2.contact-title {
 .header-dropdown {
   position: relative;
   display: inline-block;
-  padding: 0;
-  width: 161px; }
+  width: 160px;
+  padding: 0; }
   .header-dropdown button {
     position: relative;
     display: block;
@@ -6095,23 +6098,24 @@ h2.contact-title {
     outline: 0;
     background: none;
     border: none;
-    padding: 9px 10px;
-    border-bottom: 1px solid #003a75; }
+    padding: 0; }
     .header-dropdown button span[class^="icon-"] {
       margin-right: 0;
-      margin-left: 8px;
       font-size: 0.7em;
+      position: absolute;
+      top: 2px;
+      right: 0;
       transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       -o-transform: rotate(90deg); }
-    .header-dropdown button:hover, .header-dropdown button.is-active {
-      background-color: #004185; }
   .header-dropdown .drop {
     display: none;
     position: absolute;
+    left: 0;
     width: 100%;
-    z-index: 1;
+    margin-top: 9px;
+    z-index: 3;
     background-color: #004185;
     border-top: 1px solid #004994; }
     .header-dropdown .drop li {
@@ -6123,8 +6127,8 @@ h2.contact-title {
         border-bottom: 1px solid #003a75; }
     .header-dropdown .drop a {
       display: block;
-      padding: 9px 10px 8px;
-      white-space: nowrap; }
+      white-space: nowrap;
+      padding: 11px 10px 10px; }
     .header-dropdown .drop.is-visible {
       display: block; }
 
