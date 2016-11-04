@@ -486,10 +486,10 @@ span[class^=icon-]
     font-weight: 400;
     color: $white;
     text-shadow: 0 1px 5px $dark-grey;
-    &>li{padding: 11px 0px 10px;}
+    &>li{a{padding: 11px 10px 10px;}}
     &.left>li
     {
-        padding: 11px 10px 10px;
+        &:last-child{padding: 0; button{padding: 11px 10px 10px;}}
         &.active{
             background-color: lighten($blue, 5%);
         }
@@ -3105,7 +3105,6 @@ h2.contact-title {
     padding: 0;
     button{
         position: relative;
-        display: block;
         text-align: left;
         width: 100%;
         z-index: 2;
@@ -3116,9 +3115,8 @@ h2.contact-title {
         span[class^="icon-"]{
             margin-right: 0;
             font-size: 0.7em;
-            position: absolute;
-            top: 2px;
-            right: 0;
+            top: 3px;
+            float: right;
             @include transform(rotate(90deg));
         }
     }
@@ -3127,7 +3125,6 @@ h2.contact-title {
         position: absolute;
         left: 0;
         width: 100%;
-        margin-top: 9px;
         z-index: 3;
         background-color: darken($blue, 3%);
         border-top: 1px solid $blue;
