@@ -246,6 +246,9 @@
 #bg-ge-internet-astra-header {
   background-image: url(../../images/ge/internet/AstraConnect_1055x322px.jpg); }
 
+#bg-ge-internet-4g-header {
+  background-image: url(../../images/ge/internet/back4gmanage_1055x322px.jpg); }
+
 #bg-ge-tel-lolphone-header {
   background-image: url(../../images/ge/telephonie/Telephonie_LOLCLOUDPHONE_1055x322px.jpg); }
 
@@ -400,6 +403,9 @@
 
   #bg-ge-internet-astra-header {
     background-image: url(../../images/ge/internet/AstraConnect_1920x360px.jpg); }
+
+  #bg-ge-internet-4g-header {
+    background-image: url(../../images/ge/internet/back4gmanage_1920x360px.jpg); }
 
   #bg-ge-tel-lolphone-header {
     background-image: url(../../images/ge/telephonie/Telephonie_LOLCLOUDPHONE_1920x360px.jpg); }
